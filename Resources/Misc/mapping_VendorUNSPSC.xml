@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mappingDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<options>
+		<separator>,</separator>
+		<escape />
+		<hasHeader>true</hasHeader>
+		<textQualifier>"</textQualifier>
+		<hasLastDelimiter>false</hasLastDelimiter>
+	</options>
+	<tableName>P2P - Vendor UNSPSC__</tableName>
+	<mappings>
+		<mapping key="true">
+			<fieldInTable>CompanyCode__</fieldInTable>
+			<fieldInFile defaultValue="">
+				<fieldNameInFile>CompanyCode__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
+		<mapping key="true">
+			<fieldInTable>VendorNumber__</fieldInTable>
+			<fieldInFile defaultValue="">
+				<fieldNameInFile>VendorNumber__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
+		<mapping key="true">
+			<fieldInTable>UNSPSC__</fieldInTable>
+			<fieldInFile defaultValue="">
+				<fieldNameInFile>UNSPSC__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
+	</mappings>
+</mappingDef>

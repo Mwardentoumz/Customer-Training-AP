@@ -1,0 +1,1 @@
+Add here all the other resources (only .xml files in this folder will be added in Customizations.esk during Application Build)

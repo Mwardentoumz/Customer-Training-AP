@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_API Key</key>
+			<val>Klucz API</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key Identifier</key>
+			<val>Identyfikator klucza API</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key Identifier_report</key>
+			<val>Identyfikator klucza API PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key_report</key>
+			<val>Klucz API PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Id</key>
+			<val>Id. klienta OAuth</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Id_report</key>
+			<val>Id. klienta OAuth</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Secret</key>
+			<val>Klucz tajny klienta OAuth</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Secret_report</key>
+			<val>Klucz tajny klienta OAuth</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Configure the PDP connection settings</key>
+			<val>Skonfiguruj ustawienia połączenia PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Connector Type</key>
+			<val>Typ API</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Connector Type_report</key>
+			<val>Typ API</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Document data</key>
+			<val>Szczegóły PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_errorExistingConfigurationName</key>
+			<val>Konfiguracja o tej samej nazwie już istnieje.</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_General</key>
+			<val>Połączenie PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_jsonParameters</key>
+			<val>Ustawienia JSON</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_jsonParameters_report</key>
+			<val>Ustawienia JSON</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Name</key>
+			<val>Nazwa konfiguracji</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Name_report</key>
+			<val>Nazwa konfiguracji</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_P2P - PDP Connection Parameters</key>
+			<val>S2P – konfiguracja połączenia PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_P2P - PDP Connection Parameters__</key>
+			<val>S2P – konfiguracja połączenia PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_EOD</key>
+			<val>EoD</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_EOD_SG5_V1</key>
+			<val>Standardized AFNOR SG5 (Esker PA)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_SG5_V1</key>
+			<val>Standaryzowany AFNOR SG5</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_S2P Configuration</key>
+			<val>Konfiguracja aplikacji S2P</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_S2P Configuration_report</key>
+			<val>Konfiguracja aplikacji S2P</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Token URI</key>
+			<val>Adres URL tokenu OAuth</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Token URI_report</key>
+			<val>Adres URL tokenu OAuth</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_URI</key>
+			<val>URI</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_URI_report</key>
+			<val>URI interfejsu API PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>P2P - PDP Connection Parameters</key>
+			<val>S2P – konfiguracja połączenia PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>P2P - PDP Connection Parameters__</key>
+			<val>S2P – konfiguracja połączenia PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>URI_Help</key>
+			<val>Wprowadź identyfikator URI zarejestrowanej platformy (PA), z którą chcesz się połączyć.</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

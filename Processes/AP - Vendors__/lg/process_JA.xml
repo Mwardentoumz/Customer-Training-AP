@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_action_openInProcess:Vendor_Company_Extended_Properties__</key>
+			<val>詳細を表示</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Active</key>
+			<val>アクティブ</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Blocked</key>
+			<val>購入はブロックされています</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CF_C5_EDI_Identifier</key>
+			<val>電子アドレスID (Peppol CTC)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CF_C5_EDI_Identifier_report</key>
+			<val>電子アドレスID (Peppol CTC)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CF_C5_EDI_IdentifierType</key>
+			<val>電子アドレススキームID (Peppol CTC)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CF_C5_EDI_IdentifierType_report</key>
+			<val>電子アドレススキームID (Peppol CTC)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_ComplianceRiskIdentifier</key>
+			<val>サードパーティID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_ComplianceRiskIdentifier_report</key>
+			<val>サードパーティID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Country code</key>
+			<val>国コード</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Disabled</key>
+			<val>無効</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_DUNSNumber</key>
+			<val>DUNS番号</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_DUNSNumber_report</key>
+			<val>DUNS番号</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_GHGEmissionFactor</key>
+			<val>GHG排出係数 (kg CO2e)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_GHGEmissionFactor_report</key>
+			<val>GHG排出係数 (kg CO2e)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InternalScore</key>
+			<val>総合スコア</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InternalScore_report</key>
+			<val>総合スコア</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InternalScoreLastComputeDateTime</key>
+			<val>総合スコア最終更新日</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InternalScoreLastComputeDateTime_report</key>
+			<val>サプライヤーの総合スコア最終更新日</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastLifeCycleStatusChangeDate</key>
+			<val>Last status update</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastLifeCycleStatusChangeDate_report</key>
+			<val>Last status update</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleComment</key>
+			<val>理由</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleComment_report</key>
+			<val>アクティビティのステータスの事由</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleStatus</key>
+			<val>アクティビティステータス</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleStatus_report</key>
+			<val>アクティビティステータス</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleStatusCode_Help</key>
+			<val>「調達」と「買掛金」が有効になっている場合、このオプションでは次のことができます。&lt;br&gt;
+• このサプライヤーの発注書の作成を止める&lt;br&gt;
+• 発注書の作成と請求書の登録を止める</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_ShowAlerts</key>
+			<val>スコアのアラートの表示</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Siret</key>
+			<val>納税者識別番号</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Sub</key>
+			<val>建物、IA、サービス...</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Sub report</key>
+			<val>建物、IA、サービス...</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Vendor Address</key>
+			<val>住所プレビュー</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorAddress</key>
+			<val>仕入先住所</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorCategory</key>
+			<val>仕入先カテゴリー</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorCategory_report</key>
+			<val>仕入先カテゴリー</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInfo</key>
+			<val>仕入先情報</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>AP - Vendors</key>
+			<val>S2P - 仕入先</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>City</key>
+			<val>市区町村</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Company code</key>
+			<val>会社コード</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Currency</key>
+			<val>デフォルトの通貨</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Email</key>
+			<val>電子メール</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Fax number</key>
+			<val>Fax番号</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>General account</key>
+			<val>集合的な勘定科目</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Name</key>
+			<val>名前</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Number</key>
+			<val>仕入先番号</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Parafiscal tax</key>
+			<val>準財務税の対象</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Payment terms</key>
+			<val>支払条件</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Phone number</key>
+			<val>電話番号</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Postal code</key>
+			<val>郵便番号</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>PostOfficeBox</key>
+			<val>私書箱</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Preferred invoice type</key>
+			<val>優先される請求書種別</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Region</key>
+			<val>都道府県/地域</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Street</key>
+			<val>番地</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Supplier due</key>
+			<val>付加価値税種別</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Tax system</key>
+			<val>税制</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>VAT number</key>
+			<val>付加価値税登録番号</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

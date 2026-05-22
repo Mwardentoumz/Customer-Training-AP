@@ -1,0 +1,583 @@
+{
+"esker.extension.enable": true,
+	"esker.project.config": {
+		"Package": {
+			"rootList": [
+				"bin"
+			],
+			"extensionList": [
+				"esk",
+				"zip"
+			]
+		}
+	},
+	"esker.project.app.config": {
+		"ConfigurationAccount": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"accounts"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationApplication": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"configurations"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationApplicationitem": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"applicationItems"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationDashboard": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"dashboards"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationDashboardprofile": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"dashboardProfiles",
+				"dashboardprofiles"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationDemodata": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"demodata"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationDemomodifier": {
+			"rootList": [
+				"Demo Modifiers"
+			],
+			"folderList": [],
+			"filenameList": [
+				"*"
+			],
+			"extensionList": [
+				"xml"
+			]
+		},
+		"ConfigurationEmail": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"email"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationFtp": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"ftp"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationGlobalfilter": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"globalfilters"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationLanguage": {
+			"rootList": [
+				"Lg",
+				"lg"
+			],
+			"folderList": [
+				"**"
+			],
+			"filenameList": [
+				"*"
+			],
+			"extensionList": [
+				"xml",
+				"json"
+			]
+		},
+		"ConfigurationLogo": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"logo"
+			],
+			"extensionList": [
+				"xml"
+			]
+		},
+		"ConfigurationMobile": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"MobileAppCustomisations",
+				"mobileCustomization",
+				"MobileCustos"
+			],
+			"extensionList": [
+				"xml",
+				"json"
+			]
+		},
+		"ConfigurationPolicy": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"policies"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationProcesslink": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"processLink"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationProcessmodifier": {
+			"rootList": [
+				"Process Modifiers"
+			],
+			"folderList": [],
+			"filenameList": [
+				"*"
+			],
+			"extensionList": [
+				"xml"
+			]
+		},
+		"ConfigurationProfile": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"profiles"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationReport": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"reports"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationScheduler": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"schedulers"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationUser": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"users"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationView": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"views"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"ConfigurationViewtype": {
+			"rootList": [
+				"ViewTypes"
+			],
+			"folderList": [],
+			"filenameList": [
+				"*"
+			],
+			"extensionList": [
+				"xml"
+			]
+		},
+		"IndexBuildoption": {
+			"rootList": [
+				".",
+				"Common",
+				"../Common",
+				"../../Common",
+				"../../../Common",
+				"../../../../Common"
+			],
+			"folderList": [],
+			"filenameList": [
+				"buildOptions"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"IndexLibrary": {
+			"rootList": [
+				"."
+			],
+			"folderList": [],
+			"filenameList": [
+				"scriptLibraries"
+			],
+			"extensionList": [
+				"xml",
+				"xml.inh"
+			]
+		},
+		"LibraryScript": {
+			"rootList": [
+				"Lib"
+			],
+			"folderList": [
+				"**"
+			],
+			"filenameList": [
+				"*"
+			],
+			"extensionList": [
+				"js",
+				"ts"
+			]
+		},
+		"Process": {
+			"rootList": [
+				"Processes"
+			],
+			"folderList": [
+				"**\\*"
+			],
+			"filenameList": [
+				"processTemplate"
+			],
+			"extensionList": [
+				"xml"
+			]
+		},
+		"ResourceData": {
+			"rootList": [
+				"Resources\\Data"
+			],
+			"folderList": [
+				"**"
+			],
+			"filenameList": [
+				"*"
+			],
+			"extensionList": [
+				"xml",
+				"csv"
+			]
+		},
+		"ResourceDataupdate": {
+			"rootList": [
+				"Resources\\Data-update"
+			],
+			"folderList": [
+				"**"
+			],
+			"filenameList": [
+				"*"
+			],
+			"extensionList": [
+				"xml",
+				"csv"
+			]
+		},
+		"ResourceImage": {
+			"rootList": [
+				"Resources\\Images"
+			],
+			"extensionList": [
+				"gif",
+				"png",
+				"jpg",
+				"jpeg",
+				"svg"
+			]
+		},
+		"ResourceLogo": {
+			"rootList": [
+				"Resources\\Logos"
+			],
+			"extensionList": [
+				"gif",
+				"png",
+				"jpg",
+				"jpeg",
+				"svg"
+			]
+		},
+		"ResourceMiscfile": {
+			"rootList": [
+				"Resources\\Misc"
+			],
+			"folderList": [
+				"**"
+			],
+			"extensionList": [
+				"pdf",
+				"doc",
+				"docx",
+				"rtf",
+				"csv",
+				"xls",
+				"xlsx",
+				"ppt",
+				"pptx",
+				"pps",
+				"ppsx",
+				"txt",
+				"tif",
+				"htm",
+				"html",
+				"gif",
+				"jpg",
+				"jpeg",
+				"png",
+				"xml",
+				"ps",
+				"pcl",
+				"epmf",
+				"zip",
+				"esk"
+			]
+		},
+		"ResourceTemplate": {
+			"rootList": [
+				"Resources\\Templates"
+			],
+			"folderList": [
+				"**"
+			],
+			"extensionList": [
+				"htm",
+				"html",
+				"docx",
+				"txt",
+				"xsl",
+				"rpt",
+				"json",
+				"css",
+				"xml"
+			]
+		},
+	},
+	"esker.project.app.list": [
+		{
+			"category": "Customizations",
+			"label": "Project customizations",
+			"root": ".",
+			"config": {
+				"LibraryScript": {
+					"rootList": [
+						"Lib",
+						"Components"
+					],
+					"folderList": [
+						"**"
+				],
+				"filenameList": [
+					"LIB_*",
+					"Lib_*"
+				],
+				"extensionList": [
+					"js",
+					"ts"
+				]
+			},
+			"Process": {
+				"rootList": [
+					"Processes"
+				],
+				"folderList": [
+					"**\\*"
+				],
+				"filenameList": [
+					"processTemplate"
+				],
+				"extensionList": [
+					"xml"
+				]
+			},
+			"ResourceData": {
+				"rootList": [
+					"application"
+				],
+				"folderList": [
+					"Data"
+				],
+				"extensionList": [
+					"xml",
+					"csv"
+				]
+			},
+			"ConfigurationProcessmodifier": {
+				"rootList": [
+					"application"
+				],
+				"folderList": [
+					"Process Modifiers"
+				],
+				"extensionList": [
+					"xml"
+				]
+			},
+			"ConfigurationApplication": {
+				"rootList": [
+					"application"
+				],
+				"filenameList": [
+					"configurations"
+				],
+				"extensionList": [
+					"xml"
+				]
+			},
+			"ConfigurationDashboard": {
+				"rootList": [
+					"application"
+				],
+				"filenameList": [
+					"dashboards"
+				],
+				"extensionList": [
+					"xml"
+				]
+			},
+			"ConfigurationDashboardprofile": {
+				"rootList": [
+					"application"
+				],
+				"filenameList": [
+					"dashboardProfiles",
+					"dashboardprofiles"
+				],
+				"extensionList": [
+					"xml"
+				]
+			},
+			"ConfigurationEmail": {
+				"rootList": [
+					"application"
+				],
+				"filenameList": [
+					"email"
+				],
+				"extensionList": [
+					"xml"
+				]
+			}
+		}
+	}
+],
+"changelog-generator.scopes": [
+	"JFROG"
+]
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_API Key</key>
+			<val>API-nøgle</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key Identifier</key>
+			<val>API-nøgleidentifikator</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key Identifier_report</key>
+			<val>Identifikator for PA API-nøgle</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key_report</key>
+			<val>PA API-nøgle</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Id</key>
+			<val>Klient-id for OAuth</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Id_report</key>
+			<val>Klient-id for OAuth</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Secret</key>
+			<val>Oauth-klienthemmelighed</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Secret_report</key>
+			<val>Oauth-klienthemmelighed</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Configure the PDP connection settings</key>
+			<val>Konfigurer indstillingerne for PA-forbindelsen</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Connector Type</key>
+			<val>API-type</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Connector Type_report</key>
+			<val>API-type</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Document data</key>
+			<val>PA-oplysninger</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_errorExistingConfigurationName</key>
+			<val>Der findes allerede en konfiguration med samme navn.</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_General</key>
+			<val>PA-forbindelse</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_jsonParameters</key>
+			<val>JSON-indstillinger</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_jsonParameters_report</key>
+			<val>JSON-indstillinger</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Name</key>
+			<val>Konfigurationsnavn</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Name_report</key>
+			<val>Konfigurationsnavn</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_P2P - PDP Connection Parameters</key>
+			<val>S2P – konfiguration af PA-forbindelse</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_P2P - PDP Connection Parameters__</key>
+			<val>S2P – konfiguration af PA-forbindelse</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_EOD</key>
+			<val>EoD</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_EOD_SG5_V1</key>
+			<val>Standardized AFNOR SG5 (Esker PA)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_SG5_V1</key>
+			<val>Standardiseret AFNOR SG5</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_S2P Configuration</key>
+			<val>Konfiguration af S2P-program</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_S2P Configuration_report</key>
+			<val>Konfiguration af S2P-program</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Token URI</key>
+			<val>URL til OAuth-token</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Token URI_report</key>
+			<val>URL til OAuth-token</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_URI</key>
+			<val>URI</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_URI_report</key>
+			<val>URI i PA API</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>P2P - PDP Connection Parameters</key>
+			<val>S2P – konfiguration af PA-forbindelse</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>P2P - PDP Connection Parameters__</key>
+			<val>S2P – konfiguration af PA-forbindelse</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>URI_Help</key>
+			<val>Indtast den URI, der identificerer den registrerede platform (PA), du ønsker at oprette forbindelse til.</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

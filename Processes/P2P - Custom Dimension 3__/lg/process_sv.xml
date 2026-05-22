@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_ChatBotUsingTool_S2P_ProcessAssistant.GetVendorNumber</key>
+			<val>Hämtar leverantörsnummer</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

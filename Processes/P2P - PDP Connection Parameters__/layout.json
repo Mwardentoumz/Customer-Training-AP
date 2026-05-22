@@ -1,0 +1,1017 @@
+{
+	"data": [],
+	"stamps": 52,
+	"*": {
+		"Screen": {
+			"type": "FlexibleFormLayout",
+			"data": [],
+			"stamp": 1,
+			"options": {
+				"splitterType": "simple-v",
+				"style": null,
+				"maxwidth": 1024,
+				"backColor": "text-backgroundcolor-default",
+				"footerStyle": "default",
+				"processHelpId": "2623",
+				"version": 0
+			},
+			"*": {
+				"form-header": {
+					"type": "FlexibleFormHeader",
+					"data": [],
+					"stamp": 2,
+					"options": {
+						"hidePanelsMenu": false,
+						"maxwidth": 1024,
+						"version": 0
+					}
+				},
+				"form-center": {
+					"type": "FlexibleFormCenter",
+					"data": [],
+					"stamp": 3,
+					"options": {
+						"maxwidth": 1024,
+						"version": 0
+					},
+					"*": {
+						"form-content": {
+							"type": "FlexibleFormContent",
+							"data": [],
+							"stamp": 4,
+							"options": {
+								"version": 0
+							},
+							"*": {
+								"form-content-center": {
+									"type": "FlexibleFormSplitter",
+									"data": [],
+									"stamp": 5,
+									"options": {
+										"version": 1,
+										"box": {
+											"top": "0%",
+											"left": "0%",
+											"width": "100%"
+										},
+										"hidden": false,
+										"hideSeparator": true
+									},
+									"*": {
+										"form-content-center-4": {
+											"type": "FlexibleFormLine",
+											"data": [],
+											"stamp": 6,
+											"options": {
+												"version": 0
+											},
+											"*": {
+												"Wizard_steps": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 7,
+													"options": {
+														"border": {},
+														"iconURL": "",
+														"TitleFontSize": "S",
+														"hideActionButtons": true,
+														"hideTitleBar": true,
+														"hideTitle": true,
+														"sameHeightAsSiblings": false,
+														"backgroundcolor": "color1",
+														"labelsAlignment": "right",
+														"label": "Wizard steps",
+														"hidden": false,
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"labelLength": 0,
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 8,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 9,
+																	"options": {
+																		"version": 0,
+																		"lines": 3,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"Wizard_steps__": {
+																				"line": 1,
+																				"column": 1
+																			},
+																			"Wizard_step_desc__": {
+																				"line": 2,
+																				"column": 1
+																			},
+																			"Spacer2__": {
+																				"line": 3,
+																				"column": 1
+																			}
+																		},
+																		"colspans": [
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			]
+																		]
+																	},
+																	"*": {
+																		"Wizard_steps__": {
+																			"type": "HTML",
+																			"data": false,
+																			"stamp": 10,
+																			"options": {
+																				"label": "Wizard_steps__",
+																				"css": "@ .wizard-container {\n    display: flex;\n    justify-content: center;\n}@ \n.wizard-timeline {\n\tcontent: \"\";\n\theight: 3px;\n\tmargin-top: 35px;\n\tposition: absolute;\n\tbackground-color: #00b4bd;\n\tz-index: 10;\n}@ \n.wizard {\n\theight: 145px;\n\tz-index: 30;\n\tcolor: #263645;\n}@ \n.wizard td {\n\ttext-align: center;\n\tfont-size: 14px;\n}@ \n.wizard td i {\n\twidth: 50px;\n\tpadding: 10px;\n}@ \n.wizard td.text {\n\ttext-transform: uppercase;\n\twhite-space: pre-wrap;\n\tvertical-align: top;\n\tfont-size: 12px;\n}@ \n.wizard td.wizardSelected {\n\tcolor: White;\n}@ ",
+																				"width": "100%",
+																				"version": 0
+																			}
+																		},
+																		"Wizard_step_desc__": {
+																			"type": "Text",
+																			"data": false,
+																			"stamp": 11,
+																			"options": {
+																				"label": "_Configure the PDP connection settings",
+																				"marge": 0,
+																				"textSize": "M",
+																				"textAlignment": "center",
+																				"textStyle": "default",
+																				"textColor": "color8",
+																				"backgroundcolor": "default",
+																				"iconClass": "",
+																				"version": 0
+																			}
+																		},
+																		"Spacer2__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 12,
+																			"options": {
+																				"label": "_Spacer2",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"form-content-center-6": {
+											"type": "FlexibleFormLine",
+											"data": [],
+											"stamp": 13,
+											"options": {
+												"version": 0
+											},
+											"*": {
+												"TitleArrow": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 14,
+													"options": {
+														"border": {},
+														"iconURL": "",
+														"TitleFontSize": "S",
+														"hideActionButtons": true,
+														"hideTitleBar": true,
+														"hideTitle": false,
+														"sameHeightAsSiblings": false,
+														"backgroundcolor": "default",
+														"labelsAlignment": "right",
+														"label": "TitleArrow",
+														"hidden": false,
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"labelLength": 0,
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 15,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 16,
+																	"options": {
+																		"version": 0,
+																		"lines": 1,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"HTMLArrow__": {
+																				"line": 1,
+																				"column": 1
+																			}
+																		},
+																		"colspans": [
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			]
+																		]
+																	},
+																	"*": {
+																		"HTMLArrow__": {
+																			"type": "HTML",
+																			"data": false,
+																			"stamp": 17,
+																			"options": {
+																				"label": "HTMLArrow__",
+																				"htmlContent": "<div class=\"wizard-arrow\"></div>",
+																				"css": "@ .wizard-arrow {\nbackground-color: white;\nwidth: 0;\nheight: 0;\nborder-style: solid;\nborder-width: 20px 25px 0 25px;\nborder-color: #008998 transparent transparent transparent;\nposition: absolute;\ntop: -10px;\nheight: 50px;\nleft: 50%;\nmargin-left: -25px;\n}@ ",
+																				"width": "100%",
+																				"version": 0
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"form-content-center-1": {
+											"type": "FlexibleFormLine",
+											"data": [],
+											"stamp": 18,
+											"options": {
+												"version": 0
+											},
+											"*": {
+												"GeneralPane": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 19,
+													"options": {
+														"border": {},
+														"iconURL": "",
+														"TitleFontSize": "S",
+														"hideActionButtons": true,
+														"hideTitleBar": false,
+														"hideTitle": false,
+														"sameHeightAsSiblings": false,
+														"backgroundcolor": "default",
+														"labelsAlignment": "right",
+														"label": "_Document data",
+														"labelLength": "25%",
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 20,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {
+																	"Name__": "LabelName__",
+																	"LabelName__": "Name__",
+																	"ConnectorType__": "LabelConnectorType__",
+																	"LabelConnectorType__": "ConnectorType__",
+																	"Configuration__": "LabelConfiguration__",
+																	"LabelConfiguration__": "Configuration__",
+																	"URI__": "LabelURI__",
+																	"LabelURI__": "URI__",
+																	"TokenURI__": "LabelTokenURI__",
+																	"LabelTokenURI__": "TokenURI__",
+																	"ClientId__": "LabelClientId__",
+																	"LabelClientId__": "ClientId__",
+																	"ClientSecret__": "LabelClientSecret__",
+																	"LabelClientSecret__": "ClientSecret__",
+																	"API_Key_Identifier__": "LabelAPI_Key_Identifier__",
+																	"LabelAPI_Key_Identifier__": "API_Key_Identifier__",
+																	"API_Key__": "LabelAPI_Key__",
+																	"LabelAPI_Key__": "API_Key__",
+																	"jsonParameters__": "LabeljsonParameters__",
+																	"LabeljsonParameters__": "jsonParameters__"
+																}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 21,
+																	"options": {
+																		"version": 0,
+																		"lines": 15,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"LabelName__": {
+																				"line": 1,
+																				"column": 1
+																			},
+																			"Name__": {
+																				"line": 1,
+																				"column": 2
+																			},
+																			"Spacer1__": {
+																				"line": 2,
+																				"column": 1
+																			},
+																			"LabelConnectorType__": {
+																				"line": 3,
+																				"column": 1
+																			},
+																			"ConnectorType__": {
+																				"line": 3,
+																				"column": 2
+																			},
+																			"LabelConfiguration__": {
+																				"line": 4,
+																				"column": 1
+																			},
+																			"Configuration__": {
+																				"line": 4,
+																				"column": 2
+																			},
+																			"Spacer2__": {
+																				"line": 5,
+																				"column": 1
+																			},
+																			"LabelURI__": {
+																				"line": 6,
+																				"column": 1
+																			},
+																			"URI__": {
+																				"line": 6,
+																				"column": 2
+																			},
+																			"Spacer4__": {
+																				"line": 7,
+																				"column": 1
+																			},
+																			"LabelTokenURI__": {
+																				"line": 8,
+																				"column": 1
+																			},
+																			"TokenURI__": {
+																				"line": 8,
+																				"column": 2
+																			},
+																			"LabelClientId__": {
+																				"line": 9,
+																				"column": 1
+																			},
+																			"ClientId__": {
+																				"line": 9,
+																				"column": 2
+																			},
+																			"LabelClientSecret__": {
+																				"line": 10,
+																				"column": 1
+																			},
+																			"ClientSecret__": {
+																				"line": 10,
+																				"column": 2
+																			},
+																			"LabelAPI_Key_Identifier__": {
+																				"line": 11,
+																				"column": 1
+																			},
+																			"API_Key_Identifier__": {
+																				"line": 11,
+																				"column": 2
+																			},
+																			"LabelAPI_Key__": {
+																				"line": 12,
+																				"column": 1
+																			},
+																			"API_Key__": {
+																				"line": 12,
+																				"column": 2
+																			},
+																			"Spacer5__": {
+																				"line": 13,
+																				"column": 1
+																			},
+																			"LabeljsonParameters__": {
+																				"line": 14,
+																				"column": 1
+																			},
+																			"jsonParameters__": {
+																				"line": 14,
+																				"column": 2
+																			},
+																			"Spacer6__": {
+																				"line": 15,
+																				"column": 1
+																			}
+																		},
+																		"colspans": [
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[],
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			]
+																		]
+																	},
+																	"*": {
+																		"LabelName__": {
+																			"type": "Label",
+																			"data": [
+																				"Name__"
+																			],
+																			"stamp": 23,
+																			"options": {
+																				"label": "_Name",
+																				"version": 0
+																			}
+																		},
+																		"Name__": {
+																			"type": "ShortText",
+																			"data": [
+																				"Name__"
+																			],
+																			"stamp": 22,
+																			"options": {
+																				"label": "_Name",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false
+																			}
+																		},
+																		"Spacer1__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 24,
+																			"options": {
+																				"label": "_Spacer1",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		},
+																		"LabelConnectorType__": {
+																			"type": "Label",
+																			"data": [
+																				"ConnectorType__"
+																			],
+																			"stamp": 26,
+																			"options": {
+																				"label": "_Connector Type",
+																				"hidden": false,
+																				"version": 0
+																			}
+																		},
+																		"ConnectorType__": {
+																			"type": "ComboBox",
+																			"data": [
+																				"ConnectorType__"
+																			],
+																			"stamp": 25,
+																			"options": {
+																				"label": "_Connector Type",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "200",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"readonly": false,
+																				"hidden": false,
+																				"possibleValues": {
+																					"0": "_PDP_Connector_EOD",
+																					"1": "_PDP_Connector_SG5_V1"
+																				},
+																				"maxNbLinesToDisplay": 10,
+																				"keyValueMode": true,
+																				"possibleKeys": {
+																					"0": "EOD",
+																					"1": "SG5_V1"
+																				}
+																			}
+																		},
+																		"LabelConfiguration__": {
+																			"type": "Label",
+																			"data": [
+																				"Configuration__"
+																			],
+																			"stamp": 28,
+																			"options": {
+																				"label": "_S2P Configuration",
+																				"version": 0
+																			}
+																		},
+																		"Configuration__": {
+																			"type": "DatabaseComboBox",
+																			"data": [
+																				"Configuration__"
+																			],
+																			"stamp": 27,
+																			"options": {
+																				"label": "_S2P Configuration",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"PreFillFTS": true,
+																				"fTSmaxRecords": "20",
+																				"browsable": true
+																			}
+																		},
+																		"Spacer2__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 29,
+																			"options": {
+																				"label": "_Spacer2",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		},
+																		"LabelURI__": {
+																			"type": "Label",
+																			"data": [
+																				"URI__"
+																			],
+																			"stamp": 31,
+																			"options": {
+																				"label": "_URI",
+																				"version": 0
+																			}
+																		},
+																		"URI__": {
+																			"type": "ShortText",
+																			"data": [
+																				"URI__"
+																			],
+																			"stamp": 30,
+																			"options": {
+																				"label": "_URI",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "URI_Help",
+																				"helpURL": "2624",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false
+																			}
+																		},
+																		"Spacer4__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 32,
+																			"options": {
+																				"label": "_Spacer4",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		},
+																		"LabelTokenURI__": {
+																			"type": "Label",
+																			"data": [
+																				"TokenURI__"
+																			],
+																			"stamp": 34,
+																			"options": {
+																				"label": "_Token URI",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"TokenURI__": {
+																			"type": "ShortText",
+																			"data": [
+																				"TokenURI__"
+																			],
+																			"stamp": 33,
+																			"options": {
+																				"label": "_Token URI",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"readonly": false,
+																				"hidden": true
+																			}
+																		},
+																		"LabelClientId__": {
+																			"type": "Label",
+																			"data": [
+																				"ClientId__"
+																			],
+																			"stamp": 36,
+																			"options": {
+																				"label": "_Client Id",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"ClientId__": {
+																			"type": "ShortText",
+																			"data": [
+																				"ClientId__"
+																			],
+																			"stamp": 35,
+																			"options": {
+																				"label": "_Client Id",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"readonly": false,
+																				"hidden": true
+																			}
+																		},
+																		"LabelClientSecret__": {
+																			"type": "Label",
+																			"data": [
+																				"ClientSecret__"
+																			],
+																			"stamp": 38,
+																			"options": {
+																				"label": "_Client Secret",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"ClientSecret__": {
+																			"type": "ShortText",
+																			"data": [
+																				"ClientSecret__"
+																			],
+																			"stamp": 37,
+																			"options": {
+																				"label": "_Client Secret",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"readonly": false,
+																				"hidden": true
+																			}
+																		},
+																		"LabelAPI_Key_Identifier__": {
+																			"type": "Label",
+																			"data": [
+																				"API_Key_Identifier__"
+																			],
+																			"stamp": 40,
+																			"options": {
+																				"label": "_API Key Identifier",
+																				"version": 0
+																			}
+																		},
+																		"API_Key_Identifier__": {
+																			"type": "LongText",
+																			"data": [
+																				"API_Key_Identifier__"
+																			],
+																			"stamp": 39,
+																			"options": {
+																				"label": "_API Key Identifier",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 5,
+																				"activable": true,
+																				"width": "512",
+																				"browsable": false,
+																				"numberOfLines": 10
+																			}
+																		},
+																		"LabelAPI_Key__": {
+																			"type": "Label",
+																			"data": [
+																				"API_Key__"
+																			],
+																			"stamp": 42,
+																			"options": {
+																				"label": "_API Key",
+																				"version": 0
+																			}
+																		},
+																		"API_Key__": {
+																			"type": "ShortText",
+																			"data": [
+																				"API_Key__"
+																			],
+																			"stamp": 41,
+																			"options": {
+																				"label": "_API Key",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"browsable": false
+																			}
+																		},
+																		"Spacer5__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 43,
+																			"options": {
+																				"label": "_Spacer5",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		},
+																		"LabeljsonParameters__": {
+																			"type": "Label",
+																			"data": [
+																				"jsonParameters__"
+																			],
+																			"stamp": 45,
+																			"options": {
+																				"label": "_jsonParameters",
+																				"version": 0
+																			}
+																		},
+																		"jsonParameters__": {
+																			"type": "LongText",
+																			"data": [
+																				"jsonParameters__"
+																			],
+																			"stamp": 44,
+																			"options": {
+																				"label": "_jsonParameters",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 3,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false
+																			}
+																		},
+																		"Spacer6__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 46,
+																			"options": {
+																				"label": "_Spacer6",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"form-footer": {
+					"type": "FlexibleFormFooter",
+					"data": [],
+					"stamp": 47,
+					"options": {
+						"splitterType": "simple-h",
+						"maxwidth": 1024,
+						"version": 0
+					},
+					"*": {
+						"Save": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 48,
+							"options": {
+								"label": "_Save",
+								"action": "savequit",
+								"submit": true,
+								"shortCut": "S",
+								"textSize": "S",
+								"version": 0
+							}
+						},
+						"Close": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 49,
+							"options": {
+								"label": "_Close",
+								"action": "cancel",
+								"submit": true,
+								"shortCut": "Q",
+								"textSize": "S",
+								"version": 0
+							}
+						},
+						"Delete": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 50,
+							"options": {
+								"label": "_Delete",
+								"action": "delete",
+								"submit": true,
+								"disabled": true,
+								"textSize": "S",
+								"version": 0
+							}
+						},
+						"Previous": {
+							"type": "SubmitButton",
+							"data": false,
+							"stamp": 51,
+							"options": {
+								"label": "Previous__",
+								"textPosition": "text-right",
+								"textSize": "S",
+								"textStyle": "default",
+								"textColor": "default",
+								"iconColor": "default",
+								"nextprocess": {
+									"processName": "",
+									"attachmentsMode": "all",
+									"willBeChild": true
+								},
+								"urlImageOverlay": "",
+								"url": "",
+								"position": null,
+								"action": "none",
+								"hidden": true,
+								"version": 0
+							}
+						},
+						"Next": {
+							"type": "SubmitButton",
+							"data": false,
+							"stamp": 52,
+							"options": {
+								"label": "Next__",
+								"textPosition": "text-right",
+								"textSize": "S",
+								"textStyle": "default",
+								"textColor": "default",
+								"iconColor": "default",
+								"nextprocess": {
+									"processName": "",
+									"attachmentsMode": "all",
+									"willBeChild": true
+								},
+								"urlImageOverlay": "",
+								"url": "",
+								"position": null,
+								"action": "none",
+								"hidden": true,
+								"version": 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

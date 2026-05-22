@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>__VendorInvoiceRUIDEX</key>
+			<val>Invoice extended ID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CDV data</key>
+			<val>Details</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CompanyCode</key>
+			<val>Company code</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CompanyCode_report</key>
+			<val>Company code</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_EDIStatus</key>
+			<val>Life cycle status</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_EDIStatus_report</key>
+			<val>Life cycle status</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History</key>
+			<val>History</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_Date</key>
+			<val>Date</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_Date_report</key>
+			<val>Date</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_EDIStatus</key>
+			<val>Life cycle status</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_EDIStatus_report</key>
+			<val>Life cycle status</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InvoiceNumber</key>
+			<val>Invoice number</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InvoiceNumber_report</key>
+			<val>Invoice number</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastDisputeReason</key>
+			<val>Last dispute reason</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastDisputeReason_report</key>
+			<val>Last dispute reason</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInvoiceRUIDEX_report</key>
+			<val>Invoice extended ID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorNumber</key>
+			<val>Supplier number</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorNumber_report</key>
+			<val>Supplier number</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_203_Received</key>
+			<val>Made available</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_204_TakeOn</key>
+			<val>In hand</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_205_Approved</key>
+			<val>Approved</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_206_PartiallyApproved</key>
+			<val>Partially approved</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_207_OnHold</key>
+			<val>Disputed</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_208_Suspended</key>
+			<val>Suspended</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_210_Refused</key>
+			<val>Refused</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_211_PaymentSent</key>
+			<val>Payment sent</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_212_Cashed</key>
+			<val>Payment received</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Vendor Invoice CDV</key>
+			<val>E-invoice life cycle (France)</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

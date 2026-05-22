@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_Peppol Invoice Response data</key>
+			<val>Dane dokumentu</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInvoiceRUIDEX</key>
+			<val>Rozszerzony id. faktury dostawcy</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInvoiceRUIDEX_report</key>
+			<val>Rozszerzony id. faktury dostawcy</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_203_Received</key>
+			<val>Udostępnione</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_204_TakeOn</key>
+			<val>W posiadaniu</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_205_Approved</key>
+			<val>Zatwierdzone</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_206_PartiallyApproved</key>
+			<val>Częściowo zatwierdzona</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_207_OnHold</key>
+			<val>Zgłoszone jako sporne</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_208_Suspended</key>
+			<val>Zawieszone</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_210_Refused</key>
+			<val>Z odmową</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_211_PaymentSent</key>
+			<val>Płatność wysłana</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_212_Cashed</key>
+			<val>Płatność otrzymana</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Vendor Invoice Peppol Response</key>
+			<val>Odpowiedź na fakturę Peppol BIS</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

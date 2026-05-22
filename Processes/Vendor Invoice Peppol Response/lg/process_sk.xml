@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_Peppol Invoice Response data</key>
+			<val>Dáta dokumentu</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInvoiceRUIDEX</key>
+			<val>Rozšírené ID faktúry dodávateľa</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInvoiceRUIDEX_report</key>
+			<val>Rozšírené ID faktúry dodávateľa</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_203_Received</key>
+			<val>Sprístupnený</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_204_TakeOn</key>
+			<val>K dispozícii</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_205_Approved</key>
+			<val>Schválené</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_206_PartiallyApproved</key>
+			<val>Čiastočne schválená</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_207_OnHold</key>
+			<val>Sporný</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_208_Suspended</key>
+			<val>Indragen</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_210_Refused</key>
+			<val>Zamietnutý</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_211_PaymentSent</key>
+			<val>Odoslaná platba</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_212_Cashed</key>
+			<val>Prijatá platba</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Vendor Invoice Peppol Response</key>
+			<val>Odpoveď na faktúru Peppol BIS</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

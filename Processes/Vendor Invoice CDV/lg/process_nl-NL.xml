@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>__VendorInvoiceRUIDEX</key>
+			<val>Uitgebreide factuur-ID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CDV data</key>
+			<val>Details</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CompanyCode</key>
+			<val>Bedrijfscode</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CompanyCode_report</key>
+			<val>Bedrijfscode</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_EDIStatus</key>
+			<val>Status levenscyclus</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_EDIStatus_report</key>
+			<val>Status levenscyclus</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History</key>
+			<val>Geschiedenis</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_Date</key>
+			<val>Datum</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_Date_report</key>
+			<val>Datum</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_EDIStatus</key>
+			<val>Status levenscyclus</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_EDIStatus_report</key>
+			<val>Status levenscyclus</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InvoiceNumber</key>
+			<val>Factuurnummer</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InvoiceNumber_report</key>
+			<val>Factuurnummer</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastDisputeReason</key>
+			<val>Laatste reden voor betwisting</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastDisputeReason_report</key>
+			<val>Laatste reden voor betwisting</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInvoiceRUIDEX_report</key>
+			<val>Uitgebreide factuur-ID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorNumber</key>
+			<val>Nummer leverancier</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorNumber_report</key>
+			<val>Nummer leverancier</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_203_Received</key>
+			<val>Beschikbaar gemaakt</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_204_TakeOn</key>
+			<val>In handen</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_205_Approved</key>
+			<val>Goedgekeurd</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_206_PartiallyApproved</key>
+			<val>Deels goedgekeurd</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_207_OnHold</key>
+			<val>Betwist</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_208_Suspended</key>
+			<val>Opgeschort</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_210_Refused</key>
+			<val>Geweigerd</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_211_PaymentSent</key>
+			<val>Betaling verzonden</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_212_Cashed</key>
+			<val>Betaling ontvangen</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Vendor Invoice CDV</key>
+			<val>Levenscyclus e-factuur (Frankrijk)</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_API Key</key>
+			<val>API 密钥</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key Identifier</key>
+			<val>API 密钥标识符</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key Identifier_report</key>
+			<val>PA API 密钥标识符</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key_report</key>
+			<val>PA API 密钥</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Id</key>
+			<val>开放授权（OAuth）客户端 ID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Id_report</key>
+			<val>开放授权（OAuth）客户端 ID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Secret</key>
+			<val>开放授权（OAuth）客户端密钥</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Secret_report</key>
+			<val>开放授权（OAuth）客户端密钥</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Configure the PDP connection settings</key>
+			<val>配置 PA 连接设置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Connector Type</key>
+			<val>API 类型</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Connector Type_report</key>
+			<val>API 类型</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Document data</key>
+			<val>PA 详情</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_errorExistingConfigurationName</key>
+			<val>具有相同名称的配置已存在。</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_General</key>
+			<val>PA 连接</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_jsonParameters</key>
+			<val>JSON 设置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_jsonParameters_report</key>
+			<val>JSON 设置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Name</key>
+			<val>配置名称</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Name_report</key>
+			<val>配置名称</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_P2P - PDP Connection Parameters</key>
+			<val>寻源到付款 - PA 连接配置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_P2P - PDP Connection Parameters__</key>
+			<val>寻源到付款 - PA 连接配置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_EOD</key>
+			<val>EoD</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_EOD_SG5_V1</key>
+			<val>Standardized AFNOR SG5 (Esker PA)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_SG5_V1</key>
+			<val>AFNOR SG5 标准化</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_S2P Configuration</key>
+			<val>寻源到付款（S2P）应用配置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_S2P Configuration_report</key>
+			<val>寻源到付款（S2P）应用配置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Token URI</key>
+			<val>开放授权（OAuth）令牌 URL</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Token URI_report</key>
+			<val>开放授权（OAuth）令牌 URL</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_URI</key>
+			<val>URI</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_URI_report</key>
+			<val>PA API 的 URI</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>P2P - PDP Connection Parameters</key>
+			<val>寻源到付款 - PA 连接配置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>P2P - PDP Connection Parameters__</key>
+			<val>寻源到付款 - PA 连接配置</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>URI_Help</key>
+			<val>输入标识要连接的注册平台（PA）的 URI。</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

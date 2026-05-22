@@ -1,0 +1,1896 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<process accountid="20092025" allowrepairprocess="0" builtin="0" builtinversion="0" carriesapplicationversion="0" creationdatetime="2026-05-08 14:31:51" deleted="0" eskerapplication="P2P" global="0" id="S0F4Y300153E" keepcustomization="0" keepcustompositions="0" keepfieldsonly="1" keepfieldsproperties="0" keepnewcontroloptions="0" migrationversion="4" name="P2P - PDP Connection Parameters__" needvalidation="0" ootofilter="" ootoversion="2" originalProcessID="FBYJG0000VLT" ownerid="cn=.su@20092025,ou=DEV,ou=TrainingCustomerPJT,ou=demoprocess_thivolet,ou=05324291,ou=ESK,s=eoo" ownerpb="OnDemand AddressBook" public="1" pushnotification="0" reuseengine="0" sprintversion="5.353.0" transportname="CustomTable" upgradable="1" userid="0" version="1" visibility="0">
+  <properties>
+    <dbIndex>
+      <AUTO_AW0F4Y300153EA>&lt;Index Option="Unique"&gt;&lt;Ref Name="AW0F4Y300153E" Option="ASC"/&gt;&lt;/Index&gt;</AUTO_AW0F4Y300153EA>
+    </dbIndex>
+    <lg>
+      <process_da>{
+	"_API Key": "API-nøgle",
+	"_API Key Identifier": "API-nøgleidentifikator",
+	"_API Key Identifier_report": "Identifikator for PA API-nøgle",
+	"_API Key_report": "PA API-nøgle",
+	"_Configure the PDP connection settings": "Konfigurer indstillingerne for PA-forbindelsen",
+	"_Document data": "PA-oplysninger",
+	"_errorExistingConfigurationName": "Der findes allerede en konfiguration med samme navn.",
+	"_General": "PA-forbindelse",
+	"_jsonParameters": "JSON-indstillinger",
+	"_jsonParameters_report": "JSON-indstillinger",
+	"_Name": "Konfigurationsnavn",
+	"_Name_report": "Konfigurationsnavn",
+	"_P2P - PDP Connection Parameters": "S2P – konfiguration af PA-forbindelse",
+	"_P2P - PDP Connection Parameters__": "S2P – konfiguration af PA-forbindelse",
+	"_S2P Configuration": "Konfiguration af S2P-program",
+	"_S2P Configuration_report": "Konfiguration af S2P-program",
+	"P2P - PDP Connection Parameters": "S2P – konfiguration af PA-forbindelse",
+	"P2P - PDP Connection Parameters__": "S2P – konfiguration af PA-forbindelse",
+	"_Client Id": "Klient-id for OAuth",
+	"_Client Id_report": "Klient-id for OAuth",
+	"_Client Secret": "Oauth-klienthemmelighed",
+	"_Client Secret_report": "Oauth-klienthemmelighed",
+	"_Connector Type": "API-type",
+	"_Connector Type_report": "API-type",
+	"_PDP_Connector_EOD": "EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "Standardiseret AFNOR SG5",
+	"_Token URI": "URL til OAuth-token",
+	"_Token URI_report": "URL til OAuth-token",
+	"_URI": "URI",
+	"_URI_report": "URI i PA API",
+	"URI_Help": "Indtast den URI, der identificerer den registrerede platform (PA), du ønsker at oprette forbindelse til."
+}</process_da>
+      <process_de>{
+	"_API Key": "API-Schlüssel",
+	"_API Key Identifier": "API-Schlüssel-ID",
+	"_API Key Identifier_report": "PA-API-Schlüssel-Kennung",
+	"_API Key_report": "PA-API-Schlüssel",
+	"_Configure the PDP connection settings": "PA-Verbindungseinstellungen konfigurieren",
+	"_Document data": "PA-Details",
+	"_errorExistingConfigurationName": "Eine Konfiguration mit demselben Namen existiert bereits.",
+	"_General": "PA-Verbindung",
+	"_jsonParameters": "JSON-Einstellungen",
+	"_jsonParameters_report": "JSON-Einstellungen",
+	"_Name": "Konfigurationsname",
+	"_Name_report": "Konfigurationsname",
+	"_P2P - PDP Connection Parameters": "S2P - Konfiguration der PA-Verbindung",
+	"_P2P - PDP Connection Parameters__": "S2P - Konfiguration der PA-Verbindung",
+	"_S2P Configuration": "S2P Anwendungskonfiguration",
+	"_S2P Configuration_report": "S2P Anwendungskonfiguration",
+	"P2P - PDP Connection Parameters": "S2P - Konfiguration der PA-Verbindung",
+	"P2P - PDP Connection Parameters__": "S2P - Konfiguration der PA-Verbindung",
+	"_Client Id": "OAuth-Kunden-ID",
+	"_Client Id_report": "OAuth-Kunden-ID",
+	"_Client Secret": "OAuth-Kundengeheimnis",
+	"_Client Secret_report": "OAuth-Kundengeheimnis",
+	"_Connector Type": "API-Typ",
+	"_Connector Type_report": "API-Typ",
+	"_PDP_Connector_EOD": "EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "Standard AFNOR SG5",
+	"_Token URI": "OAuth-Token-URL",
+	"_Token URI_report": "OAuth-Token-URL",
+	"_URI": "URI",
+	"_URI_report": "URI der PA-API",
+	"URI_Help": "Geben Sie die URI ein, die die registrierte Plattform (PA) identifiziert, zu der Sie eine Verbindung herstellen möchten."
+}</process_de>
+      <process_ja>{
+	"_API Key": "APIキー",
+	"_API Key Identifier": "APIキー識別子",
+	"_API Key Identifier_report": "PA APIキー識別子",
+	"_API Key_report": "PA APIキー",
+	"_Configure the PDP connection settings": "PA接続設定の構成",
+	"_Document data": "PAの詳細",
+	"_errorExistingConfigurationName": "同じ名前の構成が既に存在しています。",
+	"_General": "PA接続",
+	"_jsonParameters": "JSON設定",
+	"_jsonParameters_report": "JSON設定",
+	"_Name": "設定名",
+	"_Name_report": "設定名",
+	"_P2P - PDP Connection Parameters": "S2P - PA接続設定",
+	"_P2P - PDP Connection Parameters__": "S2P - PA接続設定",
+	"_S2P Configuration": "S2P アプリケーション設定",
+	"_S2P Configuration_report": "S2P アプリケーション設定",
+	"P2P - PDP Connection Parameters": "S2P - PA接続設定",
+	"P2P - PDP Connection Parameters__": "S2P - PA接続設定",
+	"_Client Id": "OAuthクライアントID",
+	"_Client Id_report": "OAuthクライアントID",
+	"_Client Secret": "OAuth クライアントシークレット",
+	"_Client Secret_report": "OAuth クライアントシークレット",
+	"_Connector Type": "APIタイプ",
+	"_Connector Type_report": "APIタイプ",
+	"_PDP_Connector_EOD": "EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "AFNOR SG 5で標準化",
+	"_Token URI": "OAuthトークンのURL",
+	"_Token URI_report": "OAuthトークンのURL",
+	"_URI": "URI",
+	"_URI_report": "PA APIのURI",
+	"URI_Help": "接続するレジスタードプラットフォーム（PA）を識別するURIを入力します。"
+}</process_ja>
+      <process_en>{
+	"_API Key": "API key",
+	"_API Key Identifier": "API key identifier",
+	"_API Key Identifier_report": "PA API key identifier",
+	"_API Key_report": "PA API key",
+	"_Configure the PDP connection settings": "Configure the PA connection settings",
+	"_Document data": "PA Details",
+	"_errorExistingConfigurationName": "A configuration with the same name already exists.",
+	"_General": "PA connection",
+	"_jsonParameters": "JSON settings",
+	"_jsonParameters_report": "JSON settings",
+	"_Name": "Configuration name",
+	"_Name_report": "Configuration name",
+	"_P2P - PDP Connection Parameters": "S2P - PA connection configuration",
+	"_P2P - PDP Connection Parameters__": "S2P - PA connection configuration",
+	"_S2P Configuration": "S2P application configuration",
+	"_S2P Configuration_report": "S2P application configuration",
+	"P2P - PDP Connection Parameters": "S2P - PA connection configuration",
+	"P2P - PDP Connection Parameters__": "S2P - PA connection configuration",
+	"_Client Id": "OAuth client ID",
+	"_Client Id_report": "OAuth client ID",
+	"_Client Secret": "OAuth client secret",
+	"_Client Secret_report": "OAuth client secret",
+	"_Connector Type": "API type",
+	"_Connector Type_report": "API type",
+	"_PDP_Connector_EOD": "EoD REST",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "Standardized AFNOR SG5 (other PAs)",
+	"_Token URI": "OAuth token URL",
+	"_Token URI_report": "OAuth token URL",
+	"_URI": "URI",
+	"_URI_report": "URI of the PA API",
+	"URI_Help": "Enter the URI identifying the registered platform (PA) you wish to connect to."
+}</process_en>
+      <process_es>{
+	"_API Key": "Clave API",
+	"_API Key Identifier": "Identificador de clave API",
+	"_API Key Identifier_report": "Identificador de clave API de la PA",
+	"_API Key_report": "Clave API de la PA",
+	"_Configure the PDP connection settings": "Configurar los parámetros de conexión a la PA",
+	"_Document data": "Detalles de la PA",
+	"_errorExistingConfigurationName": "Ya existe una configuración con el mismo nombre",
+	"_General": "Conexión PA",
+	"_jsonParameters": "Parámetros JSON",
+	"_jsonParameters_report": "Parámetros JSON",
+	"_Name": "Nombre de la configuración",
+	"_Name_report": "Nombre de la configuración",
+	"_P2P - PDP Connection Parameters": "S2P - Configuración de conexión PA",
+	"_P2P - PDP Connection Parameters__": "S2P - Configuración de conexión PA",
+	"_S2P Configuration": "Configuración de la aplicación S2P",
+	"_S2P Configuration_report": "Configuración de la aplicación S2P",
+	"P2P - PDP Connection Parameters": "S2P - Configuración de conexión PA",
+	"P2P - PDP Connection Parameters__": "S2P - Configuración de conexión PA",
+	"_Client Id": "ID cliente OAuth",
+	"_Client Id_report": "ID cliente OAuth",
+	"_Client Secret": "Secreto del cliente OAuth",
+	"_Client Secret_report": "Secreto del cliente OAuth",
+	"_Connector Type": "Tipo de API",
+	"_Connector Type_report": "Tipo de API",
+	"_PDP_Connector_EOD": "REST EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Estandarizado AFNOR SG5 (PA Esker)",
+	"_PDP_Connector_SG5_V1": "Estandarizado AFNOR SG5 (otras PA)",
+	"_Token URI": "URL del token OAuth",
+	"_Token URI_report": "URL del token OAuth",
+	"_URI": "URI",
+	"_URI_report": "URI de la API de la PA",
+	"URI_Help": "Introduzca el URI que identifica la PA a la que desea conectarse."
+}</process_es>
+      <process_fr>{
+	"_API Key": "Clé API",
+	"_API Key Identifier": "Identifiant de clé API",
+	"_API Key Identifier_report": "Identifiant clé API de la PA",
+	"_API Key_report": "Clé API de la PA",
+	"_Configure the PDP connection settings": "Configurez les paramètres de connexion à la PA",
+	"_Document data": "Détails de la PA",
+	"_errorExistingConfigurationName": "Une configuration du même nom existe déjà.",
+	"_General": "Connexion PA",
+	"_jsonParameters": "Paramètres JSON",
+	"_jsonParameters_report": "Paramètres JSON",
+	"_Name": "Nom de la configuration",
+	"_Name_report": "Nom de la configuration",
+	"_P2P - PDP Connection Parameters": "S2P - Configuration de connexion PA",
+	"_P2P - PDP Connection Parameters__": "S2P - Configuration de connexion PA",
+	"_S2P Configuration": "Configuration de l'application S2P",
+	"_S2P Configuration_report": "Configuration de l'application S2P",
+	"P2P - PDP Connection Parameters": "S2P - Configuration de connexion PA",
+	"P2P - PDP Connection Parameters__": "S2P - Configuration de connexion PA",
+	"_Client Id": "ID client OAuth",
+	"_Client Id_report": "ID client OAuth",
+	"_Client Secret": "Clé secrète client OAuth",
+	"_Client Secret_report": "Clé secrète client OAuth",
+	"_Connector Type": "Type d'API",
+	"_Connector Type_report": "Type d'API",
+	"_PDP_Connector_EOD": "REST EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardisée AFNOR SG5 (PA Esker)",
+	"_PDP_Connector_SG5_V1": "Standardisée AFNOR SG5 (autres PA)",
+	"_Token URI": "URL de jeton OAuth",
+	"_Token URI_report": "URL de jeton OAuth",
+	"_URI": "URI",
+	"_URI_report": "URI de l'API de la PA",
+	"URI_Help": "Saisissez l'URI identifiant la plateforme agréée à laquelle vous souhaitez vous connecter."
+}</process_fr>
+      <process_nl-NL>{
+	"_API Key": "API-sleutel",
+	"_API Key Identifier": "Identificatie API-sleutel",
+	"_API Key Identifier_report": "Identificatie API-sleutel PA",
+	"_API Key_report": "API-sleutel PA",
+	"_Configure the PDP connection settings": "Verbindingsinstellingen PA configureren",
+	"_Document data": "Details PA",
+	"_errorExistingConfigurationName": "Er bestaat al een configuratie met dezelfde naam.",
+	"_General": "Verbinding met PA",
+	"_jsonParameters": "JSON-instellingen",
+	"_jsonParameters_report": "JSON-instellingen",
+	"_Name": "Naam configuratie",
+	"_Name_report": "Naam configuratie",
+	"_P2P - PDP Connection Parameters": "S2P - configuratie verbinding PA",
+	"_P2P - PDP Connection Parameters__": "S2P - configuratie verbinding PA",
+	"_S2P Configuration": "Configuratie toepassing S2P",
+	"_S2P Configuration_report": "Configuratie toepassing S2P",
+	"P2P - PDP Connection Parameters": "S2P - configuratie verbinding PA",
+	"P2P - PDP Connection Parameters__": "S2P - configuratie verbinding PA",
+	"_Client Id": "OAuth client-ID",
+	"_Client Id_report": "OAuth client-ID",
+	"_Client Secret": "OAuth clientgeheim",
+	"_Client Secret_report": "OAuth clientgeheim",
+	"_Connector Type": "Type API",
+	"_Connector Type_report": "Type API",
+	"_PDP_Connector_EOD": "EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "Gestandaardiseerde AFNOR SG5",
+	"_Token URI": "OAuth token URL",
+	"_Token URI_report": "OAuth token URL",
+	"_URI": "URI",
+	"_URI_report": "URI van de PA API",
+	"URI_Help": "Voer de URI in ter identificatie van het geregistreerde platform (PA) waarmee u verbinding wilt maken."
+}</process_nl-NL>
+      <process_pl>{
+	"_API Key": "Klucz API",
+	"_API Key Identifier": "Identyfikator klucza API",
+	"_API Key Identifier_report": "Identyfikator klucza API PA",
+	"_API Key_report": "Klucz API PA",
+	"_Configure the PDP connection settings": "Skonfiguruj ustawienia połączenia PA",
+	"_Document data": "Szczegóły PA",
+	"_errorExistingConfigurationName": "Konfiguracja o tej samej nazwie już istnieje.",
+	"_General": "Połączenie PA",
+	"_jsonParameters": "Ustawienia JSON",
+	"_jsonParameters_report": "Ustawienia JSON",
+	"_Name": "Nazwa konfiguracji",
+	"_Name_report": "Nazwa konfiguracji",
+	"_P2P - PDP Connection Parameters": "S2P – konfiguracja połączenia PA",
+	"_P2P - PDP Connection Parameters__": "S2P – konfiguracja połączenia PA",
+	"_S2P Configuration": "Konfiguracja aplikacji S2P",
+	"_S2P Configuration_report": "Konfiguracja aplikacji S2P",
+	"P2P - PDP Connection Parameters": "S2P – konfiguracja połączenia PA",
+	"P2P - PDP Connection Parameters__": "S2P – konfiguracja połączenia PA",
+	"_Client Id": "Id. klienta OAuth",
+	"_Client Id_report": "Id. klienta OAuth",
+	"_Client Secret": "Klucz tajny klienta OAuth",
+	"_Client Secret_report": "Klucz tajny klienta OAuth",
+	"_Connector Type": "Typ API",
+	"_Connector Type_report": "Typ API",
+	"_PDP_Connector_EOD": "EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "Standaryzowany AFNOR SG5",
+	"_Token URI": "Adres URL tokenu OAuth",
+	"_Token URI_report": "Adres URL tokenu OAuth",
+	"_URI": "URI",
+	"_URI_report": "URI interfejsu API PA",
+	"URI_Help": "Wprowadź identyfikator URI zarejestrowanej platformy (PA), z którą chcesz się połączyć."
+}</process_pl>
+      <process_it>{
+	"_API Key": "Chiave API",
+	"_API Key Identifier": "Identificatore chiave API",
+	"_API Key Identifier_report": "Identificatore chiave API della PA",
+	"_API Key_report": "Chiave API della PA",
+	"_Configure the PDP connection settings": "Configurare le impostazioni di connessione alla PA",
+	"_Document data": "Dettagli della PA",
+	"_errorExistingConfigurationName": "Esiste già una configurazione con questo nome.",
+	"_General": "Connessione PA",
+	"_jsonParameters": "Impostazioni JSON",
+	"_jsonParameters_report": "Impostazioni JSON",
+	"_Name": "Nome configurazione",
+	"_Name_report": "Nome configurazione",
+	"_P2P - PDP Connection Parameters": "S2P - Configurazione di connessione PA",
+	"_P2P - PDP Connection Parameters__": "S2P - Configurazione di connessione PA",
+	"_S2P Configuration": "Configurazione applicazione S2P",
+	"_S2P Configuration_report": "Configurazione applicazione S2P",
+	"P2P - PDP Connection Parameters": "S2P - Configurazione di connessione PA",
+	"P2P - PDP Connection Parameters__": "S2P - Configurazione di connessione PA",
+	"_Client Id": "ID client OAuth",
+	"_Client Id_report": "ID client OAuth",
+	"_Client Secret": "Chiave privata client OAuth",
+	"_Client Secret_report": "Chiave privata client OAuth",
+	"_Connector Type": "Tipo di API",
+	"_Connector Type_report": "Tipo di API",
+	"_PDP_Connector_EOD": "REST EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardizzata AFNOR SG5 (PA Esker)",
+	"_PDP_Connector_SG5_V1": "Standardizzata AFNOR SG5 (altre PA)",
+	"_Token URI": "URL di token OAuth",
+	"_Token URI_report": "URL di token OAuth",
+	"_URI": "URI",
+	"_URI_report": "URI API della PA",
+	"URI_Help": "Immettere l'URI che identifica la PA a cui connettersi."
+}</process_it>
+      <process_sk>{
+	"_API Key": "Kľúč API",
+	"_API Key Identifier": "Identifikátor kľúča API",
+	"_API Key Identifier_report": "Identifikátor kľúča API PA",
+	"_API Key_report": "Kľúč PA API",
+	"_Configure the PDP connection settings": "Konfigurácia nastavení pripojenia PA",
+	"_Document data": "Detaily PA",
+	"_errorExistingConfigurationName": "Konfigurácia s rovnakým názvom už existuje.",
+	"_General": "Pripojenie PA",
+	"_jsonParameters": "Nastavenia JSON",
+	"_jsonParameters_report": "Nastavenia JSON",
+	"_Name": "Názov konfigurácie",
+	"_Name_report": "Názov konfigurácie",
+	"_P2P - PDP Connection Parameters": "S2P - konfigurácia PA pripojenia",
+	"_P2P - PDP Connection Parameters__": "S2P - konfigurácia PA pripojenia",
+	"_S2P Configuration": "Konfigurácia aplikácie S2P",
+	"_S2P Configuration_report": "Konfigurácia aplikácie S2P",
+	"P2P - PDP Connection Parameters": "S2P - konfigurácia PA pripojenia",
+	"P2P - PDP Connection Parameters__": "S2P - konfigurácia PA pripojenia",
+	"_Client Id": "ID klienta OAuth",
+	"_Client Id_report": "ID klienta OAuth",
+	"_Client Secret": "Tajný kľúč klienta OAuth",
+	"_Client Secret_report": "Tajný kľúč klienta OAuth",
+	"_Connector Type": "Typ API",
+	"_Connector Type_report": "Typ API",
+	"_PDP_Connector_EOD": "EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "Štandardizovaný AFNOR SG5",
+	"_Token URI": "URL tokenu OAuth",
+	"_Token URI_report": "URL tokenu OAuth",
+	"_URI": "URI",
+	"_URI_report": "URI rozhrania PA API",
+	"URI_Help": "Zadajte URI identifikujúci registrovanú platformu (PA), ku ktorému sa chcete pripojiť."
+}</process_sk>
+      <process_zh-CN>{
+	"_API Key": "API 密钥",
+	"_API Key Identifier": "API 密钥标识符",
+	"_API Key Identifier_report": "PA API 密钥标识符",
+	"_API Key_report": "PA API 密钥",
+	"_Configure the PDP connection settings": "配置 PA 连接设置",
+	"_Document data": "PA 详情",
+	"_errorExistingConfigurationName": "具有相同名称的配置已存在。",
+	"_General": "PA 连接",
+	"_jsonParameters": "JSON 设置",
+	"_jsonParameters_report": "JSON 设置",
+	"_Name": "配置名称",
+	"_Name_report": "配置名称",
+	"_P2P - PDP Connection Parameters": "寻源到付款 - PA 连接配置",
+	"_P2P - PDP Connection Parameters__": "寻源到付款 - PA 连接配置",
+	"_S2P Configuration": "寻源到付款（S2P）应用配置",
+	"_S2P Configuration_report": "寻源到付款（S2P）应用配置",
+	"P2P - PDP Connection Parameters": "寻源到付款 - PA 连接配置",
+	"P2P - PDP Connection Parameters__": "寻源到付款 - PA 连接配置",
+	"_Client Id": "开放授权（OAuth）客户端 ID",
+	"_Client Id_report": "开放授权（OAuth）客户端 ID",
+	"_Client Secret": "开放授权（OAuth）客户端密钥",
+	"_Client Secret_report": "开放授权（OAuth）客户端密钥",
+	"_Connector Type": "API 类型",
+	"_Connector Type_report": "API 类型",
+	"_PDP_Connector_EOD": "EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "AFNOR SG5 标准化",
+	"_Token URI": "开放授权（OAuth）令牌 URL",
+	"_Token URI_report": "开放授权（OAuth）令牌 URL",
+	"_URI": "URI",
+	"_URI_report": "PA API 的 URI",
+	"URI_Help": "输入标识要连接的注册平台（PA）的 URI。"
+}</process_zh-CN>
+      <process_pt-BR>{
+	"_API Key": "Chave API",
+	"_API Key Identifier": "Identificador da chave API",
+	"_API Key Identifier_report": "Identificador da chave de API da PA",
+	"_API Key_report": "Chave de API da PA",
+	"_Configure the PDP connection settings": "Configurar as definições de conexão PA",
+	"_Document data": "Detalhes da PA",
+	"_errorExistingConfigurationName": "Já existe uma configuração com o mesmo nome.",
+	"_General": "Conexão PA",
+	"_jsonParameters": "Configurações JSON",
+	"_jsonParameters_report": "Configurações JSON",
+	"_Name": "Nome da configuração",
+	"_Name_report": "Nome da configuração",
+	"_P2P - PDP Connection Parameters": "S2P - Configuração de conexão PA",
+	"_P2P - PDP Connection Parameters__": "S2P - Configuração de conexão PA",
+	"_S2P Configuration": "Configuração do aplicativo S2P",
+	"_S2P Configuration_report": "Configuração do aplicativo S2P",
+	"P2P - PDP Connection Parameters": "S2P - Configuração de conexão PA",
+	"P2P - PDP Connection Parameters__": "S2P - Configuração de conexão PA",
+	"_Client Id": "ID do cliente OAuth",
+	"_Client Id_report": "ID do cliente OAuth",
+	"_Client Secret": "Código secreto do cliente OAuth",
+	"_Client Secret_report": "Código secreto do cliente OAuth",
+	"_Connector Type": "Tipo de API",
+	"_Connector Type_report": "Tipo de API",
+	"_PDP_Connector_EOD": "EoD",
+	"_PDP_Connector_EOD_SG5_V1": "Standardized AFNOR SG5 (Esker PA)",
+	"_PDP_Connector_SG5_V1": "Padronizada AFNOR SG5",
+	"_Token URI": "URL do token OAuth",
+	"_Token URI_report": "URL do token OAuth",
+	"_URI": "URI",
+	"_URI_report": "URI do API da PA",
+	"URI_Help": "Introduza o URI que identifica a PA ao qual pretende se conectar."
+}</process_pt-BR>
+    </lg>
+    <process>
+      <flowtype>processing</flowtype>
+      <EnableNegativeNumbersBetweenBrackets>true</EnableNegativeNumbersBetweenBrackets>
+      <homepagelabel>_P2P - PDP Connection Parameters</homepagelabel>
+      <instanciable>1</instanciable>
+      <disableScriptModification>true</disableScriptModification>
+      <enableUpgradableDesign>true</enableUpgradableDesign>
+      <ESDirectIndexing>1</ESDirectIndexing>
+      <enablerounddecimal>true</enablerounddecimal>
+      <OverrideAllowedAttachmentExtensions>*</OverrideAllowedAttachmentExtensions>
+      <UseActionNameWithScriptApproval>true</UseActionNameWithScriptApproval>
+      <displayWidth>
+      </displayWidth>
+      <AllowUploadAttachment>0</AllowUploadAttachment>
+      <AllowUploadReferenceDocument>0</AllowUploadReferenceDocument>
+      <RemovePointWhenCastingIntToString>true</RemovePointWhenCastingIntToString>
+      <shouldRollbackManualRecordEdits>true</shouldRollbackManualRecordEdits>
+      <shouldShowManualEditsWarning>false</shouldShowManualEditsWarning>
+      <UseCultureFormat>true</UseCultureFormat>
+      <TransportName>CustomTable</TransportName>
+      <LayoutVersion>1.0</LayoutVersion>
+    </process>
+    <ui>
+      <CustomScriptDebug>false</CustomScriptDebug>
+      <customscriptIncludedScripts>Sys/Sys_GenericAPI_Client</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Helpers_Array</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Helpers_Date</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Helpers_LdapUtil</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_EDI_FRB2B_PDPConnector_Common</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Wizard</customscriptIncludedScripts>
+      <customscriptIncludedScripts>[LIB_AP_CUSTOMIZATION_WIZARD]</customscriptIncludedScripts>
+      <customscriptIncludedScripts>[LIB_P2P_CUSTOMIZATION_TABLES_CLIENT]</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Helpers</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_EDI_FRB2B_PDPConnector_Common</customscriptIncludedScripts>
+      <CustomScriptReadonly>true</CustomScriptReadonly>
+      <CustomScript>/**
+ * Manage the General step
+ */
+const fieldsToShowPerConnectorType = {
+    "TokenURI__": [Sys.EDI.FRB2B.PDPConnector.ConnectorType.SG5_V1],
+    "ClientId__": [Sys.EDI.FRB2B.PDPConnector.ConnectorType.SG5_V1],
+    "ClientSecret__": [Sys.EDI.FRB2B.PDPConnector.ConnectorType.SG5_V1],
+    "API_Key_Identifier__": [Sys.EDI.FRB2B.PDPConnector.ConnectorType.EOD],
+    "API_Key__": [Sys.EDI.FRB2B.PDPConnector.ConnectorType.EOD]
+};
+let generalStep = {
+    panels: [Controls.GeneralPane],
+    icon: "fa-cog",
+    title: "_General",
+    description: "_Configure the PDP connection settings",
+    helpId: 2623,
+    onStart: function () {
+        generalStep.initLayout();
+        generalStep.handleErrorMessage();
+    },
+    onQuit: function () {
+        return true;
+    },
+    updateWizard: function () {
+        Sys.Wizard.Wizard.DrawSteps();
+    },
+    handleErrorMessage: function () {
+        // Handle error message
+    },
+    initLayout: function () {
+        Controls.ConnectorType__.OnChange = function () {
+            cleanFieldsBasedOnConnectorType();
+            showFieldsBasedOnConnectorType();
+            setConnectorTypeDefaults(true); // Force defaults when user changes connector type
+        };
+        showFieldsBasedOnConnectorType();
+        setConnectorTypeDefaults(false); // Don't overwrite when opening existing config
+    }
+};
+function InitializePDPConfiguration(callback) {
+    callback();
+}
+const steps = [generalStep];
+function OnSave() {
+    for (const step of steps) {
+        if (!step.onQuit()) {
+            return false;
+        }
+    }
+    const configurationName = Controls.Name__.GetValue();
+    if (configurationName) {
+        const options = {
+            table: Process.GetName(),
+            filter: Sys.Helpers.LdapUtil.FilterAnd(Sys.Helpers.LdapUtil.FilterEqual("Name__", configurationName), Sys.Helpers.LdapUtil.FilterNot(Sys.Helpers.LdapUtil.FilterEqual("MSNEX", Data.GetValue("MSNEX")))).toString(),
+            attributes: ["Name__"],
+            maxRecords: 1,
+            additionalOptions: {
+                queryOptions: "FastSearch=1"
+            }
+        };
+        Sys.GenericAPI.PromisedQuery(options).Then(function (results) {
+            if (results.length &gt; 0) {
+                Controls.Name__.SetError("_errorExistingConfigurationName");
+                Process.ShowFirstError();
+            }
+            else {
+                cleanFieldsBasedOnConnectorType();
+                ProcessInstance.SaveAndQuit("Save");
+            }
+        });
+    }
+    else {
+        Process.ShowFirstError();
+    }
+    return false;
+}
+function showFieldsBasedOnConnectorType() {
+    const connectorType = Controls.ConnectorType__.GetValue();
+    for (const field in fieldsToShowPerConnectorType) {
+        const connectorTypes = fieldsToShowPerConnectorType[field];
+        Controls[field].Hide(!connectorTypes.includes(connectorType));
+    }
+}
+function cleanFieldsBasedOnConnectorType() {
+    const connectorType = Controls.ConnectorType__.GetValue();
+    for (const field in fieldsToShowPerConnectorType) {
+        if (!fieldsToShowPerConnectorType[field].includes(connectorType)) {
+            Controls[field].SetValue(null);
+        }
+    }
+}
+function setConnectorTypeDefaults(forceDefaults) {
+    const connectorType = Controls.ConnectorType__.GetValue();
+    if (connectorType === Sys.EDI.FRB2B.PDPConnector.ConnectorType.SG5_V1) {
+        // When changing connector type (forceDefaults=true), always set defaults
+        // When opening existing config (forceDefaults=false), only set if empty to preserve custom URLs
+        if (forceDefaults || !Controls.URI__.GetValue()) {
+            Controls.URI__.SetValue(Sys.EDI.FRB2B.PDPConnector.PAApi.SG5_URI);
+        }
+        if (forceDefaults || !Controls.TokenURI__.GetValue()) {
+            Controls.TokenURI__.SetValue(Sys.EDI.FRB2B.PDPConnector.PAApi.TOKEN_URI);
+        }
+    }
+}
+function Main() {
+    var _a;
+    Sys.Wizard.Wizard.Init({
+        steps: steps,
+        previousButton: Controls.Previous,
+        nextButton: Controls.Next,
+        wizardControl: Controls.Wizard_steps__,
+        descriptionControl: Controls.Wizard_step_desc__,
+        LoadFirstStep: function () {
+            return Variable.GetValueAsString("currentStep");
+        },
+        SaveCurrentStep: function (currentStep) {
+            ProcessInstance.SetSilentChange(true);
+            Variable.SetValueAsString("currentStep", currentStep);
+            ProcessInstance.SetSilentChange(false);
+        },
+        RefreshDefaultValues: function (runWizardCb) {
+            if (!Variable.GetValueAsString("currentStep")) {
+                InitializePDPConfiguration(runWizardCb);
+            }
+            else {
+                runWizardCb();
+            }
+        }
+    });
+    // Other layout initializations
+    (_a = Controls.Spacer__) === null || _a === void 0 ? void 0 : _a.Hide(true);
+    Controls.Save.OnClick = OnSave;
+    Sys.Helpers.TryCallFunction("Lib.P2P.Customization.Tables.Client.Common.OnHTMLScriptEnd");
+}
+/// ==================================
+/// Entry point !!!
+/// ==================================
+Main();
+//# sourceMappingURL=customscript.js.map</CustomScript>
+      <restorationPanel>GeneralPane</restorationPanel>
+      <layout>{
+	"data": [],
+	"stamps": 52,
+	"*": {
+		"Screen": {
+			"type": "FlexibleFormLayout",
+			"data": [],
+			"stamp": 1,
+			"options": {
+				"splitterType": "simple-v",
+				"style": null,
+				"maxwidth": 1024,
+				"backColor": "text-backgroundcolor-default",
+				"footerStyle": "default",
+				"processHelpId": "2623",
+				"version": 0
+			},
+			"*": {
+				"form-header": {
+					"type": "FlexibleFormHeader",
+					"data": [],
+					"stamp": 2,
+					"options": {
+						"hidePanelsMenu": false,
+						"maxwidth": 1024,
+						"version": 0
+					}
+				},
+				"form-center": {
+					"type": "FlexibleFormCenter",
+					"data": [],
+					"stamp": 3,
+					"options": {
+						"maxwidth": 1024,
+						"version": 0
+					},
+					"*": {
+						"form-content": {
+							"type": "FlexibleFormContent",
+							"data": [],
+							"stamp": 4,
+							"options": {
+								"version": 0
+							},
+							"*": {
+								"form-content-center": {
+									"type": "FlexibleFormSplitter",
+									"data": [],
+									"stamp": 5,
+									"options": {
+										"version": 1,
+										"box": {
+											"top": "0%",
+											"left": "0%",
+											"width": "100%"
+										},
+										"hidden": false,
+										"hideSeparator": true
+									},
+									"*": {
+										"form-content-center-4": {
+											"type": "FlexibleFormLine",
+											"data": [],
+											"stamp": 6,
+											"options": {
+												"version": 0
+											},
+											"*": {
+												"Wizard_steps": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 7,
+													"options": {
+														"border": {},
+														"iconURL": "",
+														"TitleFontSize": "S",
+														"hideActionButtons": true,
+														"hideTitleBar": true,
+														"hideTitle": true,
+														"sameHeightAsSiblings": false,
+														"backgroundcolor": "color1",
+														"labelsAlignment": "right",
+														"label": "Wizard steps",
+														"hidden": false,
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"labelLength": 0,
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 8,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 9,
+																	"options": {
+																		"version": 0,
+																		"lines": 3,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"Wizard_steps__": {
+																				"line": 1,
+																				"column": 1
+																			},
+																			"Wizard_step_desc__": {
+																				"line": 2,
+																				"column": 1
+																			},
+																			"Spacer2__": {
+																				"line": 3,
+																				"column": 1
+																			}
+																		},
+																		"colspans": [
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			]
+																		]
+																	},
+																	"*": {
+																		"Wizard_steps__": {
+																			"type": "HTML",
+																			"data": false,
+																			"stamp": 10,
+																			"options": {
+																				"label": "Wizard_steps__",
+																				"css": "@ .wizard-container {\n    display: flex;\n    justify-content: center;\n}@ \n.wizard-timeline {\n\tcontent: \"\";\n\theight: 3px;\n\tmargin-top: 35px;\n\tposition: absolute;\n\tbackground-color: #00b4bd;\n\tz-index: 10;\n}@ \n.wizard {\n\theight: 145px;\n\tz-index: 30;\n\tcolor: #263645;\n}@ \n.wizard td {\n\ttext-align: center;\n\tfont-size: 14px;\n}@ \n.wizard td i {\n\twidth: 50px;\n\tpadding: 10px;\n}@ \n.wizard td.text {\n\ttext-transform: uppercase;\n\twhite-space: pre-wrap;\n\tvertical-align: top;\n\tfont-size: 12px;\n}@ \n.wizard td.wizardSelected {\n\tcolor: White;\n}@ ",
+																				"width": "100%",
+																				"version": 0
+																			}
+																		},
+																		"Wizard_step_desc__": {
+																			"type": "Text",
+																			"data": false,
+																			"stamp": 11,
+																			"options": {
+																				"label": "_Configure the PDP connection settings",
+																				"marge": 0,
+																				"textSize": "M",
+																				"textAlignment": "center",
+																				"textStyle": "default",
+																				"textColor": "color8",
+																				"backgroundcolor": "default",
+																				"iconClass": "",
+																				"version": 0
+																			}
+																		},
+																		"Spacer2__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 12,
+																			"options": {
+																				"label": "_Spacer2",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"form-content-center-6": {
+											"type": "FlexibleFormLine",
+											"data": [],
+											"stamp": 13,
+											"options": {
+												"version": 0
+											},
+											"*": {
+												"TitleArrow": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 14,
+													"options": {
+														"border": {},
+														"iconURL": "",
+														"TitleFontSize": "S",
+														"hideActionButtons": true,
+														"hideTitleBar": true,
+														"hideTitle": false,
+														"sameHeightAsSiblings": false,
+														"backgroundcolor": "default",
+														"labelsAlignment": "right",
+														"label": "TitleArrow",
+														"hidden": false,
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"labelLength": 0,
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 15,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 16,
+																	"options": {
+																		"version": 0,
+																		"lines": 1,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"HTMLArrow__": {
+																				"line": 1,
+																				"column": 1
+																			}
+																		},
+																		"colspans": [
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			]
+																		]
+																	},
+																	"*": {
+																		"HTMLArrow__": {
+																			"type": "HTML",
+																			"data": false,
+																			"stamp": 17,
+																			"options": {
+																				"label": "HTMLArrow__",
+																				"htmlContent": "&lt;div class=\"wizard-arrow\"&gt;&lt;/div&gt;",
+																				"css": "@ .wizard-arrow {\nbackground-color: white;\nwidth: 0;\nheight: 0;\nborder-style: solid;\nborder-width: 20px 25px 0 25px;\nborder-color: #008998 transparent transparent transparent;\nposition: absolute;\ntop: -10px;\nheight: 50px;\nleft: 50%;\nmargin-left: -25px;\n}@ ",
+																				"width": "100%",
+																				"version": 0
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"form-content-center-1": {
+											"type": "FlexibleFormLine",
+											"data": [],
+											"stamp": 18,
+											"options": {
+												"version": 0
+											},
+											"*": {
+												"GeneralPane": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 19,
+													"options": {
+														"border": {},
+														"iconURL": "",
+														"TitleFontSize": "S",
+														"hideActionButtons": true,
+														"hideTitleBar": false,
+														"hideTitle": false,
+														"sameHeightAsSiblings": false,
+														"backgroundcolor": "default",
+														"labelsAlignment": "right",
+														"label": "_Document data",
+														"labelLength": "25%",
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 20,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {
+																	"Name__": "LabelName__",
+																	"LabelName__": "Name__",
+																	"ConnectorType__": "LabelConnectorType__",
+																	"LabelConnectorType__": "ConnectorType__",
+																	"Configuration__": "LabelConfiguration__",
+																	"LabelConfiguration__": "Configuration__",
+																	"URI__": "LabelURI__",
+																	"LabelURI__": "URI__",
+																	"TokenURI__": "LabelTokenURI__",
+																	"LabelTokenURI__": "TokenURI__",
+																	"ClientId__": "LabelClientId__",
+																	"LabelClientId__": "ClientId__",
+																	"ClientSecret__": "LabelClientSecret__",
+																	"LabelClientSecret__": "ClientSecret__",
+																	"API_Key_Identifier__": "LabelAPI_Key_Identifier__",
+																	"LabelAPI_Key_Identifier__": "API_Key_Identifier__",
+																	"API_Key__": "LabelAPI_Key__",
+																	"LabelAPI_Key__": "API_Key__",
+																	"jsonParameters__": "LabeljsonParameters__",
+																	"LabeljsonParameters__": "jsonParameters__"
+																}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 21,
+																	"options": {
+																		"version": 0,
+																		"lines": 15,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"LabelName__": {
+																				"line": 1,
+																				"column": 1
+																			},
+																			"Name__": {
+																				"line": 1,
+																				"column": 2
+																			},
+																			"Spacer1__": {
+																				"line": 2,
+																				"column": 1
+																			},
+																			"LabelConnectorType__": {
+																				"line": 3,
+																				"column": 1
+																			},
+																			"ConnectorType__": {
+																				"line": 3,
+																				"column": 2
+																			},
+																			"LabelConfiguration__": {
+																				"line": 4,
+																				"column": 1
+																			},
+																			"Configuration__": {
+																				"line": 4,
+																				"column": 2
+																			},
+																			"Spacer2__": {
+																				"line": 5,
+																				"column": 1
+																			},
+																			"LabelURI__": {
+																				"line": 6,
+																				"column": 1
+																			},
+																			"URI__": {
+																				"line": 6,
+																				"column": 2
+																			},
+																			"Spacer4__": {
+																				"line": 7,
+																				"column": 1
+																			},
+																			"LabelTokenURI__": {
+																				"line": 8,
+																				"column": 1
+																			},
+																			"TokenURI__": {
+																				"line": 8,
+																				"column": 2
+																			},
+																			"LabelClientId__": {
+																				"line": 9,
+																				"column": 1
+																			},
+																			"ClientId__": {
+																				"line": 9,
+																				"column": 2
+																			},
+																			"LabelClientSecret__": {
+																				"line": 10,
+																				"column": 1
+																			},
+																			"ClientSecret__": {
+																				"line": 10,
+																				"column": 2
+																			},
+																			"LabelAPI_Key_Identifier__": {
+																				"line": 11,
+																				"column": 1
+																			},
+																			"API_Key_Identifier__": {
+																				"line": 11,
+																				"column": 2
+																			},
+																			"LabelAPI_Key__": {
+																				"line": 12,
+																				"column": 1
+																			},
+																			"API_Key__": {
+																				"line": 12,
+																				"column": 2
+																			},
+																			"Spacer5__": {
+																				"line": 13,
+																				"column": 1
+																			},
+																			"LabeljsonParameters__": {
+																				"line": 14,
+																				"column": 1
+																			},
+																			"jsonParameters__": {
+																				"line": 14,
+																				"column": 2
+																			},
+																			"Spacer6__": {
+																				"line": 15,
+																				"column": 1
+																			}
+																		},
+																		"colspans": [
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[],
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			],
+																			[],
+																			[
+																				{
+																					"index": 0,
+																					"length": 2
+																				}
+																			]
+																		]
+																	},
+																	"*": {
+																		"LabelName__": {
+																			"type": "Label",
+																			"data": [
+																				"Name__"
+																			],
+																			"stamp": 23,
+																			"options": {
+																				"label": "_Name",
+																				"version": 0
+																			}
+																		},
+																		"Name__": {
+																			"type": "ShortText",
+																			"data": [
+																				"Name__"
+																			],
+																			"stamp": 22,
+																			"options": {
+																				"label": "_Name",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false
+																			}
+																		},
+																		"Spacer1__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 24,
+																			"options": {
+																				"label": "_Spacer1",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		},
+																		"LabelConnectorType__": {
+																			"type": "Label",
+																			"data": [
+																				"ConnectorType__"
+																			],
+																			"stamp": 26,
+																			"options": {
+																				"label": "_Connector Type",
+																				"hidden": false,
+																				"version": 0
+																			}
+																		},
+																		"ConnectorType__": {
+																			"type": "ComboBox",
+																			"data": [
+																				"ConnectorType__"
+																			],
+																			"stamp": 25,
+																			"options": {
+																				"label": "_Connector Type",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "200",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"readonly": false,
+																				"hidden": false,
+																				"possibleValues": {
+																					"0": "_PDP_Connector_EOD",
+																					"1": "_PDP_Connector_SG5_V1"
+																				},
+																				"maxNbLinesToDisplay": 10,
+																				"keyValueMode": true,
+																				"possibleKeys": {
+																					"0": "EOD",
+																					"1": "SG5_V1"
+																				}
+																			}
+																		},
+																		"LabelConfiguration__": {
+																			"type": "Label",
+																			"data": [
+																				"Configuration__"
+																			],
+																			"stamp": 28,
+																			"options": {
+																				"label": "_S2P Configuration",
+																				"version": 0
+																			}
+																		},
+																		"Configuration__": {
+																			"type": "DatabaseComboBox",
+																			"data": [
+																				"Configuration__"
+																			],
+																			"stamp": 27,
+																			"options": {
+																				"label": "_S2P Configuration",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"PreFillFTS": true,
+																				"fTSmaxRecords": "20",
+																				"browsable": true
+																			}
+																		},
+																		"Spacer2__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 29,
+																			"options": {
+																				"label": "_Spacer2",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		},
+																		"LabelURI__": {
+																			"type": "Label",
+																			"data": [
+																				"URI__"
+																			],
+																			"stamp": 31,
+																			"options": {
+																				"label": "_URI",
+																				"version": 0
+																			}
+																		},
+																		"URI__": {
+																			"type": "ShortText",
+																			"data": [
+																				"URI__"
+																			],
+																			"stamp": 30,
+																			"options": {
+																				"label": "_URI",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "URI_Help",
+																				"helpURL": "2624",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false
+																			}
+																		},
+																		"Spacer4__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 32,
+																			"options": {
+																				"label": "_Spacer4",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		},
+																		"LabelTokenURI__": {
+																			"type": "Label",
+																			"data": [
+																				"TokenURI__"
+																			],
+																			"stamp": 34,
+																			"options": {
+																				"label": "_Token URI",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"TokenURI__": {
+																			"type": "ShortText",
+																			"data": [
+																				"TokenURI__"
+																			],
+																			"stamp": 33,
+																			"options": {
+																				"label": "_Token URI",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"readonly": false,
+																				"hidden": true
+																			}
+																		},
+																		"LabelClientId__": {
+																			"type": "Label",
+																			"data": [
+																				"ClientId__"
+																			],
+																			"stamp": 36,
+																			"options": {
+																				"label": "_Client Id",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"ClientId__": {
+																			"type": "ShortText",
+																			"data": [
+																				"ClientId__"
+																			],
+																			"stamp": 35,
+																			"options": {
+																				"label": "_Client Id",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"readonly": false,
+																				"hidden": true
+																			}
+																		},
+																		"LabelClientSecret__": {
+																			"type": "Label",
+																			"data": [
+																				"ClientSecret__"
+																			],
+																			"stamp": 38,
+																			"options": {
+																				"label": "_Client Secret",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"ClientSecret__": {
+																			"type": "ShortText",
+																			"data": [
+																				"ClientSecret__"
+																			],
+																			"stamp": 37,
+																			"options": {
+																				"label": "_Client Secret",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"readonly": false,
+																				"hidden": true
+																			}
+																		},
+																		"LabelAPI_Key_Identifier__": {
+																			"type": "Label",
+																			"data": [
+																				"API_Key_Identifier__"
+																			],
+																			"stamp": 40,
+																			"options": {
+																				"label": "_API Key Identifier",
+																				"version": 0
+																			}
+																		},
+																		"API_Key_Identifier__": {
+																			"type": "LongText",
+																			"data": [
+																				"API_Key_Identifier__"
+																			],
+																			"stamp": 39,
+																			"options": {
+																				"label": "_API Key Identifier",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 5,
+																				"activable": true,
+																				"width": "512",
+																				"browsable": false,
+																				"numberOfLines": 10
+																			}
+																		},
+																		"LabelAPI_Key__": {
+																			"type": "Label",
+																			"data": [
+																				"API_Key__"
+																			],
+																			"stamp": 42,
+																			"options": {
+																				"label": "_API Key",
+																				"version": 0
+																			}
+																		},
+																		"API_Key__": {
+																			"type": "ShortText",
+																			"data": [
+																				"API_Key__"
+																			],
+																			"stamp": 41,
+																			"options": {
+																				"label": "_API Key",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "512",
+																				"browsable": false
+																			}
+																		},
+																		"Spacer5__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 43,
+																			"options": {
+																				"label": "_Spacer5",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		},
+																		"LabeljsonParameters__": {
+																			"type": "Label",
+																			"data": [
+																				"jsonParameters__"
+																			],
+																			"stamp": 45,
+																			"options": {
+																				"label": "_jsonParameters",
+																				"version": 0
+																			}
+																		},
+																		"jsonParameters__": {
+																			"type": "LongText",
+																			"data": [
+																				"jsonParameters__"
+																			],
+																			"stamp": 44,
+																			"options": {
+																				"label": "_jsonParameters",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 3,
+																				"activable": true,
+																				"width": "512",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false
+																			}
+																		},
+																		"Spacer6__": {
+																			"type": "Spacer",
+																			"data": false,
+																			"stamp": 46,
+																			"options": {
+																				"label": "_Spacer6",
+																				"height": "",
+																				"width": "",
+																				"color": "default",
+																				"version": 0
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"form-footer": {
+					"type": "FlexibleFormFooter",
+					"data": [],
+					"stamp": 47,
+					"options": {
+						"splitterType": "simple-h",
+						"maxwidth": 1024,
+						"version": 0
+					},
+					"*": {
+						"Save": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 48,
+							"options": {
+								"label": "_Save",
+								"action": "savequit",
+								"submit": true,
+								"shortCut": "S",
+								"textSize": "S",
+								"version": 0
+							}
+						},
+						"Close": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 49,
+							"options": {
+								"label": "_Close",
+								"action": "cancel",
+								"submit": true,
+								"shortCut": "Q",
+								"textSize": "S",
+								"version": 0
+							}
+						},
+						"Delete": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 50,
+							"options": {
+								"label": "_Delete",
+								"action": "delete",
+								"submit": true,
+								"disabled": true,
+								"textSize": "S",
+								"version": 0
+							}
+						},
+						"Previous": {
+							"type": "SubmitButton",
+							"data": false,
+							"stamp": 51,
+							"options": {
+								"label": "Previous__",
+								"textPosition": "text-right",
+								"textSize": "S",
+								"textStyle": "default",
+								"textColor": "default",
+								"iconColor": "default",
+								"nextprocess": {
+									"processName": "",
+									"attachmentsMode": "all",
+									"willBeChild": true
+								},
+								"urlImageOverlay": "",
+								"url": "",
+								"position": null,
+								"action": "none",
+								"hidden": true,
+								"version": 0
+							}
+						},
+						"Next": {
+							"type": "SubmitButton",
+							"data": false,
+							"stamp": 52,
+							"options": {
+								"label": "Next__",
+								"textPosition": "text-right",
+								"textSize": "S",
+								"textStyle": "default",
+								"textColor": "default",
+								"iconColor": "default",
+								"nextprocess": {
+									"processName": "",
+									"attachmentsMode": "all",
+									"willBeChild": true
+								},
+								"urlImageOverlay": "",
+								"url": "",
+								"position": null,
+								"action": "none",
+								"hidden": true,
+								"version": 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}</layout>
+    </ui>
+  </properties>
+  <field deleted="0" format="" guid="JBYJG0000VLT" id="U0F4Y300153E" label="_API Key Identifier_report" length="32766" name="API_Key_Identifier__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AU0F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/API_Key_Identifier__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:50</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_API Key Identifier_report</Label>
+        <Alias>AU0F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="IBYJG0000VLT" id="T0F4Y300153E" label="_API Key_report" length="500" name="API_Key__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AT0F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/API_Key__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:50</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_API Key_report</Label>
+        <Alias>AT0F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <VarType>Area</VarType>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="NBYJG0000VLT" id="Z0F4Y300153E" label="_Client Id_report" length="500" name="ClientId__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AZ0F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/ClientId__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:51</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_Client Id_report</Label>
+        <Alias>AZ0F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <VarType>Area</VarType>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="OBYJG0000VLT" id="A1F4Y300153E" label="_Client Secret_report" length="500" name="ClientSecret__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AA1F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/ClientSecret__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:51</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_Client Secret_report</Label>
+        <Alias>AA1F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <VarType>Area</VarType>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="WBYJG0000CFG" id="C1F4Y300153E" label="_S2P Configuration_report" length="50" name="Configuration__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AC1F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/Configuration__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:51</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_S2P Configuration_report</Label>
+        <Alias>AC1F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <Editable>true</Editable>
+        <TableName>CT#W1Z3Y300153E</TableName>
+        <SortOrder>ASC</SortOrder>
+        <DisplayedColumns>ConfigurationName__</DisplayedColumns>
+        <DisplayedColumnsIds>
+        </DisplayedColumnsIds>
+        <UseTableForAutolearn>false</UseTableForAutolearn>
+        <SavedColumn>ConfigurationName__</SavedColumn>
+        <SavedColumnId>
+        </SavedColumnId>
+        <ProcessName>AP - Application Settings__</ProcessName>
+        <CustomFilter>
+        </CustomFilter>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="MBYJG0000VLT" id="Y0F4Y300153E" label="_Connector Type_report" length="50" name="ConnectorType__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AY0F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/ConnectorType__</fullname>
+        <defaultvalue>SG5_V1</defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:51</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Type>webaccess.Process.Columns.WithPossibleValues</Type>
+        <Label>_Connector Type_report</Label>
+        <Alias>AY0F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <DisplayedColumns>
+        </DisplayedColumns>
+        <DataSourceOrigin>Standalone</DataSourceOrigin>
+        <possibleKeys>EOD
+SG5_V1</possibleKeys>
+        <SavedColumn>
+        </SavedColumn>
+        <possibleValues>_PDP_Connector_EOD
+_PDP_Connector_SG5_V1</possibleValues>
+      </field>
+      <gdr>
+        <VarType>Area</VarType>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="LBYJG0000VLT" id="V0F4Y300153E" label="_jsonParameters_report" length="32766" name="jsonParameters__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AV0F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/jsonParameters__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:50</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_jsonParameters_report</Label>
+        <Alias>AV0F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="GBYJG0000VLT" id="W0F4Y300153E" label="_Name_report" length="50" name="Name__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AW0F4Y300153E</alias>
+        <index vartype="INT">1</index>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/Name__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:50</RecordLastWrite>
+        <uniqueindex>1</uniqueindex>
+      </db>
+      <extrainfo>
+        <Label>_Name_report</Label>
+        <Alias>AW0F4Y300153E</Alias>
+        <Behavior>Default</Behavior>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <required>true</required>
+      </field>
+      <gdr>
+        <VarType>Area</VarType>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="PBYJG0000VLT" id="B1F4Y300153E" label="_Token URI_report" length="500" name="TokenURI__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AB1F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/TokenURI__</fullname>
+        <defaultvalue>https://fr8.pdp-esker.fr/api/v1/token</defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:51</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_Token URI_report</Label>
+        <Alias>AB1F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <VarType>Area</VarType>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="HBYJG0000VLT" id="X0F4Y300153E" label="_URI_report" length="50" name="URI__" originalProcessID="FBYJG0000VLT" precision="0" processid="S0F4Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AX0F4Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/URI__</fullname>
+        <defaultvalue>https://fr8.pdp-esker.fr/api/frb2b/v1.1</defaultvalue>
+        <RecordLastWrite>2026-05-08 14:31:51</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_URI_report</Label>
+        <Alias>AX0F4Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <VarType>Area</VarType>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"URI_Help","helpURL":"2624","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <type id="KOLHG0000M4O" name="CT">
+  </type>
+</process>

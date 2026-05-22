@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_action_openInProcess:Vendor_Company_Extended_Properties__</key>
+			<val>Visualizza dettagli</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Active</key>
+			<val>Attivo</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Blocked</key>
+			<val>Bloccato per gli acquisti</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CF_C5_EDI_Identifier</key>
+			<val>ID indirizzo elettronico (Peppol CTC)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CF_C5_EDI_Identifier_report</key>
+			<val>ID indirizzo elettronico (Peppol CTC)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CF_C5_EDI_IdentifierType</key>
+			<val>ID schema dell'indirizzo elettronico (Peppol CTC)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CF_C5_EDI_IdentifierType_report</key>
+			<val>ID schema dell'indirizzo elettronico (Peppol CTC)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_ComplianceRiskIdentifier</key>
+			<val>ID fornitore</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_ComplianceRiskIdentifier_report</key>
+			<val>ID fornitore</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Country code</key>
+			<val>Codice paese</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Disabled</key>
+			<val>Disattivato</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_DUNSNumber</key>
+			<val>Numero DUNS</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_DUNSNumber_report</key>
+			<val>Numero DUNS</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_GHGEmissionFactor</key>
+			<val>Fattore di emissioni GES (kg CO2e)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_GHGEmissionFactor_report</key>
+			<val>Fattore di emissioni GES (kg CO2e)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InternalScore</key>
+			<val>Punteggio complessivo</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InternalScore_report</key>
+			<val>Punteggio complessivo</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InternalScoreLastComputeDateTime</key>
+			<val>Punteggio complessivo aggiornato il</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InternalScoreLastComputeDateTime_report</key>
+			<val>Punteggio complessivo fornitore aggiornato il</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastLifeCycleStatusChangeDate</key>
+			<val>Data aggiornamento stato</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastLifeCycleStatusChangeDate_report</key>
+			<val>Data aggiornamento stato</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleComment</key>
+			<val>Motivo</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleComment_report</key>
+			<val>Motivo stato attività</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleStatus</key>
+			<val>Stato attività</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleStatus_report</key>
+			<val>Stato attività</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LifeCycleStatusCode_Help</key>
+			<val>Quando sono attivati i moduli 'Acquisti' e 'Fatture fornitore', l'opzione consente di:&lt;br&gt;
+• Impedire la creazione di ordini per questo fornitore&lt;br&gt;
+• Impedire la creazione di ordini e la registrazione di fatture per questo fornitore</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_ShowAlerts</key>
+			<val>Avvisi punteggio mostrati</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_ShowComplianceAlerts</key>
+			<val>Avvisi di conformità mostrati</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Siret</key>
+			<val>Codice di identificazione fiscale</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Sub</key>
+			<val>Edificio, ZI, Servizio...</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Sub report</key>
+			<val>Edificio, ZI, Servizio...</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Vendor Address</key>
+			<val>Anteprima indirizzo</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorAddress</key>
+			<val>Indirizzo fornitore</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorCategory</key>
+			<val>Categoria fornitore</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorCategory_report</key>
+			<val>Categoria fornitore</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInfo</key>
+			<val>Informazioni fornitore</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>AP - Vendors</key>
+			<val>S2P - Fornitori</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>City</key>
+			<val>Città</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Company code</key>
+			<val>Codice società</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Currency</key>
+			<val>Valuta predefinita</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Email</key>
+			<val>Indirizzo e-mail</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Fax number</key>
+			<val>Numero fax</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>General account</key>
+			<val>Conto generale collettivo</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Name</key>
+			<val>Nome</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Number</key>
+			<val>Numero fornitore</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Parafiscal tax</key>
+			<val>Soggetto a imposta parafiscale</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Payment terms</key>
+			<val>Termini di pagamento</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Phone number</key>
+			<val>Numero di telefono</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Postal code</key>
+			<val>CAP</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>PostOfficeBox</key>
+			<val>Località o casella postale</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Preferred invoice type</key>
+			<val>Tipo di fattura preferito</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Region</key>
+			<val>Stato/Regione</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Street</key>
+			<val>Via</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Supplier due</key>
+			<val>Tipo di IVA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Tax system</key>
+			<val>Regime fiscale</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>VAT number</key>
+			<val>Partita IVA</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

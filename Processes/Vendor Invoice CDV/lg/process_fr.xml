@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>__VendorInvoiceRUIDEX</key>
+			<val>Identifiant long de la facture</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CDV data</key>
+			<val>Détails</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CompanyCode</key>
+			<val>Code société</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_CompanyCode_report</key>
+			<val>Code société</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_EDIStatus</key>
+			<val>État du cycle de vie</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_EDIStatus_report</key>
+			<val>État du cycle de vie</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History</key>
+			<val>Historique</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_Date</key>
+			<val>Date</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_Date_report</key>
+			<val>Date</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_EDIStatus</key>
+			<val>État du cycle de vie</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_History_EDIStatus_report</key>
+			<val>État du cycle de vie</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InvoiceNumber</key>
+			<val>Numéro de facture</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_InvoiceNumber_report</key>
+			<val>Numéro de facture</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastDisputeReason</key>
+			<val>Dernier motif de litige</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_LastDisputeReason_report</key>
+			<val>Dernier motif de litige</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorInvoiceRUIDEX_report</key>
+			<val>Identifiant long de la facture</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorNumber</key>
+			<val>Numéro du fournisseur</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_VendorNumber_report</key>
+			<val>Numéro du fournisseur</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_203_Received</key>
+			<val>Mise à disposition</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_204_TakeOn</key>
+			<val>Prise en charge</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_205_Approved</key>
+			<val>Approuvée</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_206_PartiallyApproved</key>
+			<val>Approuvée partiellement</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_207_OnHold</key>
+			<val>En litige</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_208_Suspended</key>
+			<val>Suspendue</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_210_Refused</key>
+			<val>Refusée</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_211_PaymentSent</key>
+			<val>Paiement transmis</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>FRB2B_212_Cashed</key>
+			<val>Encaissée</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>Vendor Invoice CDV</key>
+			<val>Cycle de vie de facture électronique (France)</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>

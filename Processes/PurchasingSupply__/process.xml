@@ -1,0 +1,3439 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<process accountid="20092025" allowrepairprocess="0" builtin="0" builtinversion="0" carriesapplicationversion="0" creationdatetime="2026-05-08 14:30:17" deleted="0" eskerapplication="P2P" global="0" id="A824Y300153E" keepcustomization="0" keepcustompositions="0" keepfieldsonly="1" keepfieldsproperties="0" keepnewcontroloptions="0" migrationversion="4" name="PurchasingSupply__" needvalidation="1" ootofilter="" ootoversion="0" originalProcessID="IYID131998" ownerid="cn=.su@20092025,ou=DEV,ou=TrainingCustomerPJT,ou=demoprocess_thivolet,ou=05324291,ou=ESK,s=eoo" ownerpb="OnDemand AddressBook" public="1" pushnotification="0" reuseengine="0" sprintversion="5.353.0" transportname="CustomTable" upgradable="1" userid="0" version="1" visibility="1">
+  <properties>
+    <dataConditions>
+      <listDataConditions>
+			&lt;dataCondition&gt;
+				&lt;tableName&gt;P2P - Global Application Settings__&lt;/tableName&gt;
+				&lt;filter&gt;msnex=*&lt;/filter&gt;
+				&lt;labelKey&gt;_Purchasing disabled&lt;/labelKey&gt;
+				&lt;conditions&gt;
+					&lt;allowCondition&gt;
+						&lt;fieldName&gt;EnablePurchasingGlobalSetting__&lt;/fieldName&gt;
+						&lt;fieldValue&gt;1&lt;/fieldValue&gt;
+					&lt;/allowCondition&gt;
+					&lt;allowCondition&gt;
+						&lt;fieldName&gt;EnableStandardPurchasingGlobalSetting__&lt;/fieldName&gt;
+						&lt;fieldValue&gt;1&lt;/fieldValue&gt;
+					&lt;/allowCondition&gt;
+				&lt;/conditions&gt;
+			&lt;/dataCondition&gt;</listDataConditions>
+    </dataConditions>
+    <dbIndex>
+      <AUTO_AD824Y300153EA>&lt;Index&gt;&lt;Ref Name="AD824Y300153E" Option="ASC"/&gt;&lt;/Index&gt;</AUTO_AD824Y300153EA>
+      <AUTO_AJ824Y300153EA>&lt;Index&gt;&lt;Ref Name="AJ824Y300153E" Option="ASC"/&gt;&lt;/Index&gt;</AUTO_AJ824Y300153EA>
+      <AUTO_AK824Y300153EA>&lt;Index&gt;&lt;Ref Name="AK824Y300153E" Option="ASC"/&gt;&lt;/Index&gt;</AUTO_AK824Y300153EA>
+      <AUTO_AP824Y300153EA>&lt;Index&gt;&lt;Ref Name="AP824Y300153E" Option="ASC"/&gt;&lt;/Index&gt;</AUTO_AP824Y300153EA>
+      <IndexUniqueSupply>&lt;Index Option="Unique"&gt;&lt;Ref Name="CompanyCode__" Option="ASC"/&gt;&lt;Ref Name="SupplyID__" Option="ASC"/&gt;&lt;/Index&gt;</IndexUniqueSupply>
+    </dbIndex>
+    <lg>
+      <process_da>{
+	"_AccessRestrictionPane": "Adgangsbegrænsning",
+	"_action_createflexible:Purchasing Supply Updater": "Kør konsekvenskontrol",
+	"_AllowedUsersOrGroups": "Begræns adgang til",
+	"_AnalyticsPane": "Regnskabsdata",
+	"_BuyerLogin": "Køber-id",
+	"_BuyerLogin_report": "Køber-id",
+	"_BuyerLogin_report_Name": "Købers navn",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Virksomhedskode",
+	"_CompanyCode_report": "Virksomhedskode",
+	"_ComputedTechnicalAllowedLogins": "Valgte brugere med nedarvet adgang",
+	"_ComputedTechnicalAllowedLogins_report": "Begrænset til valgte brugere med nedarvet adgang",
+	"_DefaultCostType": "Standardomkostningstype",
+	"_DefaultCostType_report": "Standardomkostningstype",
+	"_DefaultGLAccount": "Standard artskonto",
+	"_DefaultTaxCode": "Standard afgiftskode",
+	"_DefaultTaxCode_report": "Standard afgiftskode",
+	"_Description": "Beskrivelse",
+	"_Description_report": "Beskrivelse",
+	"_DisableRestrictionInheritance": "Deaktiver nedarvning af overordnet kategori",
+	"_DisableRestrictionInheritance_report": "Nedarvning af overordnet kategori deaktiveret",
+	"_Document data": "Kategorioplysninger",
+	"_FullName": "Fuld sti",
+	"_FullName_report": "Fuld sti",
+	"_InheritedAllowedLogins": "Nedarvet adgang fra overordnet kategori",
+	"_InheritedTechnicalAllowedLogins": "Bruger med nedarvet adgang",
+	"_LongProcessingWarning": "De ændringer, der er lavet i identifikationsoplysningerne eller begrænsningerne i denne kategori, vil blive anvendt i dens underkategorier. Denne handling kan tage et par minutter og vil foregå i baggrunden.",
+	"_LongProcessingWarningTitle": "Opdater underkategorier",
+	"_NoGoodsReceipt": "Intet krav om kvittering for varer og serviceydelser",
+	"_NoGoodsReceipt_report": "Intet krav om kvittering for varer og serviceydelser",
+	"_NotifyRequesterOnReceipt": "Informer anmoder ved modtagelse",
+	"_NotifyRequesterOnReceipt_report": "Informer anmoder ved modtagelse",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "Id for overordnet kategori",
+	"_ParentSupplyID_report": "Id for overordnet varekategori",
+	"_RecipientLogin": "Modtager-id",
+	"_RecipientLogin_report": "Modtager-id",
+	"_RecipientLogin_report_Name": "Modtagers navn",
+	"_SelectOrEnterEmailAddress": "Vælg eller indtast en mailadresse...",
+	"_SupplyID": "Kategori-id",
+	"_SupplyID_report": "Varekategori-id",
+	"_SupplyName": "Kategorinavn",
+	"_SupplyName_report": "Navn på positionskategori",
+	"_SupplyTypeError_DuplicateCategory": "Der findes allerede en kategori med dette id for denne virksomhedskode.",
+	"_SupplyTypeError_IdenticalIdAndParent": "Det overordnede id må ikke være identisk med id'et for positionskategorien.\n",
+	"_SupplyTypeError_Recursion": "Denne handling ({0}) er under den aktuelle kategori i hierarkiet.",
+	"_TechnicalAllowedUsersOrGroups": "Valgte brugere med adgang",
+	"_TechnicalAllowedUsersOrGroups_report": "Begrænset til valgte brugere  ",
+	"_UpdateChildren": "Atualizar",
+	"_UserPopup_Groups": "Grupper",
+	"_UserPopup_Title": "Begræns adgang til denne varekategori",
+	"_UserPopup_Users": "Brugere",
+	"_UserPopup_UsersOrGroups": "Godkendte brugere",
+	"Purchasing - Supply": "S2P – varekategorier",
+	"PurchasingSupply": "S2P – varekategori",
+	"PurchasingSupply__": "S2P – varekategorier",
+	"_CF_C5_EDI_Identifier": "Id for elektronisk adresse (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "Id for elektronisk adresse (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "Skema-id for elektronisk adresse (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "Skema-id for elektronisk adresse (Peppol CTC)",
+	"_CompanyAddress": "Virksomhedens adresse",
+	"_CompanyAddressFormated": "Adresseeksempel",
+	"_CompanyInfo": "Virksomhedsoplysninger",
+	"_DefaultConfiguration": "Standardkonfiguration",
+	"_DefaultConfiguration_report": "Standardkonfiguration",
+	"_DefaultExpenseReportType": "Standard udgiftsrapporttype",
+	"_DefaultExpenseReportType_report": "Standard udgiftsrapporttype",
+	"_DeliveryAddressID": "Id for standard leveringsadresse",
+	"_DeliveryAddressID_report": "Id for standard leveringsadresse",
+	"_DeterminationKeyword": "Nøgleord anvendt til automatisk fastsættelse",
+	"_DeterminationKeyword_report": "Nøgleord anvendt til automatisk fastsættelse",
+	"_ERP": "ERP-integration",
+	"_errorExistingCompanyCode": "Denne virksomhedskode findes allerede i tabellen",
+	"_PDPConfiguration": "PA-konfiguration af e-rapportering (Frankrig)",
+	"_PDPConfiguration_report": "PA-konfiguration af e-rapportering (Frankrig)",
+	"_PurchasingGroup": "Indkøbsgruppe",
+	"_PurchasingGroup_report": "Indkøbsgruppe",
+	"_PurchasingOrganization": "Indkøbsorganisation",
+	"_PurchasingOrganization_report": "Indkøbsorganisation",
+	"_Sub": "Bygning, IA, service...",
+	"_Sub report": "Bygning, IA, service...",
+	"_TaxMode": "E-rapportal (Frankrig) skattepunkt",
+	"_TaxMode_report": "E-rapportal (Frankrig) skattepunkt",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "Ved modtagelse af betaling",
+	"_TVAOverDebit": "Ved udstedelse af faktura",
+	"_WorkingDays": "Arbejdsdage",
+	"_WorkingDays_report": "Arbejdsdage",
+	"City": "By",
+	"Company code": "Virksomhedskode",
+	"Company name": "Virksomhedsnavn",
+	"Contact email": "Mail",
+	"Country": "Landekode",
+	"Currency": "Valuta",
+	"Fax number": "Faxnummer",
+	"P2P - Company codes": "Virksomhedskode",
+	"P2P - Company codes__": "Virksomhedskode",
+	"Phone number": "Telefonnummer",
+	"Postal code": "Postnummer",
+	"PostOfficeBox": "Sted eller postboks",
+	"PurchasingCompanycodes": "S2P – virksomhedskoder",
+	"Region": "Stat/region",
+	"SIRET": "Momsregistreringsnummer (kun USA)",
+	"Street": "Adresse",
+	"VAT number": "Momsnummer"
+}</process_da>
+      <process_de>{
+	"_AccessRestrictionPane": "Zugriffsbeschränkung",
+	"_action_createflexible:Purchasing Supply Updater": "Konsistenzprüfung durchführen",
+	"_AllowedUsersOrGroups": "Zugriffsbeschränkung für",
+	"_AnalyticsPane": "Buchungsdaten",
+	"_BuyerLogin": "Einkäufer-ID",
+	"_BuyerLogin_report": "Einkäufer-ID",
+	"_BuyerLogin_report_Name": "Name des Einkäufers",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Buchungskreis",
+	"_CompanyCode_report": "Buchungskreis",
+	"_ComputedTechnicalAllowedLogins": "Ausgewählte Benutzer und Benutzer mit geerbtem Zugriff",
+	"_ComputedTechnicalAllowedLogins_report": "Beschränkt auf ausgewählte Benutzer und Benutzer mit geerbtem Zugriff",
+	"_DefaultCostType": "Standardkostenart",
+	"_DefaultCostType_report": "Standardkostenart",
+	"_DefaultGLAccount": "Standard-Sachkonto",
+	"_DefaultTaxCode": "Standard-Steuerschlüssel",
+	"_DefaultTaxCode_report": "Standard-Steuerschlüssel",
+	"_Description": "Beschreibung",
+	"_Description_report": "Beschreibung",
+	"_DisableRestrictionInheritance": "Vererbung der übergeordneten Kategorie deaktivieren",
+	"_DisableRestrictionInheritance_report": "Vererbung der übergeordneten Kategorie deaktiviert",
+	"_Document data": "Kategoriedetails",
+	"_FullName": "Vollständiger Pfad",
+	"_FullName_report": "Vollständiger Pfad",
+	"_InheritedAllowedLogins": "Geerbter Zugriff der übergeordneten Kategorie",
+	"_InheritedTechnicalAllowedLogins": "Benutzer mit geerbtem Zugriff",
+	"_LongProcessingWarning": "Änderungen an den Kennzeichnungsdetails oder Einschränkungen dieser Kategorie werden auf ihre Unterkategorien übertragen.\n\nDieser Vorgang kann einige Minuten dauern und wird im Hintergrund ausgeführt.",
+	"_LongProcessingWarningTitle": "Unterkategorien aktualisieren",
+	"_NoGoodsReceipt": "Kein Wareneingangs- und Serviceerbringungsbeleg erforderlich",
+	"_NoGoodsReceipt_report": "Kein Wareneingangs- und Serviceerbringungsbeleg erforderlich",
+	"_NotifyRequesterOnReceipt": "Anforderer bei Empfang benachrichtigen",
+	"_NotifyRequesterOnReceipt_report": "Anforderer bei Empfang benachrichtigen",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "ID der übergeordneten Kategorie",
+	"_ParentSupplyID_report": "ID der übergeordneten Artikelkategorie",
+	"_RecipientLogin": "Empfänger-ID ",
+	"_RecipientLogin_report": "Empfänger-ID ",
+	"_RecipientLogin_report_Name": "Name des Empfängers",
+	"_SelectOrEnterEmailAddress": "Wählen oder geben Sie eine E-Mail-Adresse ein ...",
+	"_SupplyID": "Kategorie-ID",
+	"_SupplyID_report": "Artikelkategorie-ID",
+	"_SupplyName": "Name der Kategorie",
+	"_SupplyName_report": "Name der Artikelkategorie",
+	"_SupplyTypeError_DuplicateCategory": "Für diesen Buchungskreis existiert bereits eine Kategorie mit dieser ID.",
+	"_SupplyTypeError_IdenticalIdAndParent": "Die ID der übergeordneten Kategorie darf nicht mit der Artikelkategorie-ID übereinstimmen.",
+	"_SupplyTypeError_Recursion": "Diese Kategorie ({0}) steht hierarchisch unterhalb der aktuellen Kategorie.",
+	"_TechnicalAllowedUsersOrGroups": "Ausgewählte Benutzer mit Zugriff",
+	"_TechnicalAllowedUsersOrGroups_report": "Beschränkt auf ausgewählte Benutzer",
+	"_UpdateChildren": "Aktualisierung",
+	"_UserPopup_Groups": "Gruppen",
+	"_UserPopup_Title": "Zugriff auf diese Artikelkategorie einschränken",
+	"_UserPopup_Users": "Benutzer",
+	"_UserPopup_UsersOrGroups": "Autorisierte Benutzer",
+	"Purchasing - Supply": "S2P - Artikelkategorien",
+	"PurchasingSupply": "S2P - Artikelkategorie",
+	"PurchasingSupply__": "S2P - Artikelkategorien",
+	"_CF_C5_EDI_Identifier": "ID der elektronischen Adresse (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "ID der elektronischen Adresse (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "ID des Schemas der elektronischen Adresse (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "ID des Schemas der elektronischen Adresse (Peppol CTC)",
+	"_CompanyAddress": "Firmenandresse",
+	"_CompanyAddressFormated": "Adressvorschau",
+	"_CompanyInfo": "Firmeninformationen",
+	"_DefaultConfiguration": "Standard-Konfiguration",
+	"_DefaultConfiguration_report": "Standard-Konfiguration",
+	"_DefaultExpenseReportType": "Standard-Ausgabenberichtstyp",
+	"_DefaultExpenseReportType_report": "Standard-Ausgabenberichtstyp",
+	"_DeliveryAddressID": "ID der Standardlieferadresse",
+	"_DeliveryAddressID_report": "ID der Standardlieferadresse",
+	"_DeterminationKeyword": "Schlüsselwörter für automatische Buchungskreisermittlung",
+	"_DeterminationKeyword_report": "Schlüsselwörter für automatische Buchungskreisermittlung",
+	"_ERP": "ERP-Integration",
+	"_errorExistingCompanyCode": "Dieser Buchungskreis ist bereits in der Tabelle enthalten.",
+	"_PDPConfiguration": "PA-Konfiguration für die E-Berichterstattung (Frankreich)",
+	"_PDPConfiguration_report": "PA-Konfiguration für die E-Berichterstattung (Frankreich)",
+	"_PurchasingGroup": "Einkäufergruppe",
+	"_PurchasingGroup_report": "Einkäufergruppe",
+	"_PurchasingOrganization": "Einkaufsorganisation",
+	"_PurchasingOrganization_report": "Einkaufsorganisation",
+	"_Sub": "Gebäude, Industriegebiet, Dienst...",
+	"_Sub report": "Gebäude, Industriegebiet, Dienst...",
+	"_TaxMode": "Umsatzsteuer-Besteuerungszeitpunkt für die E-Berichterstattung (Frankreich)",
+	"_TaxMode_report": "Umsatzsteuer-Besteuerungszeitpunkt für die E-Berichterstattung (Frankreich)",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "Bei Erhalt der Zahlung",
+	"_TVAOverDebit": "Bei Ausstellung der Rechnung",
+	"_WorkingDays": "Werktage",
+	"_WorkingDays_report": "Werktage",
+	"City": "Ort",
+	"Company code": "Buchungskreis",
+	"Company name": "Firmenname",
+	"Contact email": "E-Mail-Adresse",
+	"Country": "Ländercode",
+	"Currency": "Währung",
+	"Fax number": "Faxnummer",
+	"P2P - Company codes": "Buchungskreis",
+	"P2P - Company codes__": "Buchungskreis",
+	"Phone number": "Telefonnummer",
+	"Postal code": "PLZ",
+	"PostOfficeBox": "Ort oder Postfach",
+	"PurchasingCompanycodes": "S2P - Buchungskreise",
+	"Region": "Bundesland/Region",
+	"SIRET": "Steuernummer",
+	"Street": "Straße",
+	"VAT number": "Umsatzsteuernummer"
+}</process_de>
+      <process_JA>{
+	"_AccessRestrictionPane": "アクセス制限",
+	"_action_createflexible:Purchasing Supply Updater": "整合性チェックを実行",
+	"_AllowedUsersOrGroups": "アクセス制限",
+	"_AnalyticsPane": "会計データ",
+	"_BuyerLogin": "購入者ID",
+	"_BuyerLogin_report": "購入者ID",
+	"_BuyerLogin_report_Name": "購入者名",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "会社コード",
+	"_CompanyCode_report": "会社コード",
+	"_ComputedTechnicalAllowedLogins": "選択したユーザーと継承したアクセスユーザー",
+	"_ComputedTechnicalAllowedLogins_report": "選択したユーザーと継承したアクセスユーザーに限定",
+	"_DefaultCostType": "デフォルトのコスト種別",
+	"_DefaultCostType_report": "デフォルトのコスト種別",
+	"_DefaultGLAccount": "デフォルトの勘定科目",
+	"_DefaultTaxCode": "デフォルトの税コード",
+	"_DefaultTaxCode_report": "デフォルトの税コード",
+	"_Description": "説明",
+	"_Description_report": "説明",
+	"_DisableRestrictionInheritance": "親カテゴリーの継承を無効にする",
+	"_DisableRestrictionInheritance_report": "親カテゴリーの継承は無効",
+	"_Document data": "カテゴリーの詳細",
+	"_FullName": "フルパス",
+	"_FullName_report": "フルパス",
+	"_InheritedAllowedLogins": "親カテゴリーから継承されたアクセス",
+	"_InheritedTechnicalAllowedLogins": "継承されたアクセス権を持つユーザー",
+	"_LongProcessingWarning": "このカテゴリーの識別情報の詳細または制限に加えられた変更は、そのサブカテゴリーに適用されます。\n\nこのアクションはバックグラウンドで処理され、数分かかることがあります。",
+	"_LongProcessingWarningTitle": "サブカテゴリーを更新",
+	"_NoGoodsReceipt": "品物とサービスの受領書不要",
+	"_NoGoodsReceipt_report": "品物とサービスの受領書不要",
+	"_NotifyRequesterOnReceipt": "受領時に送信者に通知する",
+	"_NotifyRequesterOnReceipt_report": "受領時に送信者に通知する",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "親カテゴリーID",
+	"_ParentSupplyID_report": "親アイテムのカテゴリーID",
+	"_RecipientLogin": "受信者ID",
+	"_RecipientLogin_report": "受信者ID",
+	"_RecipientLogin_report_Name": "受領者名",
+	"_SelectOrEnterEmailAddress": "メールアドレスを選択または入力してください...",
+	"_SupplyID": "カテゴリーID",
+	"_SupplyID_report": "品目分類ID",
+	"_SupplyName": "カテゴリー名",
+	"_SupplyName_report": "品目カテゴリー名",
+	"_SupplyTypeError_DuplicateCategory": "この会社コードには、このIDのカテゴリーがすでに存在します。",
+	"_SupplyTypeError_IdenticalIdAndParent": "親カテゴリーIDは、品目カテゴリーIDと異なるIDでなければなりません。",
+	"_SupplyTypeError_Recursion": "このカテゴリー ({0}) は、現在のカテゴリーの下の階層にあります。",
+	"_TechnicalAllowedUsersOrGroups": "アクセス権のある選択されたユーザー",
+	"_TechnicalAllowedUsersOrGroups_report": "選択したユーザーに限定 ",
+	"_UpdateChildren": "Opdater",
+	"_UserPopup_Groups": "グループ",
+	"_UserPopup_Title": "この品目分類へのアクセスを制限する",
+	"_UserPopup_Users": "ユーザー",
+	"_UserPopup_UsersOrGroups": "許可されたユーザー",
+	"Purchasing - Supply": "S2P - 品目分類",
+	"PurchasingSupply": "S2P - 品目分類",
+	"PurchasingSupply__": "S2P - 品目分類",
+	"_CF_C5_EDI_Identifier": "電子アドレスID (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "電子アドレスID (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "電子アドレススキームID (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "電子アドレススキームID (Peppol CTC)",
+	"_CompanyAddress": "会社住所",
+	"_CompanyAddressFormated": "住所プレビュー",
+	"_CompanyInfo": "会社情報",
+	"_DefaultConfiguration": "既定の設定",
+	"_DefaultConfiguration_report": "既定の設定",
+	"_DefaultExpenseReportType": "既定の費用レポート種別",
+	"_DefaultExpenseReportType_report": "既定の費用レポート種別",
+	"_DeliveryAddressID": "既定の納品先住所ID",
+	"_DeliveryAddressID_report": "既定の納品先住所ID",
+	"_DeterminationKeyword": "自動決定用キーワード",
+	"_DeterminationKeyword_report": "自動決定用キーワード",
+	"_ERP": "ERP統合",
+	"_errorExistingCompanyCode": "この会社カードはテーブルに存在します",
+	"_PDPConfiguration": "電子レポート（フランス）PA設定",
+	"_PDPConfiguration_report": "電子レポート（フランス）PA設定",
+	"_PurchasingGroup": "購買グループ",
+	"_PurchasingGroup_report": "購買グループ",
+	"_PurchasingOrganization": "購買組織",
+	"_PurchasingOrganization_report": "購買組織",
+	"_Sub": "建物、IA、サービス...",
+	"_Sub report": "建物、IA、サービス...",
+	"_TaxMode": "電子レポート (フランス) 付加価値税納税義務成立日",
+	"_TaxMode_report": "電子レポート (フランス) 付加価値税納税義務成立日",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "支払い受領時",
+	"_TVAOverDebit": "請求書発行時",
+	"_WorkingDays": "営業日",
+	"_WorkingDays_report": "営業日",
+	"City": "市区町村",
+	"Company code": "会社コード",
+	"Company name": "会社名",
+	"Contact email": "電子メール",
+	"Country": "国コード",
+	"Currency": "通貨",
+	"Fax number": "Fax番号",
+	"P2P - Company codes": "会社コード",
+	"P2P - Company codes__": "会社コード",
+	"Phone number": "電話番号",
+	"Postal code": "郵便番号",
+	"PostOfficeBox": "私書箱",
+	"PurchasingCompanycodes": "S2P - 会社コード",
+	"Region": "都道府県/地域",
+	"SIRET": "納税者識別番号",
+	"Street": "番地",
+	"VAT number": "付加価値税登録番号"
+}</process_JA>
+      <process_en>{
+	"_AccessRestrictionPane": "Access restriction",
+	"_action_createflexible:Purchasing Supply Updater": "Run consistency check",
+	"_AllowedUsersOrGroups": "Restrict access to",
+	"_AnalyticsPane": "Accounting data",
+	"_BuyerLogin": "Buyer ID",
+	"_BuyerLogin_report": "Buyer ID",
+	"_BuyerLogin_report_Name": "Buyer name",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Company code",
+	"_CompanyCode_report": "Company code",
+	"_ComputedTechnicalAllowedLogins": "Selected and inherited-access users",
+	"_ComputedTechnicalAllowedLogins_report": "Restricted to selected and inherited-access users",
+	"_DefaultCostType": "Default cost type",
+	"_DefaultCostType_report": "Default cost type",
+	"_DefaultGLAccount": "Default G/L account",
+	"_DefaultTaxCode": "Default tax code",
+	"_DefaultTaxCode_report": "Default tax code",
+	"_Description": "Description",
+	"_Description_report": "Description",
+	"_DisableRestrictionInheritance": "Disable parent category inheritance",
+	"_DisableRestrictionInheritance_report": "Parent category inheritance disabled",
+	"_Document data": "Category details",
+	"_FullName": "Full path",
+	"_FullName_report": "Full path",
+	"_InheritedAllowedLogins": "Inherited access from parent category",
+	"_InheritedTechnicalAllowedLogins": "Users with inherited access",
+	"_LongProcessingWarning": "Changes made to the identification details or restrictions of this category will be applied to its sub-categories.\n\nThis action may take a few minutes and will be processed in the background.",
+	"_LongProcessingWarningTitle": "Update sub-categories",
+	"_NoGoodsReceipt": "No goods and services receipt required",
+	"_NoGoodsReceipt_report": "No goods and services receipt required",
+	"_NotifyRequesterOnReceipt": "Notify requester upon receipt",
+	"_NotifyRequesterOnReceipt_report": "Notify requester upon receipt",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "Parent category ID",
+	"_ParentSupplyID_report": "Parent item category ID",
+	"_RecipientLogin": "Recipient ID",
+	"_RecipientLogin_report": "Recipient ID",
+	"_RecipientLogin_report_Name": "Recipient name",
+	"_SelectOrEnterEmailAddress": "Select or enter an email address...",
+	"_SupplyID": "Category ID",
+	"_SupplyID_report": "Item category ID",
+	"_SupplyName": "Category name",
+	"_SupplyName_report": "Item category name",
+	"_SupplyTypeError_DuplicateCategory": "A category with this ID already exists for this company code.",
+	"_SupplyTypeError_IdenticalIdAndParent": "The parent category ID must be different than the item category ID.\n",
+	"_SupplyTypeError_Recursion": "This category ({0}) is hierarchically under the current category.",
+	"_TechnicalAllowedUsersOrGroups": "Selected users with access",
+	"_TechnicalAllowedUsersOrGroups_report": "Restricted to selected users  ",
+	"_UpdateChildren": "Update",
+	"_UserPopup_Groups": "Groups",
+	"_UserPopup_Title": "Restrict access to this item category",
+	"_UserPopup_Users": "Users",
+	"_UserPopup_UsersOrGroups": "Authorized users",
+	"Purchasing - Supply": "S2P - Item categories",
+	"PurchasingSupply": "S2P - Item category",
+	"PurchasingSupply__": "S2P - Item categories",
+	"_CF_C5_EDI_Identifier": "Electronic address ID (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "Electronic address ID (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "Electronic address scheme ID (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "Electronic address scheme ID (Peppol CTC)",
+	"_CompanyAddress": "Company Address",
+	"_CompanyAddressFormated": "Address preview",
+	"_CompanyInfo": "Company Information",
+	"_DefaultConfiguration": "Default configuration",
+	"_DefaultConfiguration_report": "Default configuration",
+	"_DefaultExpenseReportType": "Default expense report type",
+	"_DefaultExpenseReportType_report": "Default expense report type",
+	"_DeliveryAddressID": "ID of default delivery address",
+	"_DeliveryAddressID_report": "ID of default delivery address",
+	"_DeterminationKeyword": "Keywords used for automatic determination",
+	"_DeterminationKeyword_report": "Keywords used for automatic determination",
+	"_ERP": "ERP integration",
+	"_errorExistingCompanyCode": "This company code already exists in the table",
+	"_PurchasingGroup": "Purchasing group",
+	"_PurchasingGroup_report": "Purchasing group",
+	"_PurchasingOrganization": "Purchasing organization",
+	"_PurchasingOrganization_report": "Purchasing organization",
+	"_Sub": "Building, IA, Service...",
+	"_Sub report": "Building, IA, Service...",
+	"_TaxMode": "E-reporting (France) tax point",
+	"_TaxMode_report": "E-reporting (France) tax point",
+	"_PDPConfiguration": "E-reporting (France) PA configuration",
+	"_PDPConfiguration_report": "E-reporting (France) PA configuration",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "On payment received",
+	"_TVAOverDebit": "On invoice issued",
+	"_WorkingDays": "Working days",
+	"_WorkingDays_report": "Working days",
+	"City": "City",
+	"Company code": "Company code",
+	"Company name": "Company name",
+	"Contact email": "Email",
+	"Country": "Country code",
+	"Currency": "Currency",
+	"Fax number": "Fax number",
+	"P2P - Company codes": "Company code",
+	"P2P - Company codes__": "Company code",
+	"Phone number": "Phone number",
+	"Postal code": "Postal code",
+	"PostOfficeBox": "Locality or P.O. Box",
+	"PurchasingCompanycodes": "S2P - Company codes",
+	"Region": "State/Region",
+	"SIRET": "Tax identification number",
+	"Street": "Street",
+	"VAT number": "VAT number"
+}</process_en>
+      <process_es>{
+	"_AccessRestrictionPane": "Restricción de acceso",
+	"_action_createflexible:Purchasing Supply Updater": "Ejecutar la verificación de coherencia",
+	"_AllowedUsersOrGroups": "Restringir el acceso a",
+	"_AnalyticsPane": "Datos contables",
+	"_BuyerLogin": "ID del comprador",
+	"_BuyerLogin_report": "ID del comprador",
+	"_BuyerLogin_report_Name": "Nombre del comprador",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Código de empresa",
+	"_CompanyCode_report": "Código de empresa",
+	"_ComputedTechnicalAllowedLogins": "Usuarios seleccionados y con acceso heredado",
+	"_ComputedTechnicalAllowedLogins_report": "Restringido a usuarios seleccionados y con acceso heredado",
+	"_DefaultCostType": "Tipo de coste predeterminado",
+	"_DefaultCostType_report": "Tipo de coste predeterminado",
+	"_DefaultGLAccount": "Cuenta de mayor predeterminada",
+	"_DefaultTaxCode": "Código de impuestos predeterminado",
+	"_DefaultTaxCode_report": "Código de impuestos predeterminado",
+	"_Description": "Descripción",
+	"_Description_report": "Descripción",
+	"_DisableRestrictionInheritance": "Desactivar la herencia de la categoría principal",
+	"_DisableRestrictionInheritance_report": "Herencia de categoría principal desactivada",
+	"_Document data": "Detalles de la categoría",
+	"_FullName": "Ruta de acceso completa",
+	"_FullName_report": "Ruta de acceso completa",
+	"_InheritedAllowedLogins": "Acceso heredado de la categoría principal",
+	"_InheritedTechnicalAllowedLogins": "Usuarios con acceso heredado",
+	"_LongProcessingWarning": "Los cambios realizados en los detalles o restricciones de esta categoría se aplicarán a sus subcategorías.\n\nEsta acción puede tardar unos minutos y se procesará en segundo plano.",
+	"_LongProcessingWarningTitle": "Actualizar subcategorías",
+	"_NoGoodsReceipt": "Entrada de bienes y servicios no requerida",
+	"_NoGoodsReceipt_report": "Entrada de bienes y servicios no requerida",
+	"_NotifyRequesterOnReceipt": "Notificar al solicitante en el momento de la recepción",
+	"_NotifyRequesterOnReceipt_report": "Notificar al solicitante en el momento de la recepción",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "ID de la categoría principal",
+	"_ParentSupplyID_report": "ID de la categoría de artículo principal",
+	"_RecipientLogin": "ID del destinatario",
+	"_RecipientLogin_report": "ID del destinatario",
+	"_RecipientLogin_report_Name": "Nombre del destinatario",
+	"_SelectOrEnterEmailAddress": "Seleccione o introduzca una dirección de e-mail...",
+	"_SupplyID": "ID de categoría",
+	"_SupplyID_report": "ID de categoría de artículo",
+	"_SupplyName": "Nombre de la categoría",
+	"_SupplyName_report": "Nombre de la categoría de artículo",
+	"_SupplyTypeError_DuplicateCategory": "Ya existe una categoría con este ID para este código de empresa.",
+	"_SupplyTypeError_IdenticalIdAndParent": "El ID de la categoría principal debe ser diferente del ID de la categoría del artículo.\n",
+	"_SupplyTypeError_Recursion": "Esta categoría ({0}) está jerárquicamente por debajo de la categoría actual.",
+	"_TechnicalAllowedUsersOrGroups": "Usuarios seleccionados con acceso",
+	"_TechnicalAllowedUsersOrGroups_report": "Restringida a usuarios seleccionados",
+	"_UpdateChildren": "Actualizar",
+	"_UserPopup_Groups": "Grupos",
+	"_UserPopup_Title": "Restringir el acceso a esta categoría",
+	"_UserPopup_Users": "Usuarios",
+	"_UserPopup_UsersOrGroups": "Usuarios autorizados",
+	"Purchasing - Supply": "S2P - Categorías de artículos",
+	"PurchasingSupply": "S2P - Categoría de artículo",
+	"PurchasingSupply__": "S2P - Categorías de artículos",
+	"_CF_C5_EDI_Identifier": "ID de la dirección de correo electrónico (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "ID de la dirección de correo electrónico (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "ID del esquema de dirección de correo electrónico (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "ID del esquema de dirección de correo electrónico (Peppol CTC)",
+	"_CompanyAddress": "Dirección de la empresa",
+	"_CompanyAddressFormated": "Vista previa de la dirección",
+	"_CompanyInfo": "Información de la empresa",
+	"_DefaultConfiguration": "Configuración predeterminada",
+	"_DefaultConfiguration_report": "Configuración predeterminada",
+	"_DefaultExpenseReportType": "Tipo de informe de gastos predeterminado",
+	"_DefaultExpenseReportType_report": "Tipo de informe de gastos predeterminado",
+	"_DeliveryAddressID": "ID de dirección de entrega predeterminada",
+	"_DeliveryAddressID_report": "ID de dirección de entrega predeterminada",
+	"_DeterminationKeyword": "Palabras clave usadas para la determinación automática",
+	"_DeterminationKeyword_report": "Palabras clave usadas para la determinación automática",
+	"_ERP": "Integración ERP",
+	"_errorExistingCompanyCode": "Este código de empresa ya existe en la tabla",
+	"_PDPConfiguration": "Configuración PA (Informe electrónico Francia)",
+	"_PDPConfiguration_report": "Configuración PA (Informe electrónico Francia)",
+	"_PurchasingGroup": "Grupo de compras",
+	"_PurchasingGroup_report": "Grupo de compras",
+	"_PurchasingOrganization": "Organización de compras",
+	"_PurchasingOrganization_report": "Organización de compras",
+	"_Sub": "Edificio, P.I., Servicio...",
+	"_Sub report": "Edificio, P.I., Servicio...",
+	"_TaxMode": "Informes electrónicos (Francia) punto fiscal",
+	"_TaxMode_report": "Informes electrónicos (Francia) punto fiscal",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "Al recibir el pago",
+	"_TVAOverDebit": "Al emitir la factura",
+	"_WorkingDays": "Días laborables",
+	"_WorkingDays_report": "Días laborables",
+	"City": "Ciudad",
+	"Company code": "Código de empresa",
+	"Company name": "Nombre de la empresa",
+	"Contact email": "Dirección de e-mail",
+	"Country": "Código de país",
+	"Currency": "Divisa",
+	"Fax number": "Número de fax",
+	"P2P - Company codes": "Código de empresa",
+	"P2P - Company codes__": "Código de empresa",
+	"Phone number": "Número de teléfono",
+	"Postal code": "Código postal",
+	"PostOfficeBox": "Localidad o apartado postal",
+	"PurchasingCompanycodes": "S2P - Códigos de empresa",
+	"Region": "Estado/Provincia",
+	"SIRET": "N° ident. fiscal",
+	"Street": "Calle",
+	"VAT number": "Nº de IVA"
+}</process_es>
+      <process_fr>{
+	"_AccessRestrictionPane": "Restriction d'accès",
+	"_action_createflexible:Purchasing Supply Updater": "Exécuter le contrôle de cohérence",
+	"_AllowedUsersOrGroups": "Restreindre l'accès à",
+	"_AnalyticsPane": "Données comptables",
+	"_BuyerLogin": "ID de l'acheteur",
+	"_BuyerLogin_report": "ID de l'acheteur",
+	"_BuyerLogin_report_Name": "Nom de l'acheteur",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Code société",
+	"_CompanyCode_report": "Code société",
+	"_ComputedTechnicalAllowedLogins": "Utilisateurs sélectionnés et avec accès hérité",
+	"_ComputedTechnicalAllowedLogins_report": "Restreinte aux utilisateurs sélectionnés et avec accès hérité",
+	"_DefaultCostType": "Type de coût par défaut",
+	"_DefaultCostType_report": "Type de coût par défaut",
+	"_DefaultGLAccount": "Compte général par défaut",
+	"_DefaultTaxCode": "Code TVA par défaut",
+	"_DefaultTaxCode_report": "Code TVA par défaut",
+	"_Description": "Description",
+	"_Description_report": "Description",
+	"_DisableRestrictionInheritance": "Désactiver l'héritage de la catégorie parente",
+	"_DisableRestrictionInheritance_report": "Héritage de la catégorie parente désactivé",
+	"_Document data": "Détails de la catégorie",
+	"_FullName": "Chemin complet",
+	"_FullName_report": "Chemin complet",
+	"_InheritedAllowedLogins": "Accès hérité de la catégorie parente",
+	"_InheritedTechnicalAllowedLogins": "Utilisateurs avec accès hérité",
+	"_LongProcessingWarning": "Les modifications apportées aux détails d'identification ou aux restrictions de cette catégorie seront appliquées à ses sous-catégories.\n\nCette action peut durer quelques minutes et sera traitée en arrière-plan. ",
+	"_LongProcessingWarningTitle": "Mettre à jour les sous-catégories",
+	"_NoGoodsReceipt": "Entrée de biens et services non requise",
+	"_NoGoodsReceipt_report": "Entrée de biens et services non requise",
+	"_NotifyRequesterOnReceipt": "Notifier le demandeur à la réception",
+	"_NotifyRequesterOnReceipt_report": "Notifier le demandeur à la réception",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "ID de la catégorie parente",
+	"_ParentSupplyID_report": "ID de la catégorie d'article parente",
+	"_RecipientLogin": "ID du réceptionnaire",
+	"_RecipientLogin_report": "ID du réceptionnaire",
+	"_RecipientLogin_report_Name": "Nom du réceptionnaire",
+	"_SelectOrEnterEmailAddress": "Sélectionnez ou saisissez une adresse e-mail...",
+	"_SupplyID": "ID de la catégorie",
+	"_SupplyID_report": "ID de la catégorie d'article",
+	"_SupplyName": "Nom de la catégorie",
+	"_SupplyName_report": "Nom de la catégorie d'article",
+	"_SupplyTypeError_DuplicateCategory": "Une catégorie avec cet identifiant existe déjà pour ce code société.",
+	"_SupplyTypeError_IdenticalIdAndParent": "L'identifiant de la catégorie parente doit être différent de celui de la catégorie d'article.",
+	"_SupplyTypeError_Recursion": "Cette catégorie ({0}) se situe hiérarchiquement sous la catégorie actuelle.",
+	"_TechnicalAllowedUsersOrGroups": "Utilisateurs sélectionnés avec accès",
+	"_TechnicalAllowedUsersOrGroups_report": "Restreinte aux utilisateurs sélectionnés",
+	"_UpdateChildren": "Mettre à jour",
+	"_UserPopup_Groups": "Groupes",
+	"_UserPopup_Title": "Restreindre l'accès à cette catégorie d'article",
+	"_UserPopup_Users": "Utilisateurs",
+	"_UserPopup_UsersOrGroups": "Utilisateurs autorisés",
+	"Purchasing - Supply": "S2P - Catégories d'articles",
+	"PurchasingSupply": "S2P - Catégorie d'article",
+	"PurchasingSupply__": "S2P - Catégories d'articles",
+	"_CF_C5_EDI_Identifier": "ID de l'adresse électronique (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "ID de l'adresse électronique (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "ID du schéma de l'adresse électronique (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "ID du schéma de l'adresse électronique (Peppol CTC)",
+	"_CompanyAddress": "Adresse de la société",
+	"_CompanyAddressFormated": "Aperçu de l'adresse",
+	"_CompanyInfo": "Informations sur la société",
+	"_DefaultConfiguration": "Configuration par défaut",
+	"_DefaultConfiguration_report": "Configuration par défaut",
+	"_DefaultExpenseReportType": "Type de note de frais par défaut",
+	"_DefaultExpenseReportType_report": "Type de note de frais par défaut",
+	"_DeliveryAddressID": "Identifiant de l'adresse de livraison par défaut",
+	"_DeliveryAddressID_report": "Identifiant de l'adresse de livraison par défaut",
+	"_DeterminationKeyword": "Mots-clés utilisés pour la détermination automatique",
+	"_DeterminationKeyword_report": "Mots-clés utilisés pour la détermination automatique",
+	"_ERP": "Intégration ERP",
+	"_errorExistingCompanyCode": "Ce code société existe déjà dans la table",
+	"_PDPConfiguration": "Configuration PA (E-reporting France)",
+	"_PDPConfiguration_report": "Configuration PA (E-reporting France)",
+	"_PurchasingGroup": "Groupe d'acheteurs",
+	"_PurchasingGroup_report": "Groupe d'acheteurs",
+	"_PurchasingOrganization": "Organisation d'achats",
+	"_PurchasingOrganization_report": "Organisation d'achats",
+	"_Sub": "Bâtiment, ZI, Service...",
+	"_Sub report": "Bâtiment, ZI, Service...",
+	"_TaxMode": "Régime d'exigibilité TVA (E-reporting France)",
+	"_TaxMode_report": "Régime d'exigibilité TVA (E-reporting France)",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "TVA sur les encaissements",
+	"_TVAOverDebit": "TVA sur les débits",
+	"_WorkingDays": "Jours ouvrés",
+	"_WorkingDays_report": "Jours ouvrés",
+	"City": "Ville",
+	"Company code": "Code société",
+	"Company name": "Nom de la société",
+	"Contact email": "Adresse e-mail",
+	"Country": "Code pays",
+	"Currency": "Devise",
+	"Fax number": "Numéro de fax",
+	"P2P - Company codes": "Code société",
+	"P2P - Company codes__": "Code société",
+	"Phone number": "Numéro de téléphone",
+	"Postal code": "Code postal",
+	"PostOfficeBox": "Lieu-dit ou boîte postale",
+	"PurchasingCompanycodes": "S2P - Codes société",
+	"Region": "État/Région",
+	"SIRET": "SIRET",
+	"Street": "Rue",
+	"VAT number": "Numéro de TVA"
+}</process_fr>
+      <process_nl-NL>{
+	"_AccessRestrictionPane": "Toegangsbeperking",
+	"_action_createflexible:Purchasing Supply Updater": "Consistentiecontrole uitvoeren",
+	"_AllowedUsersOrGroups": "Toegang beperken tot ",
+	"_AnalyticsPane": "Boekhoudgegevens",
+	"_BuyerLogin": "Koper-ID",
+	"_BuyerLogin_report": "Koper-ID",
+	"_BuyerLogin_report_Name": "Naam koper",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Bedrijfscode",
+	"_CompanyCode_report": "Bedrijfscode",
+	"_ComputedTechnicalAllowedLogins": "Gebruikers met gekozen of verkregen toegang.",
+	"_ComputedTechnicalAllowedLogins_report": "Beperkt tot gebruikers met gekozen of verkregen toegang.",
+	"_DefaultCostType": "Standaardtype kosten",
+	"_DefaultCostType_report": "Standaardtype kosten",
+	"_DefaultGLAccount": "Standaard grootboekrekening",
+	"_DefaultTaxCode": "Standaard belastingcode",
+	"_DefaultTaxCode_report": "Standaard belastingcode",
+	"_Description": "Beschrijving",
+	"_Description_report": "Beschrijving",
+	"_DisableRestrictionInheritance": "Bovenliggende categorie verkrijgen uitschakelen",
+	"_DisableRestrictionInheritance_report": "Bovenliggende categorie verkrijgen uitgeschakeld",
+	"_Document data": "Details categorie",
+	"_FullName": "Volledig pad",
+	"_FullName_report": "Volledig pad",
+	"_InheritedAllowedLogins": "Toegang verkregen via bovenliggende categorie",
+	"_InheritedTechnicalAllowedLogins": "Gebruikers met verkregen toegang",
+	"_LongProcessingWarning": "Wijzigingen aan de identificatiegegevens of beperkingen van deze categorie zullen worden toegepast op de subcategorieën.\n\nDeze actie kan enkele minuten in beslag nemen en wordt op de achtergrond verwerkt.",
+	"_LongProcessingWarningTitle": "Subcategorieën bijwerken",
+	"_NoGoodsReceipt": "Geen ontvangstbewijs goederen en services vereist",
+	"_NoGoodsReceipt_report": "Geen ontvangstbewijs goederen en services vereist",
+	"_NotifyRequesterOnReceipt": "Aanvrager melden bij ontvangst",
+	"_NotifyRequesterOnReceipt_report": "Aanvrager melden bij ontvangst",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "Bovenliggende categorie-ID",
+	"_ParentSupplyID_report": "Bovenliggende itemcategorie-ID",
+	"_RecipientLogin": "Ontvanger-ID",
+	"_RecipientLogin_report": "Ontvanger-ID",
+	"_RecipientLogin_report_Name": "Naam ontvanger",
+	"_SelectOrEnterEmailAddress": "Selecteer of voer een e-mailadres in...",
+	"_SupplyID": "Categorie-ID",
+	"_SupplyID_report": "Itemcategorie-ID",
+	"_SupplyName": "Categorie naam",
+	"_SupplyName_report": "Naam itemcategorie",
+	"_SupplyTypeError_DuplicateCategory": "Er bestaat al een categorie met deze ID voor deze bedrijfscode. ",
+	"_SupplyTypeError_IdenticalIdAndParent": "Het bovenliggende categorie-ID moet verschillen van het itemcategorie-ID.\n",
+	"_SupplyTypeError_Recursion": "Deze categorie {0} is in de hiërarchie onder de huidige categorie.",
+	"_TechnicalAllowedUsersOrGroups": "Geselecteerde gebruikers met toegang",
+	"_TechnicalAllowedUsersOrGroups_report": "Beperkt tot geselecteerde gebruikers.  ",
+	"_UpdateChildren": "更新",
+	"_UserPopup_Groups": "Groepen",
+	"_UserPopup_Title": "Beperk toegang tot deze categorie",
+	"_UserPopup_Users": "Gebruikers",
+	"_UserPopup_UsersOrGroups": "Gemachtigde gebruikers",
+	"Purchasing - Supply": "S2P - Itemcategorieën",
+	"PurchasingSupply": "S2P - Itemcategorie",
+	"PurchasingSupply__": "S2P - Itemcategorieën",
+	"_CF_C5_EDI_Identifier": "ID-electronisch adres (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "ID-electronisch adres (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "ID-schema electronisch adres (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "ID-schema electronisch adres (Peppol CTC)",
+	"_CompanyAddress": "Adres bedrijf",
+	"_CompanyAddressFormated": "Voorbeeldweergave adres",
+	"_CompanyInfo": "Informatie bedrijf",
+	"_DefaultConfiguration": "Standaardconfiguratie",
+	"_DefaultConfiguration_report": "Standaardconfiguratie",
+	"_DefaultExpenseReportType": "Standaardtype uitgavenstaat",
+	"_DefaultExpenseReportType_report": "Standaardtype uitgavenstaat",
+	"_DeliveryAddressID": "ID van standaard leveringsadres",
+	"_DeliveryAddressID_report": "ID van standaard leveringsadres",
+	"_DeterminationKeyword": "Trefwoorden gebruikt voor automatische bepaling",
+	"_DeterminationKeyword_report": "Trefwoorden gebruikt voor automatische bepaling",
+	"_ERP": "ERP-integratie",
+	"_errorExistingCompanyCode": "Deze bedrijfscode bestaat al in de tabel",
+	"_PDPConfiguration": "PA-configuratie E-rapportage (Frankrijk)",
+	"_PDPConfiguration_report": "PA-configuratie E-rapportage (Frankrijk)",
+	"_PurchasingGroup": "Inkoopgroep",
+	"_PurchasingGroup_report": "Inkoopgroep",
+	"_PurchasingOrganization": "Inkooporganisatie",
+	"_PurchasingOrganization_report": "Inkooporganisatie",
+	"_Sub": "Gebouw, IZ, service",
+	"_Sub report": "Gebouw, IZ, service",
+	"_TaxMode": "Aangrijpingspunt btw e-rapportage (Frankrijk)",
+	"_TaxMode_report": "Aangrijpingspunt btw e-rapportage (Frankrijk)",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "Bij ontvangen bedrag",
+	"_TVAOverDebit": "Bij uitgave factuur",
+	"_WorkingDays": "Werkdagen",
+	"_WorkingDays_report": "Werkdagen",
+	"City": "Stad",
+	"Company code": "Bedrijfscode",
+	"Company name": "Bedrijfsnaam",
+	"Contact email": "E-mail",
+	"Country": "Landcode",
+	"Currency": "Valuta",
+	"Fax number": "Faxnummer",
+	"P2P - Company codes": "Bedrijfscode",
+	"P2P - Company codes__": "Bedrijfscode",
+	"Phone number": "Telefoonnummer",
+	"Postal code": "Postcode",
+	"PostOfficeBox": "Locatie of postbus",
+	"PurchasingCompanycodes": "S2P - Bedrijfscodes",
+	"Region": "Staat/Regio",
+	"SIRET": "Belastingnummer",
+	"Street": "Straat",
+	"VAT number": "Btw-nummer"
+}</process_nl-NL>
+      <process_pl>{
+	"_AccessRestrictionPane": "Ograniczenie adresu",
+	"_action_createflexible:Purchasing Supply Updater": "Uruchom kontrolę spójności",
+	"_AllowedUsersOrGroups": "Ogranicz dostęp do",
+	"_AnalyticsPane": "Dane rachunkowe",
+	"_BuyerLogin": "Id. kupującego",
+	"_BuyerLogin_report": "Id. kupującego",
+	"_BuyerLogin_report_Name": "Nazwa kupującego",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Kod firmy",
+	"_CompanyCode_report": "Kod firmy",
+	"_ComputedTechnicalAllowedLogins": "Użytkownicy wybrani i z odziedziczonym dostępem",
+	"_ComputedTechnicalAllowedLogins_report": "Ograniczenie do użytkowników wybranych i z odziedziczonym dostępem",
+	"_DefaultCostType": "Domyślny typ kosztów",
+	"_DefaultCostType_report": "Domyślny typ kosztów",
+	"_DefaultGLAccount": "Domyślne konto KG",
+	"_DefaultTaxCode": "Domyślny kod podatku",
+	"_DefaultTaxCode_report": "Domyślny kod podatku",
+	"_Description": "Opis",
+	"_Description_report": "Opis",
+	"_DisableRestrictionInheritance": "Wyłącz dziedziczenie z kategorii nadrzędnej",
+	"_DisableRestrictionInheritance_report": "Wyłączono dziedziczenie z kategorii nadrzędnej",
+	"_Document data": "Szczegóły kategorii",
+	"_FullName": "Pełna ścieżka",
+	"_FullName_report": "Pełna ścieżka",
+	"_InheritedAllowedLogins": "Odziedziczony dostęp z kategorii nadrzędnej",
+	"_InheritedTechnicalAllowedLogins": "Użytkownicy z odziedziczonym dostępem",
+	"_LongProcessingWarning": "Zmiany wprowadzone w szczegółach identyfikacyjnych lub ograniczeniach tej kategorii zostaną zastosowane do jej podkategorii.\n\nTo działanie może potrwać kilka minut i zostanie wykonane w tle.",
+	"_LongProcessingWarningTitle": "Aktualizuj podkategorie",
+	"_NoGoodsReceipt": "Nie jest wymagane przyjęcie materiałów i usług",
+	"_NoGoodsReceipt_report": "Nie jest wymagane przyjęcie materiałów i usług",
+	"_NotifyRequesterOnReceipt": "Powiadom wnioskodawcę po otrzymaniu",
+	"_NotifyRequesterOnReceipt_report": "Powiadom wnioskodawcę po otrzymaniu",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "Id. kategorii nadrzędnej",
+	"_ParentSupplyID_report": "Id. kategorii pozycji nadrzędnej",
+	"_RecipientLogin": "Id. odbiorcy",
+	"_RecipientLogin_report": "Id. odbiorcy",
+	"_RecipientLogin_report_Name": "Nazwa odbiorcy",
+	"_SelectOrEnterEmailAddress": "Wybierz lub wprowadź adres e-mail...",
+	"_SupplyID": "Id. kategorii",
+	"_SupplyID_report": "Id. kategorii pozycji",
+	"_SupplyName": "Nazwa kategorii",
+	"_SupplyName_report": "Nazwa kategorii pozycji",
+	"_SupplyTypeError_DuplicateCategory": "Kategoria o tym identyfikatorze już istnieje dla tego kodu firmy.",
+	"_SupplyTypeError_IdenticalIdAndParent": "Identyfikator kategorii nadrzędnej musi się różnić od identyfikatora kategorii pozycji.",
+	"_SupplyTypeError_Recursion": "Ta kategoria ({0}) w hierarchii znajduje się pod bieżącą kategorią.",
+	"_TechnicalAllowedUsersOrGroups": "Wybrani użytkownicy z dostępem",
+	"_TechnicalAllowedUsersOrGroups_report": "Ograniczenie do wybranych użytkowników",
+	"_UpdateChildren": "Aktualizuj",
+	"_UserPopup_Groups": "Grupy",
+	"_UserPopup_Title": "Ogranicz dostęp do tej kategorii pozycji",
+	"_UserPopup_Users": "Użytkownicy",
+	"_UserPopup_UsersOrGroups": "Autoryzowani użytkownicy",
+	"Purchasing - Supply": "S2P – kategorie pozycji",
+	"PurchasingSupply": "S2P – kategoria pozycji",
+	"PurchasingSupply__": "S2P – kategorie pozycji",
+	"_CF_C5_EDI_Identifier": "Id. adresu elektronicznego (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "Id. adresu elektronicznego (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "Id. schematu adresu elektronicznego (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "Id. schematu adresu elektronicznego (Peppol CTC)",
+	"_CompanyAddress": "Adres firmy",
+	"_CompanyAddressFormated": "Podgląd adresu",
+	"_CompanyInfo": "Informacje o firmie",
+	"_DefaultConfiguration": "Konfiguracja domyślna",
+	"_DefaultConfiguration_report": "Konfiguracja domyślna",
+	"_DefaultExpenseReportType": "Domyślny typ raportu z wydatków",
+	"_DefaultExpenseReportType_report": "Domyślny typ raportu z wydatków",
+	"_DeliveryAddressID": "Id. domyślnego adresu dostawy",
+	"_DeliveryAddressID_report": "Id. domyślnego adresu dostawy",
+	"_DeterminationKeyword": "Słowa kluczowe używane do automatycznego ustalania",
+	"_DeterminationKeyword_report": "Słowa kluczowe używane do automatycznego ustalania",
+	"_ERP": "Integracja ERP",
+	"_errorExistingCompanyCode": "Ten kod firmy już istnieje w tabeli",
+	"_PDPConfiguration": "System e-raportowania (Francja) – konfiguracja PA",
+	"_PDPConfiguration_report": "System e-raportowania (Francja) – konfiguracja PA",
+	"_PurchasingGroup": "Grupa nabycia",
+	"_PurchasingGroup_report": "Grupa nabycia",
+	"_PurchasingOrganization": "Dział nabycia",
+	"_PurchasingOrganization_report": "Dział nabycia",
+	"_Sub": "Budynek, strefa przemysłowa, dział...",
+	"_Sub report": "Budynek, strefa przemysłowa, dział...",
+	"_TaxMode": "Moment powstania obowiązku podatkowego dla e-raportowania (Francja)",
+	"_TaxMode_report": "Moment powstania obowiązku podatkowego dla e-raportowania (Francja)",
+	"_TVAModeNotDefined": "",
+	"_TVAOverCredit": "W chwili otrzymania płatności",
+	"_TVAOverDebit": "W chwili wystawienia faktury",
+	"_WorkingDays": "Dni robocze",
+	"_WorkingDays_report": "Dni robocze",
+	"City": "Miejscowość",
+	"Company code": "Kod firmy",
+	"Company name": "Nazwa firmy",
+	"Contact email": "E-mail",
+	"Country": "Kod kraju",
+	"Currency": "Waluta",
+	"Fax number": "Numer faksu",
+	"P2P - Company codes": "Kod firmy",
+	"P2P - Company codes__": "Kod firmy",
+	"Phone number": "Numer telefonu",
+	"Postal code": "Kod pocztowy",
+	"PostOfficeBox": "Okręg lub skrytka pocztowa",
+	"PurchasingCompanycodes": "S2P – kody firm",
+	"Region": "Województwo/region",
+	"SIRET": "Numer identyfikacji podatkowej",
+	"Street": "Ulica",
+	"VAT number": "Numer VAT"
+}</process_pl>
+      <process_it>{
+	"_AccessRestrictionPane": "Restrizione accesso",
+	"_action_createflexible:Purchasing Supply Updater": "Esegui verifica di coerenza",
+	"_AllowedUsersOrGroups": "Limita l'accesso a",
+	"_AnalyticsPane": "Dati contabili",
+	"_BuyerLogin": "ID compratore",
+	"_BuyerLogin_report": "ID compratore",
+	"_BuyerLogin_report_Name": "Nome compratore",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Codice società",
+	"_CompanyCode_report": "Codice società",
+	"_ComputedTechnicalAllowedLogins": "Utenti selezionati e con accesso ereditato",
+	"_ComputedTechnicalAllowedLogins_report": "Limitata a utenti selezionati e con accesso ereditato",
+	"_DefaultCostType": "Tipo di costo predefinito",
+	"_DefaultCostType_report": "Tipo di costo predefinito",
+	"_DefaultGLAccount": "Conto generale predefinito",
+	"_DefaultTaxCode": "Codice IVA predefinito",
+	"_DefaultTaxCode_report": "Codice IVA predefinito",
+	"_Description": "Descrizione",
+	"_Description_report": "Descrizione",
+	"_DisableRestrictionInheritance": "Disattiva ereditarietà categoria principale",
+	"_DisableRestrictionInheritance_report": "Ereditarietà categoria principale disattivata",
+	"_Document data": "Dettagli categoria",
+	"_FullName": "Percorso completo",
+	"_FullName_report": "Percorso completo",
+	"_InheritedAllowedLogins": "Accesso ereditato dalla categoria principale",
+	"_InheritedTechnicalAllowedLogins": "Utenti con accesso ereditato",
+	"_LongProcessingWarning": "Le modifiche apportate ai dettagli identificativi o alle restrizioni della categoria saranno applicate alle sue categorie secondarie.\n\nQuesta operazione può richiedere alcuni minuti e sarà elaborata in background.",
+	"_LongProcessingWarningTitle": "Aggiorna categorie secondarie",
+	"_NoGoodsReceipt": "Entrata merci e servizi non richiesta",
+	"_NoGoodsReceipt_report": "Entrata merci e servizi non richiesta",
+	"_NotifyRequesterOnReceipt": "Notifica richiedente alla ricezione",
+	"_NotifyRequesterOnReceipt_report": "Notifica richiedente alla ricezione",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "ID della categoria principale",
+	"_ParentSupplyID_report": "ID della categoria di articolo principale",
+	"_RecipientLogin": "ID destinatario",
+	"_RecipientLogin_report": "ID destinatario",
+	"_RecipientLogin_report_Name": "Nome destinatario",
+	"_SelectOrEnterEmailAddress": "Seleziona o immetti un indirizzo e-mail...",
+	"_SupplyID": "ID categoria",
+	"_SupplyID_report": "ID categoria di articolo",
+	"_SupplyName": "Nome categoria",
+	"_SupplyName_report": "Nome categoria di articolo",
+	"_SupplyTypeError_DuplicateCategory": "Esiste già una categoria con lo stesso ID per questo codice società.",
+	"_SupplyTypeError_IdenticalIdAndParent": "L'ID della categoria principale deve essere diverso da quello della categoria di articolo.",
+	"_SupplyTypeError_Recursion": "Questa categoria ({0}) si trova gerarchicamente sotto la categoria corrente.",
+	"_TechnicalAllowedUsersOrGroups": "Utenti selezionati con accesso",
+	"_TechnicalAllowedUsersOrGroups_report": "Limitata agli utenti selezionati",
+	"_UpdateChildren": "Aggiorna",
+	"_UserPopup_Groups": "Gruppi",
+	"_UserPopup_Title": "Limita l'accesso a questa categoria",
+	"_UserPopup_Users": "Utenti",
+	"_UserPopup_UsersOrGroups": "Utenti autorizzati",
+	"Purchasing - Supply": "S2P - Categorie di articoli",
+	"PurchasingSupply": "S2P - Categoria di articolo",
+	"PurchasingSupply__": "S2P - Categorie di articoli",
+	"_CF_C5_EDI_Identifier": "ID indirizzo elettronico (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "ID indirizzo elettronico (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "ID schema dell'indirizzo elettronico (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "ID schema dell'indirizzo elettronico (Peppol CTC)",
+	"_CompanyAddress": "Indirizzo società",
+	"_CompanyAddressFormated": "Anteprima indirizzo",
+	"_CompanyInfo": "Informazioni società",
+	"_DefaultConfiguration": "Configurazione predefinita",
+	"_DefaultConfiguration_report": "Configurazione predefinita",
+	"_DefaultExpenseReportType": "Tipo di nota spese predefinito",
+	"_DefaultExpenseReportType_report": "Tipo di nota spese predefinito",
+	"_DeliveryAddressID": "ID indirizzo di spedizione predefinito",
+	"_DeliveryAddressID_report": "ID indirizzo di spedizione predefinito",
+	"_DeterminationKeyword": "Parole chiave per la determinazione automatica del codice società",
+	"_DeterminationKeyword_report": "Parole chiave per la determinazione automatica del codice società",
+	"_ERP": "Integrazione ERP",
+	"_errorExistingCompanyCode": "Questo codice società esiste già nella tabella",
+	"_PDPConfiguration": "Configurazione PA (E-reporting Francia)",
+	"_PDPConfiguration_report": "Configurazione PA (E-reporting Francia)",
+	"_PurchasingGroup": "Gruppo acquisti",
+	"_PurchasingGroup_report": "Gruppo acquisti",
+	"_PurchasingOrganization": "Organizzazione acquisti",
+	"_PurchasingOrganization_report": "Organizzazione acquisti",
+	"_Sub": "Edificio, ZI, Servizio...",
+	"_Sub report": "Edificio, ZI, Servizio...",
+	"_TaxMode": "Regime di esigibilità IVA (E-reporting Francia)",
+	"_TaxMode_report": "Regime di esigibilità IVA (E-reporting Francia)",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "Differita",
+	"_TVAOverDebit": "Immediata",
+	"_WorkingDays": "Giorni lavorativi",
+	"_WorkingDays_report": "Giorni lavorativi",
+	"City": "Città",
+	"Company code": "Codice società",
+	"Company name": "Nome società",
+	"Contact email": "Indirizzo e-mail",
+	"Country": "Codice paese",
+	"Currency": "Valuta",
+	"Fax number": "Numero fax",
+	"P2P - Company codes": "Codice società",
+	"P2P - Company codes__": "Codice società",
+	"Phone number": "Numero di telefono",
+	"Postal code": "CAP",
+	"PostOfficeBox": "Località o casella postale",
+	"PurchasingCompanycodes": "S2P - Codici società",
+	"Region": "Stato/Regione",
+	"SIRET": "Codice di identificazione fiscale",
+	"Street": "Via",
+	"VAT number": "Partita IVA"
+}</process_it>
+      <process_sk>{
+	"_AccessRestrictionPane": "Obmedzenie prístupu",
+	"_action_createflexible:Purchasing Supply Updater": "Spustiť kontrolu konzistencie",
+	"_AllowedUsersOrGroups": "Obmedziť prístup k",
+	"_AnalyticsPane": "Účtovné údaje",
+	"_BuyerLogin": "ID nákupcu",
+	"_BuyerLogin_report": "ID nákupcu",
+	"_BuyerLogin_report_Name": "Meno nákupcu",
+	"_CapEx": "CapEx",
+	"_CompanyCode": "Kód spoločnosti",
+	"_CompanyCode_report": "Kód spoločnosti",
+	"_ComputedTechnicalAllowedLogins": "Vybraní používatelia a používatelia s dedičným prístupom",
+	"_ComputedTechnicalAllowedLogins_report": "Obmedzené na vybraných používateľov a používateľov s dedičným prístupom",
+	"_DefaultCostType": "Predvolený typ nákladov",
+	"_DefaultCostType_report": "Predvolený typ nákladov",
+	"_DefaultGLAccount": "Predvolený účet hlavnej knihy",
+	"_DefaultTaxCode": "Predvolený daňový kód",
+	"_DefaultTaxCode_report": "Predvolený daňový kód",
+	"_Description": "Popis",
+	"_Description_report": "Popis",
+	"_DisableRestrictionInheritance": "Zakázať dedičnosť nadradenej kategórie",
+	"_DisableRestrictionInheritance_report": "Dedičnosť nadradenej kategórie zakázaná",
+	"_Document data": "Detaily kategórie",
+	"_FullName": "Úplná cesta",
+	"_FullName_report": "Úplná cesta",
+	"_InheritedAllowedLogins": "Dedičný prístup z nadradenej kategórie",
+	"_InheritedTechnicalAllowedLogins": "Používatelia s dedičným prístupom",
+	"_LongProcessingWarning": "Zmeny identifikačných údajov alebo obmedzení tejto kategórie sa uplatnia na jej podkategórie.\n\nTáto činnosť môže trvať niekoľko minút a bude spracovaná na pozadí.",
+	"_LongProcessingWarningTitle": "Aktualizovať podkategórie",
+	"_NoGoodsReceipt": "Nevyžaduje sa potvrdenie o prijatí tovaru a služieb",
+	"_NoGoodsReceipt_report": "Nevyžaduje sa potvrdenie o prijatí tovaru a služieb",
+	"_NotifyRequesterOnReceipt": "Upozorniť žiadateľa po prijatí",
+	"_NotifyRequesterOnReceipt_report": "Upozorniť žiadateľa po prijatí",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "ID nadradenej kategórie",
+	"_ParentSupplyID_report": "ID nadradenej položky",
+	"_RecipientLogin": "ID príjemcu",
+	"_RecipientLogin_report": "ID príjemcu",
+	"_RecipientLogin_report_Name": "Meno príjemcu",
+	"_SelectOrEnterEmailAddress": "Vybrať alebo zadať e-mailovú adresu...",
+	"_SupplyID": "Kategória ID",
+	"_SupplyID_report": "ID kategórie položky",
+	"_SupplyName": "Názov kategórie",
+	"_SupplyName_report": "Názov kategórie položky",
+	"_SupplyTypeError_DuplicateCategory": "Kód spoločnosti pre túto kategóriu už existuje.",
+	"_SupplyTypeError_IdenticalIdAndParent": "ID nadradenej kategórie sa musí líšiť od ID kategórie položky.",
+	"_SupplyTypeError_Recursion": "Táto kategória ({0}) je hierarchicky pod aktuálnou kategóriou.",
+	"_TechnicalAllowedUsersOrGroups": "Vybraní používatelia s prístupom",
+	"_TechnicalAllowedUsersOrGroups_report": "Obmedzené na vybraných používateľov",
+	"_UpdateChildren": "Aktualizácia",
+	"_UserPopup_Groups": "Skupiny",
+	"_UserPopup_Title": "Obmedziť prístup k tejto kategórii položiek",
+	"_UserPopup_Users": "Používatelia",
+	"_UserPopup_UsersOrGroups": "Autorizovaní používatelia",
+	"Purchasing - Supply": "S2P – Kategória položiek",
+	"PurchasingSupply": "S2P – Kategória položiek",
+	"PurchasingSupply__": "S2P – Kategória položiek",
+	"_CF_C5_EDI_Identifier": "ID elektronickej adresy (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "ID elektronickej adresy (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "ID schémy elektronickej adresy (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "ID schémy elektronickej adresy (Peppol CTC)",
+	"_CompanyAddress": "Adresa spoločnosti",
+	"_CompanyAddressFormated": "Náhľad adresy",
+	"_CompanyInfo": "Informácie o spoločnosti",
+	"_DefaultConfiguration": "Predvolená konfigurácia",
+	"_DefaultConfiguration_report": "Predvolená konfigurácia",
+	"_DefaultExpenseReportType": "Predvolený typ výkazu výdavkov",
+	"_DefaultExpenseReportType_report": "Predvolený typ výkazu výdavkov",
+	"_DeliveryAddressID": "ID predvolenej doručovacej adresy",
+	"_DeliveryAddressID_report": "ID predvolenej doručovacej adresy",
+	"_DeterminationKeyword": "Kľúčové slová používané na automatické určenie",
+	"_DeterminationKeyword_report": "Kľúčové slová používané na automatické určenie",
+	"_ERP": "Integrácia ERP",
+	"_errorExistingCompanyCode": "Tento kód spoločnosti už existuje v tabuľke",
+	"_PDPConfiguration": "Konfigurácia PA pre elektronické výkazníctvo (Francúzsko)",
+	"_PDPConfiguration_report": "Konfigurácia PA pre elektronické výkazníctvo (Francúzsko)",
+	"_PurchasingGroup": "Nákupná skupina",
+	"_PurchasingGroup_report": "Nákupná skupina",
+	"_PurchasingOrganization": "Nákupná organizácia",
+	"_PurchasingOrganization_report": "Nákupná organizácia",
+	"_Sub": "Budova, PZ, Servis...",
+	"_Sub report": "Budova, PZ, Servis...",
+	"_TaxMode": "Daňová lokalita pre elektronické výkazníctvo (Francúzsko)",
+	"_TaxMode_report": "Daňová lokalita pre elektronické výkazníctvo (Francúzsko)",
+	"_TVAModeNotDefined": "",
+	"_TVAOverCredit": "Pri prijatí platby",
+	"_TVAOverDebit": "Pri vystavení faktúry",
+	"_WorkingDays": "Pracovné dni",
+	"_WorkingDays_report": "Pracovné dni",
+	"City": "Mesto",
+	"Company code": "Kód spoločnosti",
+	"Company name": "Meno spoločnosti",
+	"Contact email": "E-mail",
+	"Country": "Kód krajiny",
+	"Currency": "Mena",
+	"Fax number": "Faxové číslo",
+	"P2P - Company codes": "Kód spoločnosti",
+	"P2P - Company codes__": "Kód spoločnosti",
+	"Phone number": "Telefónne číslo",
+	"Postal code": "PSČ",
+	"PostOfficeBox": "Lokalita alebo P.O. Box",
+	"PurchasingCompanycodes": "S2P – Kódy spoločnosti",
+	"Region": "Štát/región",
+	"SIRET": "Identifikačné číslo pre daň",
+	"Street": "Ulica",
+	"VAT number": "IČ DPH"
+}</process_sk>
+      <process_zh-CN>{
+	"_AccessRestrictionPane": "访问限制",
+	"_action_createflexible:Purchasing Supply Updater": "运行一致性检查",
+	"_AllowedUsersOrGroups": "限制访问",
+	"_AnalyticsPane": "会计数据",
+	"_BuyerLogin": "采购员ID",
+	"_BuyerLogin_report": "采购员ID",
+	"_BuyerLogin_report_Name": "采购员名称",
+	"_CapEx": "资本性支出",
+	"_CompanyCode": "公司代码",
+	"_CompanyCode_report": "公司代码",
+	"_ComputedTechnicalAllowedLogins": "选定的和继承访问权的用户",
+	"_ComputedTechnicalAllowedLogins_report": "仅限于选定的和继承访问权的用户",
+	"_DefaultCostType": "默认成本类型",
+	"_DefaultCostType_report": "默认成本类型",
+	"_DefaultGLAccount": "默认总账科目",
+	"_DefaultTaxCode": "默认税码",
+	"_DefaultTaxCode_report": "默认税码",
+	"_Description": "名称/描述",
+	"_Description_report": "名称/描述",
+	"_DisableRestrictionInheritance": "停用上级类别继承",
+	"_DisableRestrictionInheritance_report": "已停用上级类别继承",
+	"_Document data": "类别详情",
+	"_FullName": "完整路径",
+	"_FullName_report": "完整路径",
+	"_InheritedAllowedLogins": "从上级类别继承的访问权限",
+	"_InheritedTechnicalAllowedLogins": "继承了访问权限的用户",
+	"_LongProcessingWarning": "对该类别的身份验证信息或限制所作的更改将适用于其子类别。\n\n此操作可能需要几分钟，将在后台处理。",
+	"_LongProcessingWarningTitle": "更新子类别",
+	"_NoGoodsReceipt": "无需货物与服务接收单",
+	"_NoGoodsReceipt_report": "无需货物与服务接收单",
+	"_NotifyRequesterOnReceipt": "收到后通知申请人",
+	"_NotifyRequesterOnReceipt_report": "收到后通知申请人",
+	"_OpEx": "运营费用",
+	"_ParentSupplyID": "上级类别 ID",
+	"_ParentSupplyID_report": "上级商品类别 ID",
+	"_RecipientLogin": "收货人ID",
+	"_RecipientLogin_report": "收货人ID",
+	"_RecipientLogin_report_Name": "接收人名称",
+	"_SelectOrEnterEmailAddress": "请选择或输入电子邮件地址...",
+	"_SupplyID": "类别 ID",
+	"_SupplyID_report": "商品类别ID",
+	"_SupplyName": "类别名称",
+	"_SupplyName_report": "项目类别名称",
+	"_SupplyTypeError_DuplicateCategory": "此公司代码已有同 ID 类别。",
+	"_SupplyTypeError_IdenticalIdAndParent": "上级类别 ID 必须与项目类别 ID 不同。\n",
+	"_SupplyTypeError_Recursion": "此类别（{0}）在层级上处于当前类别下级。",
+	"_TechnicalAllowedUsersOrGroups": "具有访问权限的选定用户",
+	"_TechnicalAllowedUsersOrGroups_report": "仅限于选定用户",
+	"_UpdateChildren": "Bijwerken",
+	"_UserPopup_Groups": "组",
+	"_UserPopup_Title": "限制访问此项目类别",
+	"_UserPopup_Users": "用户",
+	"_UserPopup_UsersOrGroups": "授权用户",
+	"Purchasing - Supply": "寻源到付款 - 商品类别",
+	"PurchasingSupply": "寻源到付款 - 商品类别",
+	"PurchasingSupply__": "寻源到付款 - 商品类别",
+	"_CF_C5_EDI_Identifier": "电子地址 ID (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "电子地址 ID (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "电子地址方案 ID (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "电子地址方案 ID (Peppol CTC)",
+	"_CompanyAddress": "公司地址",
+	"_CompanyAddressFormated": "地址预览",
+	"_CompanyInfo": "公司信息",
+	"_DefaultConfiguration": "默认配置",
+	"_DefaultConfiguration_report": "默认配置",
+	"_DefaultExpenseReportType": "默认费用报销单类型",
+	"_DefaultExpenseReportType_report": "默认费用报销单类型",
+	"_DeliveryAddressID": "默认交付地址的ID",
+	"_DeliveryAddressID_report": "默认交付地址的ID",
+	"_DeterminationKeyword": "自动决定使用的关键字",
+	"_DeterminationKeyword_report": "自动决定使用的关键字",
+	"_ERP": "ERP 集成",
+	"_errorExistingCompanyCode": "此公司代码已存在于表中",
+	"_PDPConfiguration": "电子申报（法国）PA 配置",
+	"_PDPConfiguration_report": "电子申报（法国）PA 配置",
+	"_PurchasingGroup": "采购组",
+	"_PurchasingGroup_report": "采购组",
+	"_PurchasingOrganization": "采购组织",
+	"_PurchasingOrganization_report": "采购组织",
+	"_Sub": "楼号、工业区、部门……",
+	"_Sub report": "楼号、工业区、部门……",
+	"_TaxMode": "电子申报（法国）税点日（tax point）",
+	"_TaxMode_report": "电子申报（法国）税点日（tax point）",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "收到付款后",
+	"_TVAOverDebit": "开账单发票后",
+	"_WorkingDays": "工作日",
+	"_WorkingDays_report": "工作日",
+	"City": "城市",
+	"Company code": "公司代码",
+	"Company name": "公司名",
+	"Contact email": "电子邮件",
+	"Country": "国家/地区代码",
+	"Currency": "货币",
+	"Fax number": "传真号码",
+	"P2P - Company codes": "公司代码",
+	"P2P - Company codes__": "公司代码",
+	"Phone number": "电话号码",
+	"Postal code": "邮政编码",
+	"PostOfficeBox": "地点或邮政信箱",
+	"PurchasingCompanycodes": "寻源到付款 - 公司代码",
+	"Region": "州/省/大区",
+	"SIRET": "税务识别号",
+	"Street": "街道地址",
+	"VAT number": "增值税号(VAT)"
+}</process_zh-CN>
+      <process_pt-BR>{
+	"_AccessRestrictionPane": "Restrição de acesso",
+	"_action_createflexible:Purchasing Supply Updater": "Realizar verificação de consistência",
+	"_AllowedUsersOrGroups": "Restringir o acesso a",
+	"_AnalyticsPane": "Dados contábeis",
+	"_BuyerLogin": "ID do comprador",
+	"_BuyerLogin_report": "ID do comprador",
+	"_BuyerLogin_report_Name": "Nome do comprador",
+	"_CapEx": "Capex",
+	"_CompanyCode": "Código da empresa",
+	"_CompanyCode_report": "Código da empresa",
+	"_ComputedTechnicalAllowedLogins": "Usuários selecionados e com acesso herdado",
+	"_ComputedTechnicalAllowedLogins_report": "Restrito a usuários selecionados e com acesso herdado",
+	"_DefaultCostType": "Tipo de custo padrão",
+	"_DefaultCostType_report": "Tipo de custo padrão",
+	"_DefaultGLAccount": "Conta do Razão padrão",
+	"_DefaultTaxCode": "Código fiscal padrão",
+	"_DefaultTaxCode_report": "Código fiscal padrão",
+	"_Description": "Descrição",
+	"_Description_report": "Descrição",
+	"_DisableRestrictionInheritance": "Desabilitar herança de categoria principal",
+	"_DisableRestrictionInheritance_report": "Herança de categoria principal desabilitada",
+	"_Document data": "Detalhes da categoria",
+	"_FullName": "Caminho completo",
+	"_FullName_report": "Caminho completo",
+	"_InheritedAllowedLogins": "Acesso herdado da categoria principal",
+	"_InheritedTechnicalAllowedLogins": "Usuários com acesso herdado",
+	"_LongProcessingWarning": "As alterações realizadas nos detalhes de identificação ou restrições desta categoria serão aplicadas às suas subcategorias. Esta ação pode demorar alguns minutos e será processada em segundo plano.",
+	"_LongProcessingWarningTitle": "Atualizar subcategorias",
+	"_NoGoodsReceipt": "Nenhum recebimento de bens e serviços necessário",
+	"_NoGoodsReceipt_report": "Nenhum recebimento de bens e serviços necessário",
+	"_NotifyRequesterOnReceipt": "Notificar o solicitante após o recebimento",
+	"_NotifyRequesterOnReceipt_report": "Notificar o solicitante após o recebimento",
+	"_OpEx": "OpEx",
+	"_ParentSupplyID": "ID da categoria principal",
+	"_ParentSupplyID_report": "ID da categoria do item principal",
+	"_RecipientLogin": "ID de destinatário",
+	"_RecipientLogin_report": "ID de destinatário",
+	"_RecipientLogin_report_Name": "Nome do destinatário",
+	"_SelectOrEnterEmailAddress": "Selecione ou digite um endereço de e-mail...",
+	"_SupplyID": "ID da categoria",
+	"_SupplyID_report": "ID da categoria do item",
+	"_SupplyName": "Nome da categoria",
+	"_SupplyName_report": "Nome da categoria do item",
+	"_SupplyTypeError_DuplicateCategory": "Já existe uma categoria com essa ID para esse código de empresa.",
+	"_SupplyTypeError_IdenticalIdAndParent": "A ID da categoria principal deve ser diferente da ID da categoria do item.",
+	"_SupplyTypeError_Recursion": "Esta categoria ({0}) está hierarquicamente abaixo da categoria atual.",
+	"_TechnicalAllowedUsersOrGroups": "Usuários selecionados com acesso",
+	"_TechnicalAllowedUsersOrGroups_report": "Restrito a usuários selecionados",
+	"_UpdateChildren": "更新",
+	"_UserPopup_Groups": "Grupos",
+	"_UserPopup_Title": "Restringir acesso a esta categoria de item",
+	"_UserPopup_Users": "Usuários",
+	"_UserPopup_UsersOrGroups": "Usuários autorizados",
+	"Purchasing - Supply": "S2P - Categorias de itens",
+	"PurchasingSupply": "S2P - Categoria do item",
+	"PurchasingSupply__": "S2P - Categorias de itens",
+	"_CF_C5_EDI_Identifier": "ID do endereço de e-mail (Peppol CTC)",
+	"_CF_C5_EDI_Identifier_report": "ID do endereço de e-mail (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType": "ID do esquema do endereço de e-mail (Peppol CTC)",
+	"_CF_C5_EDI_IdentifierType_report": "ID do esquema do endereço de e-mail (Peppol CTC)",
+	"_CompanyAddress": "Endereço da empresa",
+	"_CompanyAddressFormated": "Visualização do endereço",
+	"_CompanyInfo": "Informações sobre a empresa",
+	"_DefaultConfiguration": "Configuração padrão",
+	"_DefaultConfiguration_report": "Configuração padrão",
+	"_DefaultExpenseReportType": "Tipo de relatório de despesas padrão",
+	"_DefaultExpenseReportType_report": "Tipo de relatório de despesas padrão",
+	"_DeliveryAddressID": "ID do endereço de entrega padrão",
+	"_DeliveryAddressID_report": "ID do endereço de entrega padrão",
+	"_DeterminationKeyword": "Palavras-chave usadas para determinação automática",
+	"_DeterminationKeyword_report": "Palavras-chave usadas para determinação automática",
+	"_ERP": "Integração ERP",
+	"_errorExistingCompanyCode": "Essa empresa já existe na tabela",
+	"_PDPConfiguration": "Configuração de relatórios eletrônicos AP (França)",
+	"_PDPConfiguration_report": "Configuração de relatórios eletrônicos AP (França)",
+	"_PurchasingGroup": "Grupo de compras",
+	"_PurchasingGroup_report": "Grupo de compras",
+	"_PurchasingOrganization": "Organização de compras",
+	"_PurchasingOrganization_report": "Organização de compras",
+	"_Sub": "Prédio, área industrial, serviço",
+	"_Sub report": "Prédio, área industrial, serviço",
+	"_TaxMode": "Ponto fiscal de relatórios eletrônicos (França)",
+	"_TaxMode_report": "Ponto fiscal de relatórios eletrônicos (França)",
+	"_TVAModeNotDefined": " ",
+	"_TVAOverCredit": "No pagamento recebido",
+	"_TVAOverDebit": "Na fatura emitida",
+	"_WorkingDays": "Dias úteis",
+	"_WorkingDays_report": "Dias úteis",
+	"City": "Cidade",
+	"Company code": "Código da empresa",
+	"Company name": "Nome da empresa",
+	"Contact email": "E-mail",
+	"Country": "Código do país",
+	"Currency": "Moeda",
+	"Fax number": "Número de fax",
+	"P2P - Company codes": "Código da empresa",
+	"P2P - Company codes__": "Código da empresa",
+	"Phone number": "Número de telefone",
+	"Postal code": "Código postal",
+	"PostOfficeBox": "Localidade ou apartado",
+	"PurchasingCompanycodes": "S2P - Códigos da empresa",
+	"Region": "Estado/Região",
+	"SIRET": "Número de identificação fiscal",
+	"Street": "Rua",
+	"VAT number": "Número de IVA"
+}</process_pt-BR>
+    </lg>
+    <openInProcess>
+      <process>{name: "Purchasing Supply Updater", withMessage: false, multiple:true, label: "_action_createflexible:Purchasing Supply Updater", Parameters: "startInPopup=true"}</process>
+    </openInProcess>
+    <process>
+      <BUColumn>CompanyCode__</BUColumn>
+      <flowtype>processing</flowtype>
+      <panelLabelWidth>
+      </panelLabelWidth>
+      <homepagelabel>Purchasing - Supply</homepagelabel>
+      <upgradable>yes</upgradable>
+      <instanciable>1</instanciable>
+      <disableScriptModification>true</disableScriptModification>
+      <enableUpgradableDesign>true</enableUpgradableDesign>
+      <OverrideAllowedAttachmentExtensions>*</OverrideAllowedAttachmentExtensions>
+      <displayWidth>1280</displayWidth>
+      <AllowUploadAttachment>0</AllowUploadAttachment>
+      <AllowUploadReferenceDocument>0</AllowUploadReferenceDocument>
+      <shouldRollbackManualRecordEdits>true</shouldRollbackManualRecordEdits>
+      <allowUnauthorizedUserTableInteraction>
+      </allowUnauthorizedUserTableInteraction>
+      <shouldShowManualEditsWarning>false</shouldShowManualEditsWarning>
+      <UseCultureFormat>true</UseCultureFormat>
+      <TransportName>CustomTable</TransportName>
+      <LayoutVersion>1.0</LayoutVersion>
+    </process>
+    <ui>
+      <CustomScriptDebug>false</CustomScriptDebug>
+      <customscriptIncludedScripts>Sys/Sys</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Helpers_Controls</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Helpers_LdapUtil</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Helpers_Promise</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Lib_CommonDialog_V12.0.553.0</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Lib_P2P_V12.0.553.0</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Lib_Parameters_P2P_V12.0.553.0</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Lib_P2P_UsersBrowse_Client_V12.0.553.0</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Lib_Purchasing_CatalogHelper_V12.0.553.0</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Lib_Purchasing_SupplyType_V12.0.553.0</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Lib_LinkerManager_Client_V12.0.553.0</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Lib_P2P_Layout_V12.0.553.0</customscriptIncludedScripts>
+      <customscriptIncludedScripts>[LIB_P2P_CUSTOMIZATION_TABLES_CLIENT]</customscriptIncludedScripts>
+      <customscriptIncludedScripts>Sys/Sys_Helpers</customscriptIncludedScripts>
+      <CustomScriptReadonly>true</CustomScriptReadonly>
+      <CustomScript>var CustomScript;
+(function (CustomScript) {
+    const panes = ["AccessRestrictionPane", "AnalyticsPane", "DataPanel"];
+    const buttons = ["Save", "Close"];
+    const g_layout = new Lib.P2P.Layout.Manager(panes, buttons);
+    var LdapUtil = Sys.Helpers.LdapUtil;
+    var SupplyType = Lib.Purchasing.SupplyType;
+    class SupplyTypeLinker extends Lib.LinkerManagerClient {
+        constructor() {
+            super("Purchasing Supply Updater");
+        }
+        async Process(action, companyCode, supplyId) {
+            if (!supplyId) {
+                throw `Supply Id is required`;
+            }
+            const msnex = await this.CreateLinker(action, {
+                CompanyCode__: companyCode,
+                SupplyID__: supplyId
+            });
+            return await this.WaitLinker(msnex);
+        }
+        async Update(companyCode, supplyTypeId) {
+            return await this.Process(SupplyType.Action.UpdateChildrenTree, companyCode, supplyTypeId);
+        }
+    }
+    CustomScript.SupplyTypeLinker = SupplyTypeLinker;
+    class UsersBrowse {
+        constructor() {
+            this.userSeparator = ";";
+        }
+        async Configure() {
+            await Lib.P2P.UsersBrowse.Init(Controls.AllowedUsersOrGroups__, "TechnicalAllowedUsersOrGroups__", Lib.P2P.UsersBrowse.StorageType.Control, "_UserPopup_Title", this.ComputeUsersSelectionOption(), "_UserPopup_UsersOrGroups", false);
+        }
+        GetUsersFilter() {
+            const notLockedFilter = LdapUtil.FilterOr(LdapUtil.FilterEqual("ACCOUNTLOCKED", "0"), LdapUtil.FilterNotExist("ACCOUNTLOCKED"));
+            const technicalFilter = LdapUtil.FilterOr(LdapUtil.FilterEqual("TECHNICALUSER", "0"), LdapUtil.FilterNotExist("TECHNICALUSER"));
+            const filters = [
+                notLockedFilter,
+                technicalFilter,
+                LdapUtil.FilterEqual("Customer", "0"),
+                LdapUtil.FilterEqual("Vendor", "0"),
+                Sys.Helpers.LdapUtil.FilterEqualOrEmpty("PortalUser", "0")
+            ];
+            return LdapUtil.FilterAnd(...filters).toString();
+        }
+        ComputeUsersSelectionOption() {
+            return {
+                SavedColumn: "Login",
+                Tables: JSON.stringify([
+                    {
+                        TableName: "ODUSER",
+                        CustomFilter: this.GetUsersFilter(),
+                        SortOrder: "DisplayName ASC",
+                        DisplayedColumns: "DisplayName|IsGroup"
+                    }
+                ]),
+                SortAndGroup: JSON.stringify([
+                    {
+                        column: "IsGroup",
+                        sort: "ASC",
+                        groups: {
+                            "1": {
+                                label: Language.Translate("_UserPopup_Groups", false),
+                                tagClassNames: "lightEmailTag",
+                                groupIndex: 1
+                            }
+                        },
+                        defaultGroup: {
+                            label: Language.Translate("_UserPopup_Users", false),
+                            tagClassNames: "lightEmailTag",
+                            groupIndex: 0
+                        }
+                    },
+                    {
+                        column: "DisplayName",
+                        sort: "ASC"
+                    },
+                    {
+                        column: "EmailAddress",
+                        sort: "ASC"
+                    }
+                ]),
+                Multiple: true,
+                DisplayFormat: "%%DisplayName%%",
+                TitleDisplayFormat: "%%DisplayName%%",
+                FreeEntryCheck: "^([a-zA-Z0-9-'_!#$%&amp;*+/=?^`{|}~]+(\\.[a-zA-Z0-9-'_!#$%&amp;*+/=?^`{|}~]+)*)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9-]+\\.)+))([a-zA-Z]{2,}|[0-9]{1,3})(\\]?)$",
+                CopyPasteCheck: "([a-zA-Z0-9-'_!#$%&amp;*+/=?^`{|}~]+(\\.[a-zA-Z0-9-'_!#$%&amp;*+/=?^`{|}~]+)*)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9-]+\\.)+))([a-zA-Z]{2,}|[0-9]{1,3})(\\]?)",
+                Separator: this.userSeparator,
+                TokenSeparators: [",", ";"],
+                RegexSeparators: /,|;/,
+                Placeholder: Language.Translate("_SelectOrEnterEmailAddress"),
+                keepInputOnDelete: false
+            };
+        }
+    }
+    async function OnCompanyCodeChange() {
+        g_layout.ShowWaitScreen();
+        const companyCode = Data.GetValue("CompanyCode__");
+        const filter = Sys.Helpers.IsEmpty(companyCode)
+            ? Sys.Helpers.LdapUtil.FilterEqualOrEmpty("CompanyCode__", "")
+            : Sys.Helpers.LdapUtil.FilterEqual("CompanyCode__", companyCode);
+        Controls.ParentSupplyID__.SetFilter(filter.toString());
+        Controls.DefaultGLAccount__.SetFilter(filter.toString());
+        await Process.CheckAllControls();
+        await SupplyType.manager.Query(companyCode);
+        await OnParentOrIDChange();
+        g_layout.HideWaitScreen();
+    }
+    async function OnDependencyChange() {
+        const fieldDependencies = ["CompanyCode__", "SupplyID__", "ParentSupplyID__", "Name__"];
+        const updateDependencies = fieldDependencies.every(fieldName =&gt; !Data.GetError(fieldName));
+        if (updateDependencies) {
+            ProcessInstance.SetSilentChange(true);
+            const companyCode = Data.GetValue("CompanyCode__");
+            const id = Data.GetValue("SupplyID__");
+            const parentId = Data.GetValue("ParentSupplyID__");
+            const name = Data.GetValue("Name__");
+            const allowedLogins = Data.GetValue("TechnicalAllowedUsersOrGroups__");
+            const updatedSupply = SupplyType.manager.UpdateSupplyTypeInCache(ruidex, {
+                CompanyCode__: companyCode,
+                SupplyID__: id,
+                ParentSupplyID__: parentId,
+                Name__: name,
+                DisableRestrictionInheritance__: Data.GetValue("DisableRestrictionInheritance__"),
+                TechnicalAllowedUsersOrGroups__: allowedLogins ? allowedLogins.split(";") : null,
+            });
+            await UpdateFormValues(updatedSupply);
+        }
+        ProcessInstance.SetSilentChange(false);
+    }
+    async function OnParentOrIDChange() {
+        await Controls.ParentSupplyID__.WaitForCheck();
+        const companyCode = Data.GetValue("CompanyCode__");
+        const id = Data.GetValue("SupplyID__");
+        const parentId = Data.GetValue("ParentSupplyID__");
+        let error = "";
+        if (!Sys.Helpers.IsEmpty(id) &amp;&amp; id === parentId) {
+            error = Language.Translate("_SupplyTypeError_IdenticalIdAndParent", false);
+        }
+        else if (SupplyType.manager.GetRecursionID(companyCode, id, parentId)) {
+            const parent = SupplyType.manager.GetFromCache(companyCode, parentId);
+            error = Language.Translate("_SupplyTypeError_Recursion", false, parent.name);
+        }
+        if (error) {
+            Data.SetCategorizedError("ParentSupplyID__", Lib.P2P.ErrorCategory.SupplyType, error);
+        }
+        else {
+            Lib.P2P.ResetCategorizedError("ParentSupplyID__", Lib.P2P.ErrorCategory.SupplyType);
+        }
+        OnDependencyChange();
+    }
+    async function UpdateFormValues(supply) {
+        Data.SetValue("FullName__", supply.GetPath());
+        const parent = SupplyType.manager.GetParent(supply.companyCode, supply.id);
+        const inhUsersLogins = parent ? parent.computedAllowedLogins : [];
+        const inhUsersInfo = inhUsersLogins.length ? await Lib.P2P.UsersBrowse.GetCompleteUsersOrGroups(inhUsersLogins) : [];
+        Controls.InheritedTechnicalAllowedLogins__.SetValue(inhUsersLogins.join(";"));
+        Controls.InheritedAllowedLogins__.SetValue(inhUsersInfo.map(userOrGroup =&gt; userOrGroup.name).join("\n"));
+        Data.SetValue("ComputedTechnicalAllowedLogins__", supply.computedAllowedLogins.join(";"));
+        UpdateLayout();
+    }
+    function UpdateLayout() {
+        const hideParentDependencies = !Data.GetValue("ParentSupplyID__") || !Controls.InheritedTechnicalAllowedLogins__.GetValue();
+        Controls.InheritedAllowedLogins__.Hide(hideParentDependencies);
+        Controls.DisableRestrictionInheritance__.Hide(hideParentDependencies);
+        if (Controls.DisableRestrictionInheritance__.IsChecked()) {
+            Controls.InheritedAllowedLogins__.AddStyle("highlight-grayed");
+        }
+        else {
+            Controls.InheritedAllowedLogins__.RemoveStyle("highlight-grayed");
+        }
+    }
+    async function OnSubmitForm() {
+        await Process.CheckAllControls();
+        if (!Process.ShowFirstError()) {
+            const children = SupplyType.manager.GetChildrenTree(Data.GetValue("CompanyCode__"), Data.GetValue("SupplyID__"));
+            const childrenUpdate = children &amp;&amp; children.some(child =&gt; SupplyType.manager.UpdateParentDependencies(child));
+            if (childrenUpdate) {
+                Lib.CommonDialog.PopupYesCancel(function (action) {
+                    switch (action) {
+                        case "Yes":
+                            const linkerManager = new SupplyTypeLinker();
+                            linkerManager.Update(Data.GetValue("CompanyCode__"), Data.GetValue("SupplyID__"));
+                            ProcessInstance.SaveAndQuit("Save");
+                            break;
+                        default:
+                            break;
+                    }
+                }, "_LongProcessingWarningTitle", "_LongProcessingWarning", "_UpdateChildren");
+            }
+            else {
+                ProcessInstance.SaveAndQuit("Save");
+            }
+        }
+    }
+    function InitControls() {
+        Sys.Helpers.Controls.OnDatabaseComboboxEvents(Controls.CompanyCode__, OnCompanyCodeChange, OnCompanyCodeChange, OnCompanyCodeChange);
+        Sys.Helpers.Controls.OnDatabaseComboboxEvents(Controls.ParentSupplyID__, OnParentOrIDChange, OnParentOrIDChange, OnParentOrIDChange);
+        Controls.SupplyID__.OnChange = OnParentOrIDChange;
+        Controls.Name__.OnChange = OnDependencyChange;
+        Controls.SupplyID__.SetRequired(true);
+        Controls.Name__.SetRequired(true);
+        Controls.FullName__.SetReadOnly(true);
+        Controls.AccessRestrictionPane.Hide(false);
+        Controls.DisableRestrictionInheritance__.OnChange = OnDependencyChange;
+        Controls.AllowedUsersOrGroups__.OnSetValue = OnDependencyChange;
+        Controls.AllowedUsersOrGroups__.SetReadOnly(true);
+        Controls.AllowedUsersOrGroups__.SetBrowsable(!ProcessInstance.isReadOnly);
+        Controls.TechnicalAllowedUsersOrGroups__.OnSetValue = OnDependencyChange;
+        Controls.Save.OnClick = function () {
+            OnSubmitForm();
+            return false;
+        };
+    }
+    const usersBrowse = new UsersBrowse();
+    const ruidex = Data.GetValue("RuidEx");
+    async function Init() {
+        Sys.Helpers.EnableSmartSilentChange();
+        g_layout.Hide(true);
+        g_layout.ShowWaitScreen();
+        await Sys.Parameters.GetInstance("P2P").PromisedIsReady();
+        await usersBrowse.Configure();
+        // Display errors if any + Set Parent filter
+        await OnCompanyCodeChange();
+        g_layout.Hide(false);
+        g_layout.HideWaitScreen();
+        InitControls();
+    }
+    CustomScript.Init = Init;
+    async function Main() {
+        return Sys.Helpers.TryCallFunctionAsync("Lib.P2P.Customization.Tables.Client.PurchasingSupply.OnHTMLScriptBegin")
+            .Then(() =&gt; {
+            return CustomScript.Init();
+        }).Then(() =&gt; {
+            Sys.Helpers.TryCallFunction("Lib.P2P.Customization.Tables.Client.Common.OnHTMLScriptEnd");
+            Sys.Helpers.TryCallFunction("Lib.P2P.Customization.Tables.Client.PurchasingSupply.OnHTMLScriptEnd");
+        });
+    }
+    CustomScript.Main = Main;
+    Main();
+})(CustomScript || (CustomScript = {}));
+//# sourceMappingURL=customscript.js.map</CustomScript>
+      <restorationPanel>DataPanel</restorationPanel>
+      <layout>{
+	"data": [],
+	"stamps": 58,
+	"*": {
+		"Screen": {
+			"type": "FlexibleFormLayout",
+			"data": [],
+			"stamp": 1,
+			"options": {
+				"splitterType": "simple-v",
+				"processHelpId": "5094",
+				"maxwidth": 1280,
+				"backColor": "text-backgroundcolor-color7",
+				"style": "FlexibleFormLight",
+				"footerStyle": "LargeFooter",
+				"version": 0
+			},
+			"*": {
+				"form-header": {
+					"type": "FlexibleFormHeader",
+					"data": [],
+					"stamp": 2,
+					"options": {
+						"hidePanelsMenu": false,
+						"maxwidth": 1280,
+						"version": 0
+					}
+				},
+				"form-center": {
+					"type": "FlexibleFormCenter",
+					"data": [],
+					"stamp": 3,
+					"options": {
+						"maxwidth": 1280,
+						"version": 0
+					},
+					"*": {
+						"form-content": {
+							"type": "FlexibleFormContent",
+							"data": [],
+							"stamp": 4,
+							"options": {
+								"version": 0
+							},
+							"*": {
+								"form-content-center": {
+									"type": "FlexibleFormSplitter",
+									"data": [],
+									"stamp": 5,
+									"options": {
+										"version": 1,
+										"box": {
+											"top": "0%",
+											"left": "0%",
+											"width": "100%"
+										},
+										"hidden": false,
+										"hideSeparator": true
+									},
+									"*": {
+										"form-content-center-1": {
+											"type": "FlexibleFormLine",
+											"data": [],
+											"stamp": 6,
+											"options": {
+												"version": 0
+											},
+											"*": {
+												"DataPanel": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 7,
+													"options": {
+														"border": {},
+														"labelLength": "180px",
+														"label": "_Document data",
+														"iconURL": "",
+														"TitleFontSize": "L",
+														"hideActionButtons": true,
+														"hideTitleBar": false,
+														"hideTitle": false,
+														"backgroundcolor": "default",
+														"labelsAlignment": "right",
+														"sameHeightAsSiblings": true,
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"hidden": false,
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 8,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {
+																	"CompanyCode__": "LabelCompanyCode__",
+																	"LabelCompanyCode__": "CompanyCode__",
+																	"SupplyID__": "LabelSupplyID__",
+																	"LabelSupplyID__": "SupplyID__",
+																	"ParentSupplyID__": "LabelParentSupplyID__",
+																	"LabelParentSupplyID__": "ParentSupplyID__",
+																	"Name__": "LabelName__",
+																	"LabelName__": "Name__",
+																	"FullName__": "LabelFullName__",
+																	"LabelFullName__": "FullName__",
+																	"Description__": "LabelDescription__",
+																	"LabelDescription__": "Description__",
+																	"BuyerLogin__": "LabelBuyerLogin__",
+																	"LabelBuyerLogin__": "BuyerLogin__",
+																	"RecipientLogin__": "LabelRecipientLogin__",
+																	"LabelRecipientLogin__": "RecipientLogin__",
+																	"NoGoodsReceipt__": "LabelNoGoodsReceipt__",
+																	"LabelNoGoodsReceipt__": "NoGoodsReceipt__",
+																	"NotifyRequesterOnReceipt__": "LabelNotifyRequesterOnReceipt__",
+																	"LabelNotifyRequesterOnReceipt__": "NotifyRequesterOnReceipt__"
+																}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 9,
+																	"options": {
+																		"version": 0,
+																		"lines": 10,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"LabelCompanyCode__": {
+																				"line": 1,
+																				"column": 1
+																			},
+																			"CompanyCode__": {
+																				"line": 1,
+																				"column": 2
+																			},
+																			"LabelSupplyID__": {
+																				"line": 2,
+																				"column": 1
+																			},
+																			"SupplyID__": {
+																				"line": 2,
+																				"column": 2
+																			},
+																			"LabelParentSupplyID__": {
+																				"line": 3,
+																				"column": 1
+																			},
+																			"ParentSupplyID__": {
+																				"line": 3,
+																				"column": 2
+																			},
+																			"LabelName__": {
+																				"line": 4,
+																				"column": 1
+																			},
+																			"Name__": {
+																				"line": 4,
+																				"column": 2
+																			},
+																			"LabelFullName__": {
+																				"line": 5,
+																				"column": 1
+																			},
+																			"FullName__": {
+																				"line": 5,
+																				"column": 2
+																			},
+																			"LabelDescription__": {
+																				"line": 6,
+																				"column": 1
+																			},
+																			"Description__": {
+																				"line": 6,
+																				"column": 2
+																			},
+																			"LabelBuyerLogin__": {
+																				"line": 7,
+																				"column": 1
+																			},
+																			"BuyerLogin__": {
+																				"line": 7,
+																				"column": 2
+																			},
+																			"LabelRecipientLogin__": {
+																				"line": 8,
+																				"column": 1
+																			},
+																			"RecipientLogin__": {
+																				"line": 8,
+																				"column": 2
+																			},
+																			"LabelNoGoodsReceipt__": {
+																				"line": 9,
+																				"column": 1
+																			},
+																			"NoGoodsReceipt__": {
+																				"line": 9,
+																				"column": 2
+																			},
+																			"LabelNotifyRequesterOnReceipt__": {
+																				"line": 10,
+																				"column": 1
+																			},
+																			"NotifyRequesterOnReceipt__": {
+																				"line": 10,
+																				"column": 2
+																			}
+																		},
+																		"colspans": [
+																			[],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[]
+																		]
+																	},
+																	"*": {
+																		"LabelCompanyCode__": {
+																			"type": "Label",
+																			"data": [
+																				"CompanyCode__"
+																			],
+																			"stamp": 11,
+																			"options": {
+																				"label": "_CompanyCode",
+																				"version": 0
+																			}
+																		},
+																		"CompanyCode__": {
+																			"type": "DatabaseComboBox",
+																			"data": [
+																				"CompanyCode__"
+																			],
+																			"stamp": 10,
+																			"options": {
+																				"label": "_CompanyCode",
+																				"browsable": true,
+																				"activable": true,
+																				"width": "100%",
+																				"fTSmaxRecords": "20",
+																				"PreFillFTS": true,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"minNbLines": 1,
+																				"maxNbLines": 1,
+																				"autoCompleteSearchMode": "contains",
+																				"searchMode": "contains",
+																				"helpIconPosition": "Right",
+																				"version": 0
+																			}
+																		},
+																		"LabelSupplyID__": {
+																			"type": "Label",
+																			"data": [
+																				"SupplyID__"
+																			],
+																			"stamp": 13,
+																			"options": {
+																				"label": "_SupplyID",
+																				"version": 0
+																			}
+																		},
+																		"SupplyID__": {
+																			"type": "ShortText",
+																			"data": [
+																				"SupplyID__"
+																			],
+																			"stamp": 12,
+																			"options": {
+																				"label": "_SupplyID",
+																				"activable": true,
+																				"width": "100%",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"version": 0
+																			}
+																		},
+																		"LabelParentSupplyID__": {
+																			"type": "Label",
+																			"data": [
+																				"ParentSupplyID__"
+																			],
+																			"stamp": 15,
+																			"options": {
+																				"label": "_ParentSupplyID",
+																				"hidden": false,
+																				"version": 0
+																			}
+																		},
+																		"ParentSupplyID__": {
+																			"type": "DatabaseComboBox",
+																			"data": [
+																				"ParentSupplyID__"
+																			],
+																			"stamp": 14,
+																			"options": {
+																				"label": "_ParentSupplyID",
+																				"version": 1,
+																				"activable": true,
+																				"width": "100%",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"minNbLines": 1,
+																				"maxNbLines": 1,
+																				"fTSmaxRecords": "20",
+																				"browsable": true,
+																				"autocompletable": false,
+																				"hidden": false,
+																				"RestrictSearch": true,
+																				"PreFillFTS": true,
+																				"autoCompleteSearchMode": "contains",
+																				"searchMode": "contains",
+																				"helpIconPosition": "Right"
+																			}
+																		},
+																		"LabelName__": {
+																			"type": "Label",
+																			"data": [
+																				"Name__"
+																			],
+																			"stamp": 17,
+																			"options": {
+																				"label": "_SupplyName",
+																				"version": 0
+																			}
+																		},
+																		"Name__": {
+																			"type": "ShortText",
+																			"data": [
+																				"Name__"
+																			],
+																			"stamp": 16,
+																			"options": {
+																				"label": "_SupplyName",
+																				"activable": true,
+																				"width": "100%",
+																				"length": 100,
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"version": 0
+																			}
+																		},
+																		"LabelFullName__": {
+																			"type": "Label",
+																			"data": [
+																				"FullName__"
+																			],
+																			"stamp": 19,
+																			"options": {
+																				"label": "_FullName",
+																				"version": 0
+																			}
+																		},
+																		"FullName__": {
+																			"type": "ShortText",
+																			"data": [
+																				"FullName__"
+																			],
+																			"stamp": 18,
+																			"options": {
+																				"label": "_FullName",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"activable": true,
+																				"width": "100%",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"browsable": false,
+																				"autocompletable": false,
+																				"helpIconPosition": "Right",
+																				"readonly": true
+																			}
+																		},
+																		"LabelDescription__": {
+																			"type": "Label",
+																			"data": [
+																				"Description__"
+																			],
+																			"stamp": 21,
+																			"options": {
+																				"label": "_Description",
+																				"version": 0
+																			}
+																		},
+																		"Description__": {
+																			"type": "ShortText",
+																			"data": [
+																				"Description__"
+																			],
+																			"stamp": 20,
+																			"options": {
+																				"label": "_Description",
+																				"activable": true,
+																				"width": "100%",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"browsable": false,
+																				"version": 0
+																			}
+																		},
+																		"LabelBuyerLogin__": {
+																			"type": "Label",
+																			"data": [
+																				"BuyerLogin__"
+																			],
+																			"stamp": 23,
+																			"options": {
+																				"label": "_BuyerLogin",
+																				"version": 0
+																			}
+																		},
+																		"BuyerLogin__": {
+																			"type": "DatabaseComboBox",
+																			"data": [
+																				"BuyerLogin__"
+																			],
+																			"stamp": 22,
+																			"options": {
+																				"label": "_BuyerLogin",
+																				"activable": true,
+																				"width": "100%",
+																				"PreFillFTS": true,
+																				"fTSmaxRecords": "20",
+																				"autocompletable": true,
+																				"browsable": true,
+																				"autoCompleteSearchMode": "contains",
+																				"searchMode": "contains",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"minNbLines": 1,
+																				"maxNbLines": 1,
+																				"version": 0
+																			}
+																		},
+																		"LabelRecipientLogin__": {
+																			"type": "Label",
+																			"data": [
+																				"RecipientLogin__"
+																			],
+																			"stamp": 25,
+																			"options": {
+																				"label": "_RecipientLogin",
+																				"version": 0
+																			}
+																		},
+																		"RecipientLogin__": {
+																			"type": "DatabaseComboBox",
+																			"data": [
+																				"RecipientLogin__"
+																			],
+																			"stamp": 24,
+																			"options": {
+																				"label": "_RecipientLogin",
+																				"activable": true,
+																				"width": "100%",
+																				"fTSmaxRecords": "20",
+																				"PreFillFTS": true,
+																				"browsable": true,
+																				"autoCompleteSearchMode": "contains",
+																				"searchMode": "contains",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"minNbLines": 1,
+																				"maxNbLines": 1,
+																				"version": 0
+																			}
+																		},
+																		"LabelNoGoodsReceipt__": {
+																			"type": "Label",
+																			"data": [
+																				"NoGoodsReceipt__"
+																			],
+																			"stamp": 27,
+																			"options": {
+																				"label": "_NoGoodsReceipt",
+																				"version": 0
+																			}
+																		},
+																		"NoGoodsReceipt__": {
+																			"type": "CheckBox",
+																			"data": [
+																				"NoGoodsReceipt__"
+																			],
+																			"stamp": 26,
+																			"options": {
+																				"label": "_NoGoodsReceipt",
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"possibleValues": {},
+																				"possibleKeys": {},
+																				"version": 0
+																			}
+																		},
+																		"LabelNotifyRequesterOnReceipt__": {
+																			"type": "Label",
+																			"data": [
+																				"NotifyRequesterOnReceipt__"
+																			],
+																			"stamp": 29,
+																			"options": {
+																				"label": "_NotifyRequesterOnReceipt",
+																				"version": 0
+																			}
+																		},
+																		"NotifyRequesterOnReceipt__": {
+																			"type": "CheckBox",
+																			"data": [
+																				"NotifyRequesterOnReceipt__"
+																			],
+																			"stamp": 28,
+																			"options": {
+																				"label": "_NotifyRequesterOnReceipt",
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"possibleValues": {},
+																				"possibleKeys": {},
+																				"version": 0
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												},
+												"AnalyticsPane": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 30,
+													"options": {
+														"border": {},
+														"labelLength": "180px",
+														"iconURL": "",
+														"TitleFontSize": "L",
+														"hideActionButtons": true,
+														"hideTitleBar": false,
+														"hideTitle": false,
+														"sameHeightAsSiblings": true,
+														"backgroundcolor": "default",
+														"labelsAlignment": "right",
+														"label": "_AnalyticsPane",
+														"hidden": false,
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 31,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {
+																	"DefaultTaxCode__": "LabelDefaultTaxCode__",
+																	"LabelDefaultTaxCode__": "DefaultTaxCode__",
+																	"DefaultGLAccount__": "LabelDefaultGLAccount__",
+																	"LabelDefaultGLAccount__": "DefaultGLAccount__",
+																	"DefaultCostType__": "LabelDefaultCostType__",
+																	"LabelDefaultCostType__": "DefaultCostType__"
+																}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 32,
+																	"options": {
+																		"version": 0,
+																		"lines": 3,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"LabelDefaultTaxCode__": {
+																				"line": 1,
+																				"column": 1
+																			},
+																			"DefaultTaxCode__": {
+																				"line": 1,
+																				"column": 2
+																			},
+																			"LabelDefaultGLAccount__": {
+																				"line": 2,
+																				"column": 1
+																			},
+																			"DefaultGLAccount__": {
+																				"line": 2,
+																				"column": 2
+																			},
+																			"LabelDefaultCostType__": {
+																				"line": 3,
+																				"column": 1
+																			},
+																			"DefaultCostType__": {
+																				"line": 3,
+																				"column": 2
+																			}
+																		},
+																		"colspans": [
+																			[],
+																			[],
+																			[]
+																		]
+																	},
+																	"*": {
+																		"LabelDefaultTaxCode__": {
+																			"type": "Label",
+																			"data": [
+																				"DefaultTaxCode__"
+																			],
+																			"stamp": 34,
+																			"options": {
+																				"label": "_DefaultTaxCode",
+																				"version": 0
+																			}
+																		},
+																		"DefaultTaxCode__": {
+																			"type": "DatabaseComboBox",
+																			"data": [
+																				"DefaultTaxCode__"
+																			],
+																			"stamp": 33,
+																			"options": {
+																				"label": "_DefaultTaxCode",
+																				"version": 1,
+																				"autoCompleteSearchMode": "contains",
+																				"searchMode": "contains",
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"minNbLines": 1,
+																				"maxNbLines": 1,
+																				"PreFillFTS": true,
+																				"RestrictSearch": true,
+																				"fTSmaxRecords": "20",
+																				"browsable": true,
+																				"autocompletable": false
+																			}
+																		},
+																		"LabelDefaultGLAccount__": {
+																			"type": "Label",
+																			"data": [
+																				"DefaultGLAccount__"
+																			],
+																			"stamp": 36,
+																			"options": {
+																				"label": "_DefaultGLAccount",
+																				"version": 0
+																			}
+																		},
+																		"DefaultGLAccount__": {
+																			"type": "DatabaseComboBox",
+																			"data": [
+																				"DefaultGLAccount__"
+																			],
+																			"stamp": 35,
+																			"options": {
+																				"label": "_DefaultGLAccount",
+																				"version": 1,
+																				"activable": true,
+																				"width": "230",
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"minNbLines": 1,
+																				"maxNbLines": 1,
+																				"fTSmaxRecords": "20",
+																				"browsable": true,
+																				"PreFillFTS": true,
+																				"autoCompleteSearchMode": "startswith",
+																				"searchMode": "matches",
+																				"helpIconPosition": "Right"
+																			}
+																		},
+																		"LabelDefaultCostType__": {
+																			"type": "Label",
+																			"data": [
+																				"DefaultCostType__"
+																			],
+																			"stamp": 38,
+																			"options": {
+																				"label": "_DefaultCostType",
+																				"version": 0
+																			}
+																		},
+																		"DefaultCostType__": {
+																			"type": "ComboBox",
+																			"data": [
+																				"DefaultCostType__"
+																			],
+																			"stamp": 37,
+																			"options": {
+																				"label": "_DefaultCostType",
+																				"possibleValues": {
+																					"0": "",
+																					"1": "_OpEx",
+																					"2": "_CapEx"
+																				},
+																				"version": 1,
+																				"keyValueMode": true,
+																				"possibleKeys": {
+																					"0": "",
+																					"1": "OpEx",
+																					"2": "CapEx"
+																				},
+																				"activable": true,
+																				"width": 80,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"DataSourceOrigin": "Standalone",
+																				"DisplayedColumns": "",
+																				"maxNbLinesToDisplay": 10
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"form-content-center-2": {
+											"type": "FlexibleFormLine",
+											"data": [],
+											"stamp": 39,
+											"options": {
+												"version": 0
+											},
+											"*": {
+												"AccessRestrictionPane": {
+													"type": "PanelData",
+													"data": [],
+													"stamp": 40,
+													"options": {
+														"border": {},
+														"iconURL": "",
+														"TitleFontSize": "L",
+														"hideActionButtons": true,
+														"hideTitleBar": false,
+														"hideTitle": false,
+														"sameHeightAsSiblings": true,
+														"backgroundcolor": "default",
+														"labelsAlignment": "right",
+														"label": "_AccessRestrictionPane",
+														"hidden": true,
+														"leftImageURL": "",
+														"removeMargins": false,
+														"elementsAlignment": "left",
+														"labelLength": "180px",
+														"version": 0
+													},
+													"*": {
+														"FieldsManager": {
+															"type": "FieldsManager",
+															"data": [],
+															"stamp": 41,
+															"options": {
+																"version": 0,
+																"controlsAssociation": {
+																	"AllowedUsersOrGroups__": "LabelAllowedUsersOrGroups__",
+																	"LabelAllowedUsersOrGroups__": "AllowedUsersOrGroups__",
+																	"TechnicalAllowedUsersOrGroups__": "LabelTechnicalAllowedUsersOrGroups__",
+																	"LabelTechnicalAllowedUsersOrGroups__": "TechnicalAllowedUsersOrGroups__",
+																	"InheritedAllowedLogins__": "LabelInheritedAllowedLogins__",
+																	"LabelInheritedAllowedLogins__": "InheritedAllowedLogins__",
+																	"InheritedTechnicalAllowedLogins__": "LabelInheritedTechnicalAllowedLogins__",
+																	"LabelInheritedTechnicalAllowedLogins__": "InheritedTechnicalAllowedLogins__",
+																	"DisableRestrictionInheritance__": "LabelDisableRestrictionInheritance__",
+																	"LabelDisableRestrictionInheritance__": "DisableRestrictionInheritance__",
+																	"ComputedTechnicalAllowedLogins__": "LabelComputedTechnicalAllowedLogins__",
+																	"LabelComputedTechnicalAllowedLogins__": "ComputedTechnicalAllowedLogins__"
+																}
+															},
+															"*": {
+																"Grid": {
+																	"type": "GridLayout",
+																	"data": [
+																		"fields"
+																	],
+																	"stamp": 42,
+																	"options": {
+																		"version": 0,
+																		"lines": 6,
+																		"columns": 2,
+																		"ctrlsPos": {
+																			"LabelAllowedUsersOrGroups__": {
+																				"line": 1,
+																				"column": 1
+																			},
+																			"AllowedUsersOrGroups__": {
+																				"line": 1,
+																				"column": 2
+																			},
+																			"LabelTechnicalAllowedUsersOrGroups__": {
+																				"line": 2,
+																				"column": 1
+																			},
+																			"TechnicalAllowedUsersOrGroups__": {
+																				"line": 2,
+																				"column": 2
+																			},
+																			"LabelInheritedAllowedLogins__": {
+																				"line": 3,
+																				"column": 1
+																			},
+																			"InheritedAllowedLogins__": {
+																				"line": 3,
+																				"column": 2
+																			},
+																			"LabelInheritedTechnicalAllowedLogins__": {
+																				"line": 4,
+																				"column": 1
+																			},
+																			"InheritedTechnicalAllowedLogins__": {
+																				"line": 4,
+																				"column": 2
+																			},
+																			"LabelDisableRestrictionInheritance__": {
+																				"line": 5,
+																				"column": 1
+																			},
+																			"DisableRestrictionInheritance__": {
+																				"line": 5,
+																				"column": 2
+																			},
+																			"LabelComputedTechnicalAllowedLogins__": {
+																				"line": 6,
+																				"column": 1
+																			},
+																			"ComputedTechnicalAllowedLogins__": {
+																				"line": 6,
+																				"column": 2
+																			}
+																		},
+																		"colspans": [
+																			[],
+																			[],
+																			[],
+																			[],
+																			[],
+																			[]
+																		]
+																	},
+																	"*": {
+																		"LabelAllowedUsersOrGroups__": {
+																			"type": "Label",
+																			"data": [],
+																			"stamp": 44,
+																			"options": {
+																				"label": "_AllowedUsersOrGroups",
+																				"type": "LongText",
+																				"version": 0
+																			}
+																		},
+																		"AllowedUsersOrGroups__": {
+																			"type": "LongText",
+																			"data": [],
+																			"stamp": 43,
+																			"options": {
+																				"label": "_AllowedUsersOrGroups",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 1,
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"numberOfLines": 5,
+																				"readonly": true,
+																				"notInDB": true,
+																				"dataType": "String",
+																				"browsable": true
+																			}
+																		},
+																		"LabelTechnicalAllowedUsersOrGroups__": {
+																			"type": "Label",
+																			"data": [
+																				"TechnicalAllowedUsersOrGroups__"
+																			],
+																			"stamp": 46,
+																			"options": {
+																				"label": "_TechnicalAllowedUsersOrGroups",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"TechnicalAllowedUsersOrGroups__": {
+																			"type": "LongText",
+																			"data": [
+																				"TechnicalAllowedUsersOrGroups__"
+																			],
+																			"stamp": 45,
+																			"options": {
+																				"label": "_TechnicalAllowedUsersOrGroups",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 1,
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"numberOfLines": 5,
+																				"hidden": true,
+																				"readonly": true,
+																				"browsable": false
+																			}
+																		},
+																		"LabelInheritedAllowedLogins__": {
+																			"type": "Label",
+																			"data": [],
+																			"stamp": 48,
+																			"options": {
+																				"label": "_InheritedAllowedLogins",
+																				"type": "LongText",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"InheritedAllowedLogins__": {
+																			"type": "LongText",
+																			"data": [],
+																			"stamp": 47,
+																			"options": {
+																				"label": "_InheritedAllowedLogins",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 1,
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"numberOfLines": 10,
+																				"browsable": false,
+																				"readonly": true,
+																				"notInDB": true,
+																				"dataType": "String",
+																				"hidden": true
+																			}
+																		},
+																		"LabelInheritedTechnicalAllowedLogins__": {
+																			"type": "Label",
+																			"data": [],
+																			"stamp": 50,
+																			"options": {
+																				"label": "_InheritedTechnicalAllowedLogins",
+																				"hidden": true,
+																				"type": "LongText",
+																				"version": 0
+																			}
+																		},
+																		"InheritedTechnicalAllowedLogins__": {
+																			"type": "LongText",
+																			"data": [],
+																			"stamp": 49,
+																			"options": {
+																				"label": "_InheritedTechnicalAllowedLogins",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 1,
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"numberOfLines": 10,
+																				"hidden": true,
+																				"readonly": true,
+																				"notInDB": true,
+																				"dataType": "String",
+																				"browsable": false
+																			}
+																		},
+																		"LabelDisableRestrictionInheritance__": {
+																			"type": "Label",
+																			"data": [
+																				"DisableRestrictionInheritance__"
+																			],
+																			"stamp": 52,
+																			"options": {
+																				"label": "_DisableRestrictionInheritance",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"DisableRestrictionInheritance__": {
+																			"type": "CheckBox",
+																			"data": [
+																				"DisableRestrictionInheritance__"
+																			],
+																			"stamp": 51,
+																			"options": {
+																				"label": "_DisableRestrictionInheritance",
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"possibleValues": {},
+																				"possibleKeys": {},
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"LabelComputedTechnicalAllowedLogins__": {
+																			"type": "Label",
+																			"data": [
+																				"ComputedTechnicalAllowedLogins__"
+																			],
+																			"stamp": 54,
+																			"options": {
+																				"label": "_ComputedTechnicalAllowedLogins",
+																				"hidden": true,
+																				"version": 0
+																			}
+																		},
+																		"ComputedTechnicalAllowedLogins__": {
+																			"type": "LongText",
+																			"data": [
+																				"ComputedTechnicalAllowedLogins__"
+																			],
+																			"stamp": 53,
+																			"options": {
+																				"label": "_ComputedTechnicalAllowedLogins",
+																				"textSize": "S",
+																				"textAlignment": "left",
+																				"textStyle": "default",
+																				"textColor": "default",
+																				"version": 1,
+																				"minNbLines": 1,
+																				"activable": true,
+																				"width": 230,
+																				"helpText": "",
+																				"helpURL": "",
+																				"helpFormat": "HTML Format",
+																				"helpIconPosition": "Right",
+																				"numberOfLines": 10,
+																				"hidden": true,
+																				"readonly": true,
+																				"browsable": false
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"form-footer": {
+					"type": "FlexibleFormFooter",
+					"data": [],
+					"stamp": 55,
+					"options": {
+						"splitterType": "simple-h",
+						"maxwidth": 1280,
+						"version": 0
+					},
+					"*": {
+						"Save": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 56,
+							"options": {
+								"label": "_Save",
+								"action": "savequit",
+								"submit": true,
+								"shortCut": "S",
+								"textSize": "S",
+								"textPosition": "text-right",
+								"textStyle": "default",
+								"textColor": "default",
+								"iconColor": "default",
+								"nextprocess": {
+									"processName": "AP - Application Settings__",
+									"attachmentsMode": "all",
+									"willBeChild": true,
+									"returnToOriginalUrl": false
+								},
+								"urlImageOverlay": "",
+								"style": 1,
+								"buttonLabel": "",
+								"isRounded": true,
+								"isOutline": false,
+								"url": "",
+								"position": null,
+								"version": 0
+							}
+						},
+						"Delete": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 57,
+							"options": {
+								"label": "_Delete",
+								"action": "delete",
+								"submit": true,
+								"disabled": true,
+								"textSize": "S",
+								"textPosition": "text-right",
+								"textStyle": "default",
+								"textColor": "default",
+								"iconColor": "default",
+								"nextprocess": {
+									"processName": "AP - Application Settings__",
+									"attachmentsMode": "all",
+									"willBeChild": true,
+									"returnToOriginalUrl": false
+								},
+								"urlImageOverlay": "",
+								"style": 3,
+								"buttonLabel": "",
+								"isRounded": true,
+								"isOutline": true,
+								"url": "",
+								"position": null,
+								"version": 0
+							}
+						},
+						"Close": {
+							"type": "SubmitButton",
+							"data": [],
+							"stamp": 58,
+							"options": {
+								"label": "_Close",
+								"action": "cancel",
+								"submit": true,
+								"shortCut": "Q",
+								"textSize": "S",
+								"textPosition": "text-right",
+								"textStyle": "default",
+								"textColor": "default",
+								"iconColor": "default",
+								"nextprocess": {
+									"processName": "AP - Application Settings__",
+									"attachmentsMode": "all",
+									"willBeChild": true,
+									"returnToOriginalUrl": false
+								},
+								"urlImageOverlay": "",
+								"buttonLabel": "",
+								"isRounded": true,
+								"isOutline": true,
+								"url": "",
+								"position": null,
+								"version": 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}</layout>
+    </ui>
+  </properties>
+  <field deleted="0" format="" guid="LFJS86579005" id="C824Y300153E" label="_BuyerLogin_report" length="80" name="BuyerLogin__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AC824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/BuyerLogin__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_BuyerLogin_report</Label>
+        <Alias>AC824Y300153E</Alias>
+        <DocMgrDisplayType>webaccess.Edd.ui.DNorLogin</DocMgrDisplayType>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <Editable>false</Editable>
+        <required>false</required>
+        <TableName>ODUSER</TableName>
+        <SortOrder>ASC</SortOrder>
+        <SearchInArchiveServerSide>false</SearchInArchiveServerSide>
+        <DisplayedColumns>Login|DisplayName</DisplayedColumns>
+        <UseTableForAutolearn>false</UseTableForAutolearn>
+        <SavedColumn>Login</SavedColumn>
+        <ExposedColumns>
+        </ExposedColumns>
+        <ProcessName>
+        </ProcessName>
+        <KeyColumnId>
+        </KeyColumnId>
+        <KeyAttribute>
+        </KeyAttribute>
+        <CustomFilter>(&amp;(Vendor=0)(Customer=0)(|(PortalUser!=1)(PortalUser!=*)))</CustomFilter>
+      </field>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="RPIX135024" id="D824Y300153E" label="_CompanyCode_report" length="50" name="CompanyCode__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AD824Y300153E</alias>
+        <index vartype="INT">1</index>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/CompanyCode__</fullname>
+        <jointable>PurchasingCompanycodes__</jointable>
+        <jointableid>CT#EAZ3Y300153E</jointableid>
+        <defaultvalue>
+        </defaultvalue>
+        <joincondition>(source.CompanyCode__=dest.CompanyCode__)</joincondition>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_CompanyCode_report</Label>
+        <Alias>AD824Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <Editable>true</Editable>
+        <required>false</required>
+        <TableName>CT#EAZ3Y300153E</TableName>
+        <SortOrder>
+        </SortOrder>
+        <SearchInArchiveServerSide>false</SearchInArchiveServerSide>
+        <DisplayedColumns>CompanyCode__|CompanyName__</DisplayedColumns>
+        <DisplayedColumnsIds>
+        </DisplayedColumnsIds>
+        <UseTableForAutolearn>false</UseTableForAutolearn>
+        <SavedColumn>CompanyCode__</SavedColumn>
+        <SavedColumnId>
+        </SavedColumnId>
+        <ExposedColumns>
+        </ExposedColumns>
+        <ProcessName>PurchasingCompanycodes__</ProcessName>
+        <KeyColumnId>
+        </KeyColumnId>
+        <KeyAttribute>
+        </KeyAttribute>
+        <CustomFilter>
+        </CustomFilter>
+      </field>
+      <gdr>
+        <VarType>Area</VarType>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="N68KG0000YQL" id="E824Y300153E" label="_ComputedTechnicalAllowedLogins_report" length="32766" name="ComputedTechnicalAllowedLogins__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AE824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/ComputedTechnicalAllowedLogins__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_ComputedTechnicalAllowedLogins_report</Label>
+        <Alias>AE824Y300153E</Alias>
+        <Behavior>Default</Behavior>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+        <SetNullOnEmptyValue>1</SetNullOnEmptyValue>
+      </extrainfo>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="ACF3FP000M4H" id="F824Y300153E" label="_DefaultCostType_report" length="50" name="DefaultCostType__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AF824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/DefaultCostType__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Type>webaccess.Process.Columns.WithPossibleValues</Type>
+        <Label>_DefaultCostType_report</Label>
+        <Alias>AF824Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <TableName>
+        </TableName>
+        <DisplayedColumns>
+        </DisplayedColumns>
+        <DataSourceOrigin>Standalone</DataSourceOrigin>
+        <possibleKeys>
+OpEx
+CapEx</possibleKeys>
+        <SavedColumn>
+        </SavedColumn>
+        <possibleValues>
+_OpEx
+_CapEx</possibleValues>
+        <ProcessName>
+        </ProcessName>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="Z392FP000IYP" id="G824Y300153E" label="_DefaultGLAccount" length="30" name="DefaultGLAccount__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AG824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/DefaultGLAccount__</fullname>
+        <jointable>AP - G/L accounts__</jointable>
+        <jointableid>CT#UNZ3Y300153E</jointableid>
+        <defaultvalue>
+        </defaultvalue>
+        <joincondition>(&amp;(source.DefaultGLAccount__=dest.Account__)(source.CompanyCode__=dest.CompanyCode__))</joincondition>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_DefaultGLAccount</Label>
+        <Alias>AG824Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <Editable>false</Editable>
+        <TableName>CT#UNZ3Y300153E</TableName>
+        <SortOrder>ASC</SortOrder>
+        <SearchInArchiveServerSide>false</SearchInArchiveServerSide>
+        <DisplayedColumns>Account__|Description__</DisplayedColumns>
+        <DisplayedColumnsIds>
+        </DisplayedColumnsIds>
+        <UseTableForAutolearn>false</UseTableForAutolearn>
+        <SavedColumn>Account__</SavedColumn>
+        <SavedColumnId>
+        </SavedColumnId>
+        <ExposedColumns>
+        </ExposedColumns>
+        <ProcessName>AP - G/L accounts__</ProcessName>
+        <KeyColumnId>
+        </KeyColumnId>
+        <KeyAttribute>
+        </KeyAttribute>
+        <CustomFilter>(CompanyCode__=%[CompanyCode__])</CustomFilter>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="YWZIG0000VLT" id="H824Y300153E" label="_DefaultTaxCode_report" length="600" name="DefaultTaxCode__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AH824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/DefaultTaxCode__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_DefaultTaxCode_report</Label>
+        <Alias>AH824Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <Editable>false</Editable>
+        <TableName>CT#WRZ3Y300153E</TableName>
+        <SortOrder>ASC</SortOrder>
+        <SearchInArchiveServerSide>false</SearchInArchiveServerSide>
+        <DisplayedColumns>TaxCode__|Description__|TaxRate__|CompanyCode__</DisplayedColumns>
+        <DisplayedColumnsIds>
+        </DisplayedColumnsIds>
+        <UseTableForAutolearn>false</UseTableForAutolearn>
+        <SavedColumn>TaxCode__</SavedColumn>
+        <SavedColumnId>
+        </SavedColumnId>
+        <ExposedColumns>
+        </ExposedColumns>
+        <ProcessName>AP - Tax codes__</ProcessName>
+        <KeyColumnId>
+        </KeyColumnId>
+        <KeyAttribute>
+        </KeyAttribute>
+        <CustomFilter>|(CompanyCode__=%[CompanyCode__])(CompanyCode__=)(CompanyCode__!=*))</CustomFilter>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="JYHF132001" id="I824Y300153E" label="_Description_report" length="100" name="Description__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AI824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/Description__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_Description_report</Label>
+        <Alias>AI824Y300153E</Alias>
+        <Behavior>Default</Behavior>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <required>false</required>
+        <lazyTranslatable>
+        </lazyTranslatable>
+      </field>
+      <gdr>
+        <VarType>Area</VarType>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="Y81200000YRL" id="M824Y300153E" label="_DisableRestrictionInheritance_report" length="0" name="DisableRestrictionInheritance__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="BOOL">
+    <properties>
+      <db>
+        <alias>AM824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/DisableRestrictionInheritance__</fullname>
+        <defaultvalue>false</defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_DisableRestrictionInheritance_report</Label>
+        <Alias>AM824Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>Boolean</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="DRI2FP000IYP" id="J824Y300153E" label="_FullName_report" length="500" name="FullName__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AJ824Y300153E</alias>
+        <index vartype="INT">1</index>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/FullName__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_FullName_report</Label>
+        <Alias>AJ824Y300153E</Alias>
+        <Behavior>Default</Behavior>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <VarType>Area</VarType>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="ATXD131999" id="K824Y300153E" label="_SupplyName_report" length="100" name="Name__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AK824Y300153E</alias>
+        <index vartype="INT">1</index>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/Name__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_SupplyName_report</Label>
+        <Alias>AK824Y300153E</Alias>
+        <Behavior>Default</Behavior>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <required>false</required>
+        <lazyTranslatable>
+        </lazyTranslatable>
+      </field>
+      <gdr>
+        <VarType>Area</VarType>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="GSQ2FP000IYP" id="L824Y300153E" label="_NoGoodsReceipt_report" length="0" name="NoGoodsReceipt__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="BOOL">
+    <properties>
+      <db>
+        <alias>AL824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/NoGoodsReceipt__</fullname>
+        <defaultvalue>false</defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_NoGoodsReceipt_report</Label>
+        <Alias>AL824Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>Boolean</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="GLY4FP000PA9" id="N824Y300153E" label="_NotifyRequesterOnReceipt_report" length="0" name="NotifyRequesterOnReceipt__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="BOOL">
+    <properties>
+      <db>
+        <alias>AN824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/NotifyRequesterOnReceipt__</fullname>
+        <defaultvalue>false</defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_NotifyRequesterOnReceipt_report</Label>
+        <Alias>AN824Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>Boolean</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="WXJ2FP000IYP" id="B824Y300153E" label="_ParentSupplyID_report" length="50" name="ParentSupplyID__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AB824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/ParentSupplyID__</fullname>
+        <jointable>PurchasingSupply__</jointable>
+        <jointableid>CT#A824Y300153E</jointableid>
+        <defaultvalue>
+        </defaultvalue>
+        <joincondition>(&amp;(source.ParentSupplyID__=dest.SupplyID__)(source.CompanyCode__=dest.CompanyCode__))</joincondition>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_ParentSupplyID_report</Label>
+        <Alias>AB824Y300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <Editable>false</Editable>
+        <required>false</required>
+        <TableName>CT#A824Y300153E</TableName>
+        <SortOrder>ASC</SortOrder>
+        <SearchInArchiveServerSide>false</SearchInArchiveServerSide>
+        <DisplayedColumns>Name__|FullName__|Description__</DisplayedColumns>
+        <DisplayedColumnsIds>
+        </DisplayedColumnsIds>
+        <UseTableForAutolearn>false</UseTableForAutolearn>
+        <SavedColumn>SupplyID__</SavedColumn>
+        <SavedColumnId>
+        </SavedColumnId>
+        <ExposedColumns>
+        </ExposedColumns>
+        <ProcessName>PurchasingSupply__</ProcessName>
+        <KeyColumnId>SupplyID__</KeyColumnId>
+        <KeyAttribute>ParentSupplyID__</KeyAttribute>
+        <CustomFilter>(CompanyCode__=%[CompanyCode__])</CustomFilter>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="QTNC132043" id="O824Y300153E" label="_RecipientLogin_report" length="80" name="RecipientLogin__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AO824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/RecipientLogin__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_RecipientLogin_report</Label>
+        <Alias>AO824Y300153E</Alias>
+        <DocMgrDisplayType>webaccess.Edd.ui.DNorLogin</DocMgrDisplayType>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <Editable>false</Editable>
+        <TableName>ODUSER</TableName>
+        <SortOrder>ASC</SortOrder>
+        <SearchInArchiveServerSide>false</SearchInArchiveServerSide>
+        <DisplayedColumns>Login|DisplayName</DisplayedColumns>
+        <UseTableForAutolearn>false</UseTableForAutolearn>
+        <SavedColumn>Login</SavedColumn>
+        <ExposedColumns>
+        </ExposedColumns>
+        <ProcessName>
+        </ProcessName>
+        <KeyColumnId>
+        </KeyColumnId>
+        <KeyAttribute>
+        </KeyAttribute>
+        <CustomFilter>(&amp;(Vendor=0)(Customer=0)(|(PortalUser!=1)(PortalUser!=*)))</CustomFilter>
+      </field>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="KNLY132000" id="P824Y300153E" label="_SupplyID_report" length="50" name="SupplyID__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AP824Y300153E</alias>
+        <index vartype="INT">1</index>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/SupplyID__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:16</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_SupplyID_report</Label>
+        <Alias>AP824Y300153E</Alias>
+        <Behavior>Default</Behavior>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <required>false</required>
+        <lazyTranslatable>
+        </lazyTranslatable>
+      </field>
+      <gdr>
+        <VarType>Area</VarType>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="N68KG0000YRL" id="Q824Y300153E" label="_TechnicalAllowedUsersOrGroups_report" length="32766" name="TechnicalAllowedUsersOrGroups__" originalProcessID="IYID131998" precision="0" processid="A824Y300153E" submitable="1" type="STR">
+    <properties>
+      <db>
+        <alias>AQ824Y300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/TechnicalAllowedUsersOrGroups__</fullname>
+        <defaultvalue>
+        </defaultvalue>
+        <RecordLastWrite>2026-05-08 14:30:17</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>_TechnicalAllowedUsersOrGroups_report</Label>
+        <Alias>AQ824Y300153E</Alias>
+        <Behavior>Default</Behavior>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+        <SetNullOnEmptyValue>1</SetNullOnEmptyValue>
+      </extrainfo>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>String</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <type id="KOLHG0000M4O" name="CT">
+  </type>
+</process>

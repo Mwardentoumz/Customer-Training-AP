@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection>
+	<items>
+		<TranslateItem>
+			<key>_API Key</key>
+			<val>API-sleutel</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key Identifier</key>
+			<val>Identificatie API-sleutel</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key Identifier_report</key>
+			<val>Identificatie API-sleutel PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_API Key_report</key>
+			<val>API-sleutel PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Id</key>
+			<val>OAuth client-ID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Id_report</key>
+			<val>OAuth client-ID</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Secret</key>
+			<val>OAuth clientgeheim</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Client Secret_report</key>
+			<val>OAuth clientgeheim</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Configure the PDP connection settings</key>
+			<val>Verbindingsinstellingen PA configureren</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Connector Type</key>
+			<val>Type API</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Connector Type_report</key>
+			<val>Type API</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Document data</key>
+			<val>Details PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_errorExistingConfigurationName</key>
+			<val>Er bestaat al een configuratie met dezelfde naam.</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_General</key>
+			<val>Verbinding met PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_jsonParameters</key>
+			<val>JSON-instellingen</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_jsonParameters_report</key>
+			<val>JSON-instellingen</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Name</key>
+			<val>Naam configuratie</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Name_report</key>
+			<val>Naam configuratie</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_P2P - PDP Connection Parameters</key>
+			<val>S2P - configuratie verbinding PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_P2P - PDP Connection Parameters__</key>
+			<val>S2P - configuratie verbinding PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_EOD</key>
+			<val>EoD</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_EOD_SG5_V1</key>
+			<val>Standardized AFNOR SG5 (Esker PA)</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_PDP_Connector_SG5_V1</key>
+			<val>Gestandaardiseerde AFNOR SG5</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_S2P Configuration</key>
+			<val>Configuratie toepassing S2P</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_S2P Configuration_report</key>
+			<val>Configuratie toepassing S2P</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Token URI</key>
+			<val>OAuth token URL</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_Token URI_report</key>
+			<val>OAuth token URL</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_URI</key>
+			<val>URI</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>_URI_report</key>
+			<val>URI van de PA API</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>P2P - PDP Connection Parameters</key>
+			<val>S2P - configuratie verbinding PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>P2P - PDP Connection Parameters__</key>
+			<val>S2P - configuratie verbinding PA</val>
+		</TranslateItem>
+		<TranslateItem>
+			<key>URI_Help</key>
+			<val>Voer de URI in ter identificatie van het geregistreerde platform (PA) waarmee u verbinding wilt maken.</val>
+		</TranslateItem>
+	</items>
+</TranslateCollection>
