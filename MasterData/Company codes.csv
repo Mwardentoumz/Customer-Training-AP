@@ -1,0 +1,6 @@
+"CompanyCode__","CompanyName__","VATNumber__","SIRET__","Street__","Region__","PurchasingOrganization__","PurchasingGroup__","PostalCode__","PhoneNumber__","PostOfficeBox__","Country__","DeterminationKeyword__","DeliveryAddressID__","FaxNumber__","ERP__","ContactEmail__","DefaultExpenseReportType__","DefaultConfiguration__","Currency__","City__","Sub__","WorkingDays__"
+"CH01","Technologent Switzerland","79845712536","","Bundesplatz 32","","","","3003","+41586311718","","CH","","","","generic","info@ch.technologent.com","","Default","CHF","Bern","",""
+"DE01","Technologent Deutschland","","","Färbergraben 20,","","","","80331","+4915170419033","","DE","","","","generic","info@detechnologent.com","","","EUR","München","",""
+"UK01","Technologent UK Headquarters","46054983127","","Kensington Street, 22","","","","N12 5XY","","","GB","","","(866) 920-7885","generic","info@technologentt.com","","Default","GBP","London","",""
+"FR01","Technologent France","FR63498756436","812188440","10 avenue du Maréchal Foch","","","","21000","+33 554854712","","FR","","1000","(866) 211-7566","generic","info@frtechnologent.com","","Default","EUR","Dijon","",""
+"US01","Technologent USA","49145218272","16-048-3982","77 Massachusetts Ave","MA","","","02139","+61 782783937","","US","","","(866) 593-7619","generic","info@usatechnologent.com","","","USD","BOSTON","",""

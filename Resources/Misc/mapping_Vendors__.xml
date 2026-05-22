@@ -141,5 +141,12 @@
 				<fieldNameInFile>PreferredInvoiceType__</fieldNameInFile>
 			</fieldInFile>
 		</mapping>
+		<mapping>
+			<fieldInTable>ShowAlerts__</fieldInTable>
+			<fieldInFile>
+				<fieldNameInFile>ShowAlerts__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
+		
 	</mappings>
 </mappingDef>

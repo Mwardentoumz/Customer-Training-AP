@@ -579,5 +579,15 @@
 ],
 "changelog-generator.scopes": [
 	"JFROG"
+],
+"esker.eod.accounts": [
+	{
+		"id": "20092027",
+		"name": "PROD",
+		"user": ".su@20092027",
+		"overwrite": true,
+		"isProtected": false,
+		"env": "j"
+	}
 ]
 }

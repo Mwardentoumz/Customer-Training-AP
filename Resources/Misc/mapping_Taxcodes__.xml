@@ -63,5 +63,17 @@
 				<fieldNameInFile>TaxRoundingPriority__</fieldNameInFile>
 			</fieldInFile>
 		</mapping>
+		<mapping>
+			<fieldInTable>CompanyCodes__</fieldInTable>
+			<fieldInFile>
+				<fieldNameInFile>CompanyCodes__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
+		<mapping>
+			<fieldInTable>TaxType__</fieldInTable>
+			<fieldInFile>
+				<fieldNameInFile>TaxType__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
 	</mappings>
 </mappingDef>

@@ -129,5 +129,23 @@
 				<fieldNameInFile>PurchasingOrganization__</fieldNameInFile>
 			</fieldInFile>
 		</mapping>
+		<mapping>
+			<fieldInTable>DefaultExpenseReportType__</fieldInTable>
+			<fieldInFile>
+				<fieldNameInFile>DefaultExpenseReportType__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
+		<mapping>
+			<fieldInTable>DeterminationKeyword__</fieldInTable>
+			<fieldInFile>
+				<fieldNameInFile>DeterminationKeyword__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
+		<mapping>
+			<fieldInTable>WorkingDays__</fieldInTable>
+			<fieldInFile>
+				<fieldNameInFile>WorkingDays__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
 	</mappings>
 </mappingDef>
