@@ -10,9 +10,9 @@
 	</options>
 	<mappings>
 		<mapping key="true">
-			<fieldInTable>CompanyCode__</fieldInTable>
+			<fieldInTable>CompanyCodes__</fieldInTable>
 			<fieldInFile>
-				<fieldNameInFile>CompanyCode__</fieldNameInFile>
+				<fieldNameInFile>CompanyCodes__</fieldNameInFile>
 			</fieldInFile>
 		</mapping>
 		<mapping key="true">

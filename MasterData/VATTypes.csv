@@ -1,0 +1,18 @@
+Code__,CompanyCode__,Description__
+V4,FR01,TVA - 20%
+V1,FR01,TVA - 10%
+V5,FR01,TVA - 5.5%
+V3,FR01,TVA - 19,6%
+U1,FR01,TVA importation 15%
+V0,FR01,Exonération de TVA
+NO VAT,UK01,Miscellaneous without VAT
+VAT10,UK01,Miscellaneous with 10% VAT
+VAT16,UK01,Miscellaneous with 16% VAT
+VAT19,UK01,Miscellaneous with 19% VAT
+VAT25,UK01,Miscellaneous with 25% VAT
+I1,US01,A/P Sales tax - taxable 5.5%
+I0,US01,A/P Sales tax - exempt
+A1,US01,Standard rated VAT - 15%
+A0,US01,Tax Exempt
+VA,US01,19% domestic input tax
+VN,US01,16% domestic input tax
