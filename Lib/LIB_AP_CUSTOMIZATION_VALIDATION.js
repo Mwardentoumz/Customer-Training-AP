@@ -1,7 +1,7 @@
 /* eslint-disable no-empty-function, no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* LIB_DEFINITION{
-  "name": "LIB_AP_CUSTOMIZATION_VALIDATION_SAMPLE",
+  "name": "LIB_AP_CUSTOMIZATION_VALIDATION",
   "scriptType": "SERVER",
   "libraryType": "Lib",
   "comment": "Validation Script AP customization callbacks",
@@ -366,6 +366,7 @@ var Lib;
                      * }
                      */
                     GetFieldValuesMapping: function (modifiedFieldValuesMapping) {
+                        
                         return modifiedFieldValuesMapping;
                     },
                     /**

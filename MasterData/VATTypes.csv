@@ -6,6 +6,7 @@ V3,FR01,TVA - 19,6%
 U1,FR01,TVA importation 15%
 V0,FR01,Exonération de TVA
 NO VAT,UK01,Miscellaneous without VAT
+VAT5.5,UK01,Miscellaneous with 5.5% VAT
 VAT10,UK01,Miscellaneous with 10% VAT
 VAT16,UK01,Miscellaneous with 16% VAT
 VAT19,UK01,Miscellaneous with 19% VAT
