@@ -6013,5 +6013,9 @@ Demandez à votre administrateur de vérifier que le responsable et le montant m
 			<key>Wrong workflow: not in charge</key>
 			<val>Mauvaise affectation: pas en charge</val>
 		</TranslateItem>
+		<TranslateItem>
+			<key>Please make sure the Text is filled before posting.</key>
+			<val>Merci de remplir le champ texte avant de valider.</val>
+		</TranslateItem>
 	</items>
 </TranslateCollection>

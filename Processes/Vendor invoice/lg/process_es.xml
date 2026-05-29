@@ -5987,5 +5987,9 @@ Pida a su administrador que compruebe si se han especificado el responsable y el
 			<key>Wrong workflow: not in charge</key>
 			<val>Asignación incorrecta: no encargado</val>
 		</TranslateItem>
+		<TranslateItem>
+			<key>Please make sure the Text is filled before posting.</key>
+			<val>Asegúrese de que el texto esté completo antes de publicar.</val>
+		</TranslateItem>
 	</items>
 </TranslateCollection>

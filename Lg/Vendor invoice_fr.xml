@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TranslateCollection frozen="false">
+    <items>
+        <TranslateItem>
+            <key>Please make sure the Text is filled before posting </key>
+            <val>Veuillez-vous assurer que le champ Text est bien rempli avant de valider.</val>
+        </TranslateItem>
+        <TranslateItem>
+            <key>Please make sure the Text is filled before posting </key>
+            <val>Asegúrese de que el texto esté completo antes de publicar.</val>
+        </TranslateItem>
+    </items>
+</TranslateCollection>

@@ -944,6 +944,7 @@ var Lib;
                 * @example
                 * <pre><code>
                 * OnFillVendorContactEmail: function(result, error)
+                *
                 * {
                 *   // Always keep the vendor contact email read-only
                 *	Controls.VendorContactEmail__.SetReadOnly(true);
