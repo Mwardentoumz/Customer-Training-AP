@@ -279,6 +279,18 @@ var Lib;
                  * </code></pre>
                  */
                 HTMLScripts.OnRefreshApproversListRowEnd = function (workflowUIParameters, table, row, index) {
+                    
+                    
+                    Log.Verbose("profil esker : ", User.profileName)
+                    var currentUser  = User.profileName    
+                    
+                    if (Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP__", "0") === "1") {
+                        Log.Verbose("param is on")
+                        if (currentUser) {
+                            table.HideTableRowDeleteForItem(index, true);
+                            table.HideTableRowAddForItem(index, true);
+                        }
+                    }
                 };
                 /**
                  * @method Lib.AP.Customization.HTMLScripts.GetContributorsExtraFilter

@@ -162,6 +162,9 @@ var Lib;
                      * </code></pre>
                      */
                     CustomizeGlobalStep: function (step) {
+                        step.isVisible = function(){
+                            return true;
+                        };
                     }
                 };
                 Wizard.AgencySettings = {
