@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<process accountid="20092025" allowrepairprocess="0" builtin="0" builtinversion="0" carriesapplicationversion="0" creationdatetime="2026-05-08 14:29:02" deleted="0" eskerapplication="P2P" global="0" id="NC04Y300153E" keepcustomization="0" keepcustompositions="0" keepfieldsonly="1" keepfieldsproperties="0" keepnewcontroloptions="0" migrationversion="4" name="AP - Application Settings Wizard" needvalidation="1" ootofilter="" ootoversion="0" originalProcessID="VHPD70769" ownerid="cn=.su@20092025,ou=DEV,ou=TrainingCustomerPJT,ou=demoprocess_thivolet,ou=05324291,ou=ESK,s=eoo" ownerpb="OnDemand AddressBook" public="1" pushnotification="0" reuseengine="0" sprintversion="5.353.0" transportname="CustomData" upgradable="1" userid="0" version="1" visibility="1">
+<process accountid="20092025" allowrepairprocess="0" builtin="0" builtinversion="0" carriesapplicationversion="0" creationdatetime="2026-05-08 14:29:02" deleted="0" eskerapplication="P2P" global="0" id="NC04Y300153E" keepcustomization="0" keepcustompositions="0" keepfieldsonly="1" keepfieldsproperties="0" keepnewcontroloptions="0" migrationversion="4" name="AP - Application Settings Wizard" needvalidation="1" ootofilter="" ootoversion="0" originalProcessID="VHPD70769" ownerid="cn=.su@20092025,ou=DEV,ou=TrainingCustomerPJT,ou=demoprocess_thivolet,ou=05324291,ou=ESK,s=eoo" ownerpb="OnDemand AddressBook" public="1" pushnotification="0" reuseengine="0" sprintversion="5.353.0" transportname="CustomData" upgradable="1" userid="0" version="32" visibility="1">
   <properties>
     <dbIndex>
       <AUTO_AUD04Y300153EA>&lt;Index&gt;&lt;Ref Name="AUD04Y300153E" Option="ASC"/&gt;&lt;/Index&gt;</AUTO_AUD04Y300153EA>
@@ -8280,6 +8280,8 @@ run();
     <process>
       <flowtype>processing</flowtype>
       <ocrpreset>scan</ocrpreset>
+      <EnableCatchNetworkError>
+      </EnableCatchNetworkError>
       <panelLabelWidth>
       </panelLabelWidth>
       <EnablePrecomputedPngPreview>
@@ -8293,6 +8295,8 @@ run();
       </enableflexibleteaching>
       <enableflexiblewalkme>
       </enableflexiblewalkme>
+      <enableInternalConversation>
+      </enableInternalConversation>
       <upgradable>yes</upgradable>
       <disableocr>yes</disableocr>
       <instanciable>1</instanciable>
@@ -9892,7 +9896,7 @@ run();
       <restorationPanel>General_pane</restorationPanel>
       <layout>{
 	"data": [],
-	"stamps": 617,
+	"stamps": 633,
 	"*": {
 		"GDRData": {
 			"type": "GDRData",
@@ -9919,7 +9923,8 @@ run();
 				"backColor": "text-backgroundcolor-color7",
 				"style": "FlexibleFormLight",
 				"footerStyle": "LargeFooter",
-				"version": 0
+				"version": 0,
+				"maxwidth": 1480
 			},
 			"*": {
 				"form-header": {
@@ -9927,7 +9932,8 @@ run();
 					"data": [],
 					"stamp": 4,
 					"options": {
-						"version": 0
+						"version": 0,
+						"maxwidth": 1480
 					}
 				},
 				"form-center": {
@@ -9935,7 +9941,8 @@ run();
 					"data": [],
 					"stamp": 5,
 					"options": {
-						"version": 0
+						"version": 0,
+						"maxwidth": 1480
 					},
 					"*": {
 						"form-content": {
@@ -10152,7 +10159,8 @@ run();
 																"leftImageURL": "",
 																"removeMargins": false,
 																"elementsAlignment": "left",
-																"version": 0
+																"version": 0,
+																"labelLength": 0
 															},
 															"*": {
 																"FieldsManager": {
@@ -12926,7 +12934,8 @@ run();
 																						"browsable": false,
 																						"minNbLines": 3,
 																						"hidden": true,
-																						"version": 0
+																						"version": 0,
+																						"numberOfLines": 3
 																					}
 																				}
 																			}
@@ -13177,7 +13186,8 @@ run();
 																						"width": 250,
 																						"browsable": false,
 																						"minNbLines": 3,
-																						"version": 0
+																						"version": 0,
+																						"numberOfLines": 3
 																					}
 																				},
 																				"LabelReconciliationType__": {
@@ -13278,7 +13288,8 @@ run();
 																						"width": 250,
 																						"browsable": false,
 																						"minNbLines": 3,
-																						"version": 0
+																						"version": 0,
+																						"numberOfLines": 3
 																					}
 																				},
 																				"LabelAutolearningOnPOLines__": {
@@ -13494,7 +13505,7 @@ run();
 																"label": "_Payment approval workflow",
 																"leftImageURL": "",
 																"removeMargins": false,
-																"hidden": true,
+																"hidden": false,
 																"sameHeightAsSiblings": false,
 																"elementsAlignment": "left",
 																"version": 0
@@ -13536,7 +13547,9 @@ run();
 																			"WorkflowEnableAutoApproveFromNotifications__": "LabelWorkflowEnableAutoApproveFromNotifications__",
 																			"LabelWorkflowEnableAutoApproveFromNotifications__": "WorkflowEnableAutoApproveFromNotifications__",
 																			"WorkflowAutoEscalationDays__": "LabelWorkflowAutoEscalationDays__",
-																			"LabelWorkflowAutoEscalationDays__": "WorkflowAutoEscalationDays__"
+																			"LabelWorkflowAutoEscalationDays__": "WorkflowAutoEscalationDays__",
+																			"Z_BlockAP__": "LabelZ_BlockAP__",
+																			"LabelZ_BlockAP__": "Z_BlockAP__"
 																		}
 																	},
 																	"*": {
@@ -13548,7 +13561,7 @@ run();
 																			"stamp": 193,
 																			"options": {
 																				"version": 0,
-																				"lines": 19,
+																				"lines": 20,
 																				"columns": 2,
 																				"ctrlsPos": {
 																					"Spacer_line5__": {
@@ -13686,6 +13699,14 @@ run();
 																					"WorkflowAutoEscalationDays__": {
 																						"line": 19,
 																						"column": 2
+																					},
+																					"Z_BlockAP__": {
+																						"line": 20,
+																						"column": 2
+																					},
+																					"LabelZ_BlockAP__": {
+																						"line": 20,
+																						"column": 1
 																					}
 																				},
 																				"colspans": [
@@ -13724,6 +13745,7 @@ run();
 																							"length": 2
 																						}
 																					],
+																					[],
 																					[],
 																					[],
 																					[],
@@ -14176,8 +14198,44 @@ run();
 																						"helpText": "_InfoWorkflowAutoEscalationDays",
 																						"helpURL": "",
 																						"helpFormat": "HTML Format",
-																						"browsable": false
+																						"browsable": false,
+																						"integer": true,
+																						"precision_internal": 0,
+																						"precision_current": 0
 																					}
+																				},
+																				"LabelZ_BlockAP__": {
+																					"type": "Label",
+																					"data": [
+																						"Z_BlockAP__"
+																					],
+																					"options": {
+																						"label": "Block AP Specialist from editing the workflow",
+																						"version": 0
+																					},
+																					"stamp": 632,
+																					"previousName": "LabelZ_CheckBox"
+																				},
+																				"Z_BlockAP__": {
+																					"type": "CheckBox",
+																					"data": [
+																						"Z_BlockAP__"
+																					],
+																					"options": {
+																						"label": "Block AP Specialist from editing the workflow",
+																						"activable": true,
+																						"width": 230,
+																						"createdInDesignUpgradable": true,
+																						"helpText": "",
+																						"helpURL": "",
+																						"helpFormat": "HTML Format",
+																						"helpIconPosition": "Right",
+																						"possibleValues": {},
+																						"possibleKeys": {},
+																						"version": 0
+																					},
+																					"stamp": 633,
+																					"previousName": "Z_CheckBox__"
 																				}
 																			}
 																		}
@@ -17245,7 +17303,8 @@ run();
 																						"helpURL": "",
 																						"helpFormat": "HTML Format",
 																						"browsable": false,
-																						"autocompletable": false
+																						"autocompletable": false,
+																						"numberOfLines": 3
 																					}
 																				}
 																			}
@@ -17640,18 +17699,20 @@ run();
 																							"2": "_French",
 																							"3": "_Dutch",
 																							"10": "_Spanish",
-																							"13": "_Italian",
+																							"13": "_AutoDetectLanguage",
 																							"119": "_Japanese",
 																							"120": "_Simplified Chinese",
 																							"121": "_Traditional Chinese",
 																							"122": "_Korean",
-																							"125": "_Hebrew",
 																							"124": "_Arabic",
+																							"125": "_Hebrew",
 																							"-2": "_AutoDetectLanguage"
 																						},
 																						"version": 1,
-																						"keyValueMode": false,
-																						"possibleKeys": {},
+																						"keyValueMode": true,
+																						"possibleKeys": {
+																							"13": -2
+																						},
 																						"activable": true,
 																						"width": "250",
 																						"helpText": "",
@@ -18103,7 +18164,8 @@ run();
 																				"columns": 2,
 																				"ctrlsPos": {},
 																				"colspans": []
-																			}
+																			},
+																			"*": {}
 																		}
 																	}
 																}
@@ -22167,7 +22229,8 @@ run();
 					"stamp": 613,
 					"options": {
 						"splitterType": "simple-h",
-						"version": 0
+						"version": 0,
+						"maxwidth": 1480
 					},
 					"*": {
 						"Previous": {
@@ -22970,13 +23033,17 @@ _FiftenYears</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/CodingEnableAssignments__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:54</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_CodingEnableAssignments_report</Label>
         <Alias>AKD04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -22990,13 +23057,17 @@ _FiftenYears</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/CodingEnableBusinessArea__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:54</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_CodingEnableBusinessArea_report</Label>
         <Alias>ALD04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -23010,13 +23081,17 @@ _FiftenYears</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/CodingEnableCompanyCode__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:54</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_CodingEnableCompanyCode_report</Label>
         <Alias>AMD04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -23030,13 +23105,17 @@ _FiftenYears</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/CodingEnableCostCenter__</fullname>
         <defaultvalue>true</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:54</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_CodingEnableCostCenter_report</Label>
         <Alias>AND04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -23050,13 +23129,17 @@ _FiftenYears</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/CodingEnableGLAccount__</fullname>
         <defaultvalue>true</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:54</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_CodingEnableGLAccount_report</Label>
         <Alias>AOD04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -23070,13 +23153,17 @@ _FiftenYears</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/CodingEnableInternalOrder__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:54</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_CodingEnableInternalOrder_report</Label>
         <Alias>APD04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -23090,13 +23177,17 @@ _FiftenYears</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/CodingEnableProfitCenter__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:54</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_CodingEnableProfitCenter_report</Label>
         <Alias>AQD04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -23159,13 +23250,17 @@ _FiftenYears</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/CodingEnableWBSElement__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:55</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_CodingEnableWBSElement_report</Label>
         <Alias>ATD04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -23181,7 +23276,7 @@ _FiftenYears</possibleValues>
         <fullname>/job/processfields/CompanyCode__</fullname>
         <defaultvalue>
         </defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:55</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_Default Company Code</Label>
@@ -23203,6 +23298,10 @@ _FiftenYears</possibleValues>
         <CustomFilter>
         </CustomFilter>
       </field>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>String</_type>
         <automatic>true</automatic>
@@ -23217,13 +23316,17 @@ _FiftenYears</possibleValues>
         <fullname>/job/processfields/ConfigurationName__</fullname>
         <defaultvalue>
         </defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:54</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:55</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_Configuration Name</Label>
         <Alias>AVD04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>String</_type>
         <automatic>true</automatic>
@@ -23908,13 +24011,17 @@ _InvoiceDate</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/DisplayAllowanceChargeOnNonPOLines__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:55</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:55</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_DisplayAllowanceChargeOnNonPOLines_report</Label>
         <Alias>ANE04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <help>
         <helpData>{"helpText":"_DisplayAllowanceChargeOnNonPOLines_tooltip","helpURL":"2627","helpFormat":"HTML Format"}</helpData>
       </help>
@@ -23931,13 +24038,17 @@ _InvoiceDate</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/DisplayAllowanceChargeOnPOLines__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:55</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:55</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_DisplayAllowanceChargeOnPOLines_report</Label>
         <Alias>AOE04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -25145,7 +25256,7 @@ _SAP</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/ERP__</fullname>
         <defaultvalue>generic</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:56</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:55</RecordLastWrite>
       </db>
       <extrainfo>
         <Type>webaccess.Process.Columns.WithPossibleValues</Type>
@@ -25167,6 +25278,10 @@ _JDE
 _EBS
 _SAPS4CLOUD</possibleValues>
       </field>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>String</_type>
         <automatic>true</automatic>
@@ -25549,7 +25664,7 @@ _Defra</possibleValues>
         <fullname>/job/processfields/SG04Y300153E</fullname>
         <defaultvalue>
         </defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:57</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
@@ -25557,6 +25672,10 @@ _Defra</possibleValues>
       <field>
         <isLongText>true</isLongText>
       </field>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>String</_type>
         <automatic>true</automatic>
@@ -25672,7 +25791,7 @@ _prevent</possibleValues>
         <fullname>/job/processfields/LastModifiedBy__</fullname>
         <defaultvalue>
         </defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:57</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_Last Modified By</Label>
@@ -25681,6 +25800,8 @@ _prevent</possibleValues>
       </extrainfo>
       <gdr>
         <VarType>Area</VarType>
+        <DisableAutolearn>
+        </DisableAutolearn>
       </gdr>
       <ui>
         <_type>String</_type>
@@ -25696,13 +25817,17 @@ _prevent</possibleValues>
         <fullname>/job/processfields/LastModifiedDateTime__</fullname>
         <defaultvalue>
         </defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:57</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_Last Modified Date Time</Label>
         <Alias>AXG04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Date</_type>
         <automatic>true</automatic>
@@ -25794,13 +25919,17 @@ _prevent</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/NonPOInvoiceEDIGroupLinesByTax__</fullname>
         <defaultvalue>true</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:58</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_NonPOInvoiceEDIGroupLinesByTax_report</Label>
         <Alias>ABH04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <help>
         <helpData>{"helpText":"_NonPOInvoiceEDIGroupLinesByTax_toltip","helpURL":"2628","helpFormat":"HTML Format"}</helpData>
       </help>
@@ -25892,7 +26021,7 @@ _GoogleCloudVision</possibleValues>
         <fullname>/job/processfields/EH04Y300153E</fullname>
         <defaultvalue>
         </defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:58</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
@@ -25900,6 +26029,10 @@ _GoogleCloudVision</possibleValues>
       <field>
         <isLongText>true</isLongText>
       </field>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>String</_type>
         <automatic>true</automatic>
@@ -26297,13 +26430,17 @@ _POMatching_Disabled</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/ProcessFacturXAsPDF__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:58</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_ProcessFacturXAsPDF_report</Label>
         <Alias>AQH04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <help>
         <helpData>{"helpText":"_ProcessFacturXAsPDF__tooltip","helpURL":"","helpFormat":"HTML Format"}</helpData>
       </help>
@@ -26684,7 +26821,7 @@ _ReconcileAtLineItems</possibleValues>
         <fullname>/job/processfields/SAPConfiguration__</fullname>
         <defaultvalue>
         </defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:58</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_SAPConfiguration_report</Label>
@@ -26693,6 +26830,8 @@ _ReconcileAtLineItems</possibleValues>
       </extrainfo>
       <gdr>
         <VarType>Area</VarType>
+        <DisableAutolearn>
+        </DisableAutolearn>
       </gdr>
       <ui>
         <_type>String</_type>
@@ -26707,7 +26846,7 @@ _ReconcileAtLineItems</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/SAPDocumentTypeDownPaymentInvoice__</fullname>
         <defaultvalue>KA</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:59</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_SAPDocumentTypeDownPaymentInvoice_report</Label>
@@ -26716,6 +26855,8 @@ _ReconcileAtLineItems</possibleValues>
       </extrainfo>
       <gdr>
         <VarType>Area</VarType>
+        <DisableAutolearn>
+        </DisableAutolearn>
       </gdr>
       <ui>
         <_type>String</_type>
@@ -26730,7 +26871,7 @@ _ReconcileAtLineItems</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/SAPDocumentTypeFIConsignmentStock__</fullname>
         <defaultvalue>RE</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:58</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_SAPDocumentTypeFIConsignmentStock_report</Label>
@@ -26739,6 +26880,8 @@ _ReconcileAtLineItems</possibleValues>
       </extrainfo>
       <gdr>
         <VarType>Area</VarType>
+        <DisableAutolearn>
+        </DisableAutolearn>
       </gdr>
       <ui>
         <_type>String</_type>
@@ -26753,7 +26896,7 @@ _ReconcileAtLineItems</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/SAPDocumentTypeFICreditNote__</fullname>
         <defaultvalue>KG</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:58</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_SAPDocumentTypeFICreditNote_report</Label>
@@ -26762,6 +26905,8 @@ _ReconcileAtLineItems</possibleValues>
       </extrainfo>
       <gdr>
         <VarType>Area</VarType>
+        <DisableAutolearn>
+        </DisableAutolearn>
       </gdr>
       <ui>
         <_type>String</_type>
@@ -26776,7 +26921,7 @@ _ReconcileAtLineItems</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/SAPDocumentTypeFIInvoice__</fullname>
         <defaultvalue>KR</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:59</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_SAPDocumentTypeFIInvoice_report</Label>
@@ -26785,6 +26930,8 @@ _ReconcileAtLineItems</possibleValues>
       </extrainfo>
       <gdr>
         <VarType>Area</VarType>
+        <DisableAutolearn>
+        </DisableAutolearn>
       </gdr>
       <ui>
         <_type>String</_type>
@@ -26799,7 +26946,7 @@ _ReconcileAtLineItems</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/SAPDocumentTypeMMCreditNote__</fullname>
         <defaultvalue>RE</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:59</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_SAPDocumentTypeMMCreditNote_report</Label>
@@ -26808,6 +26955,8 @@ _ReconcileAtLineItems</possibleValues>
       </extrainfo>
       <gdr>
         <VarType>Area</VarType>
+        <DisableAutolearn>
+        </DisableAutolearn>
       </gdr>
       <ui>
         <_type>String</_type>
@@ -26822,7 +26971,7 @@ _ReconcileAtLineItems</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/SAPDocumentTypeMMInvoice__</fullname>
         <defaultvalue>RE</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:59</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:56</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_SAPDocumentTypeMMInvoice_report</Label>
@@ -26831,6 +26980,8 @@ _ReconcileAtLineItems</possibleValues>
       </extrainfo>
       <gdr>
         <VarType>Area</VarType>
+        <DisableAutolearn>
+        </DisableAutolearn>
       </gdr>
       <ui>
         <_type>String</_type>
@@ -27716,13 +27867,17 @@ _Universal</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/VerificationCheckAttachmentSignature__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:28:59</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_VerificationCheckAttachmentSignature_report</Label>
         <Alias>AFJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -27736,13 +27891,17 @@ _Universal</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/VerificationCheckEDICompliance__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_VerificationCheckEDICompliance_report</Label>
         <Alias>AGJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28068,13 +28227,17 @@ _Line item based</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/WorkflowReviewersCanModifyAssignments__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_WorkflowReviewersCanModifyAssignments_report</Label>
         <Alias>ATJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28088,13 +28251,17 @@ _Line item based</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/WorkflowReviewersCanModifyBusinessArea__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_WorkflowReviewersCanModifyBusinessArea_report</Label>
         <Alias>AUJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28108,13 +28275,17 @@ _Line item based</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/WorkflowReviewersCanModifyCompanyCode__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_WorkflowReviewersCanModifyCompanyCode_report</Label>
         <Alias>AVJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28128,13 +28299,17 @@ _Line item based</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/WorkflowReviewersCanModifyCostCenter__</fullname>
         <defaultvalue>true</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_WorkflowReviewersCanModifyCostCenter_report</Label>
         <Alias>AWJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28148,13 +28323,17 @@ _Line item based</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/WorkflowReviewersCanModifyGLAccount__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_WorkflowReviewersCanModifyGLAccount_report</Label>
         <Alias>AXJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28168,13 +28347,17 @@ _Line item based</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/WorkflowReviewersCanModifyInternalOrder__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_WorkflowReviewersCanModifyInternalOrder_report</Label>
         <Alias>AYJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28188,13 +28371,17 @@ _Line item based</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/WorkflowReviewersCanModifyProfitCenter__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_WorkflowReviewersCanModifyProfitCenter_report</Label>
         <Alias>AZJ04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28257,13 +28444,49 @@ _Line item based</possibleValues>
         <noxml>1</noxml>
         <fullname>/job/processfields/WorkflowReviewersCanModifyWBSElement__</fullname>
         <defaultvalue>false</defaultvalue>
-        <RecordLastWrite>2026-05-08 14:29:00</RecordLastWrite>
+        <RecordLastWrite>2026-05-22 13:57:57</RecordLastWrite>
       </db>
       <extrainfo>
         <Label>_WorkflowReviewersCanModifyWBSElement_report</Label>
         <Alias>ACK04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+      <gdr>
+        <DisableAutolearn>
+        </DisableAutolearn>
+      </gdr>
+      <ui>
+        <_type>Boolean</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="0" format="" guid="JHNXQ300153E" id="JHNXQ300153E" label="Z_BlockAP__" length="0" name="Z_BlockAP__" originalProcessID="VHPD70769" precision="0" processid="NC04Y300153E" submitable="1" type="BOOL">
+    <properties>
+      <db>
+        <alias>AJHNXQ300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/Z_BlockAP__</fullname>
+        <defaultvalue>false</defaultvalue>
+        <RecordLastWrite>2026-06-02 08:49:31</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>Z_BlockAP__</Label>
+        <Alias>AJHNXQ300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <possibleKeys>
+        </possibleKeys>
+        <possibleValues>
+        </possibleValues>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
       <ui>
         <_type>Boolean</_type>
         <automatic>true</automatic>
@@ -28298,6 +28521,102 @@ _Line item based</possibleValues>
         <Alias>AEK04Y300153E</Alias>
         <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
       </extrainfo>
+    </properties>
+  </field>
+  <field deleted="1" format="" guid="SH3BQ300153E" id="SH3BQ300153E" label="Z_AllowEditReviewers__" length="0" name="Z_AllowEditReviewers__" originalProcessID="VHPD70769" precision="0" processid="NC04Y300153E" submitable="1" type="BOOL">
+    <properties>
+      <db>
+        <alias>ASH3BQ300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/Z_AllowEditReviewers__</fullname>
+        <defaultvalue>false</defaultvalue>
+        <RecordLastWrite>2026-05-29 09:27:32</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>Z_AllowEditReviewers__</Label>
+        <Alias>ASH3BQ300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <possibleKeys>
+        </possibleKeys>
+        <possibleValues>
+        </possibleValues>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>Boolean</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="1" format="" guid="UH3BQ300153E" id="UH3BQ300153E" label="Z_BlockAP__" length="0" name="Z_BlockAP__" originalProcessID="VHPD70769" precision="0" processid="NC04Y300153E" submitable="1" type="BOOL">
+    <properties>
+      <db>
+        <alias>AUH3BQ300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/Z_BlockAP__</fullname>
+        <defaultvalue>false</defaultvalue>
+        <RecordLastWrite>2026-06-01 14:57:35</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>Z_BlockAP__</Label>
+        <Alias>AUH3BQ300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <possibleKeys>
+        </possibleKeys>
+        <possibleValues>
+        </possibleValues>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>Boolean</_type>
+        <automatic>true</automatic>
+      </ui>
+    </properties>
+  </field>
+  <field deleted="1" format="" guid="U2YXQ300153E" id="U2YXQ300153E" label="Z_BlockAP__" length="0" name="Z_BlockAP__" originalProcessID="VHPD70769" precision="0" processid="NC04Y300153E" submitable="1" type="BOOL">
+    <properties>
+      <db>
+        <alias>AU2YXQ300153E</alias>
+        <noxml>1</noxml>
+        <fullname>/job/processfields/Z_BlockAP__</fullname>
+        <defaultvalue>false</defaultvalue>
+        <RecordLastWrite>2026-06-02 08:42:38</RecordLastWrite>
+      </db>
+      <extrainfo>
+        <Label>Z_BlockAP__</Label>
+        <Alias>AU2YXQ300153E</Alias>
+        <ProcessFieldVersion vartype="INT">1</ProcessFieldVersion>
+      </extrainfo>
+      <field>
+        <possibleKeys>
+        </possibleKeys>
+        <possibleValues>
+        </possibleValues>
+      </field>
+      <gdr>
+        <DisableAutolearn>1</DisableAutolearn>
+      </gdr>
+      <help>
+        <helpData>{"helpText":"","helpURL":"","helpFormat":"HTML Format","helpIconPosition":"Right"}</helpData>
+      </help>
+      <ui>
+        <_type>Boolean</_type>
+        <automatic>true</automatic>
+      </ui>
     </properties>
   </field>
   <type id="GOLHG0000M4O" name="CD">

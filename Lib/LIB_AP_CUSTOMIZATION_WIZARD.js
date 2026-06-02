@@ -123,6 +123,15 @@ var Lib;
                         step.isVisible = function(){
                             return true;
                         };
+                        step.onStart = function () {
+                        // Si le paramètre n'existe pas en base, on met la valeur par défaut à "0" (désactivé) ou "1" (activé)
+                        // Esker utilise souvent des chaînes "1" / "0" pour les paramètres de config typés chaîne
+                        if (Data.IsNullOrEmpty("Z_BlockAP__")) {
+                            Data.SetValue("Z_BlockAP__", "1"); 
+                        }
+                        };
+                        
+                        step.onQuit = function () { return true; };
                     },
                     /**
                      * @name Lib.AP.Customization.Wizard.Common.CustomizeGlobalStep
@@ -162,9 +171,6 @@ var Lib;
                      * </code></pre>
                      */
                     CustomizeGlobalStep: function (step) {
-                        step.isVisible = function(){
-                            return true;
-                        };
                     }
                 };
                 Wizard.AgencySettings = {

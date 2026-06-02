@@ -1,6 +1,6 @@
 {
 	"data": [],
-	"stamps": 617,
+	"stamps": 633,
 	"*": {
 		"GDRData": {
 			"type": "GDRData",
@@ -27,7 +27,8 @@
 				"backColor": "text-backgroundcolor-color7",
 				"style": "FlexibleFormLight",
 				"footerStyle": "LargeFooter",
-				"version": 0
+				"version": 0,
+				"maxwidth": 1480
 			},
 			"*": {
 				"form-header": {
@@ -35,7 +36,8 @@
 					"data": [],
 					"stamp": 4,
 					"options": {
-						"version": 0
+						"version": 0,
+						"maxwidth": 1480
 					}
 				},
 				"form-center": {
@@ -43,7 +45,8 @@
 					"data": [],
 					"stamp": 5,
 					"options": {
-						"version": 0
+						"version": 0,
+						"maxwidth": 1480
 					},
 					"*": {
 						"form-content": {
@@ -260,7 +263,8 @@
 																"leftImageURL": "",
 																"removeMargins": false,
 																"elementsAlignment": "left",
-																"version": 0
+																"version": 0,
+																"labelLength": 0
 															},
 															"*": {
 																"FieldsManager": {
@@ -3034,7 +3038,8 @@
 																						"browsable": false,
 																						"minNbLines": 3,
 																						"hidden": true,
-																						"version": 0
+																						"version": 0,
+																						"numberOfLines": 3
 																					}
 																				}
 																			}
@@ -3285,7 +3290,8 @@
 																						"width": 250,
 																						"browsable": false,
 																						"minNbLines": 3,
-																						"version": 0
+																						"version": 0,
+																						"numberOfLines": 3
 																					}
 																				},
 																				"LabelReconciliationType__": {
@@ -3386,7 +3392,8 @@
 																						"width": 250,
 																						"browsable": false,
 																						"minNbLines": 3,
-																						"version": 0
+																						"version": 0,
+																						"numberOfLines": 3
 																					}
 																				},
 																				"LabelAutolearningOnPOLines__": {
@@ -3602,7 +3609,7 @@
 																"label": "_Payment approval workflow",
 																"leftImageURL": "",
 																"removeMargins": false,
-																"hidden": true,
+																"hidden": false,
 																"sameHeightAsSiblings": false,
 																"elementsAlignment": "left",
 																"version": 0
@@ -3644,7 +3651,9 @@
 																			"WorkflowEnableAutoApproveFromNotifications__": "LabelWorkflowEnableAutoApproveFromNotifications__",
 																			"LabelWorkflowEnableAutoApproveFromNotifications__": "WorkflowEnableAutoApproveFromNotifications__",
 																			"WorkflowAutoEscalationDays__": "LabelWorkflowAutoEscalationDays__",
-																			"LabelWorkflowAutoEscalationDays__": "WorkflowAutoEscalationDays__"
+																			"LabelWorkflowAutoEscalationDays__": "WorkflowAutoEscalationDays__",
+																			"Z_BlockAP__": "LabelZ_BlockAP__",
+																			"LabelZ_BlockAP__": "Z_BlockAP__"
 																		}
 																	},
 																	"*": {
@@ -3656,7 +3665,7 @@
 																			"stamp": 193,
 																			"options": {
 																				"version": 0,
-																				"lines": 19,
+																				"lines": 20,
 																				"columns": 2,
 																				"ctrlsPos": {
 																					"Spacer_line5__": {
@@ -3794,6 +3803,14 @@
 																					"WorkflowAutoEscalationDays__": {
 																						"line": 19,
 																						"column": 2
+																					},
+																					"Z_BlockAP__": {
+																						"line": 20,
+																						"column": 2
+																					},
+																					"LabelZ_BlockAP__": {
+																						"line": 20,
+																						"column": 1
 																					}
 																				},
 																				"colspans": [
@@ -3832,6 +3849,7 @@
 																							"length": 2
 																						}
 																					],
+																					[],
 																					[],
 																					[],
 																					[],
@@ -4284,8 +4302,44 @@
 																						"helpText": "_InfoWorkflowAutoEscalationDays",
 																						"helpURL": "",
 																						"helpFormat": "HTML Format",
-																						"browsable": false
+																						"browsable": false,
+																						"integer": true,
+																						"precision_internal": 0,
+																						"precision_current": 0
 																					}
+																				},
+																				"LabelZ_BlockAP__": {
+																					"type": "Label",
+																					"data": [
+																						"Z_BlockAP__"
+																					],
+																					"options": {
+																						"label": "Block AP Specialist from editing the workflow",
+																						"version": 0
+																					},
+																					"stamp": 632,
+																					"previousName": "LabelZ_CheckBox"
+																				},
+																				"Z_BlockAP__": {
+																					"type": "CheckBox",
+																					"data": [
+																						"Z_BlockAP__"
+																					],
+																					"options": {
+																						"label": "Block AP Specialist from editing the workflow",
+																						"activable": true,
+																						"width": 230,
+																						"createdInDesignUpgradable": true,
+																						"helpText": "",
+																						"helpURL": "",
+																						"helpFormat": "HTML Format",
+																						"helpIconPosition": "Right",
+																						"possibleValues": {},
+																						"possibleKeys": {},
+																						"version": 0
+																					},
+																					"stamp": 633,
+																					"previousName": "Z_CheckBox__"
 																				}
 																			}
 																		}
@@ -7353,7 +7407,8 @@
 																						"helpURL": "",
 																						"helpFormat": "HTML Format",
 																						"browsable": false,
-																						"autocompletable": false
+																						"autocompletable": false,
+																						"numberOfLines": 3
 																					}
 																				}
 																			}
@@ -7748,18 +7803,20 @@
 																							"2": "_French",
 																							"3": "_Dutch",
 																							"10": "_Spanish",
-																							"13": "_Italian",
+																							"13": "_AutoDetectLanguage",
 																							"119": "_Japanese",
 																							"120": "_Simplified Chinese",
 																							"121": "_Traditional Chinese",
 																							"122": "_Korean",
-																							"125": "_Hebrew",
 																							"124": "_Arabic",
+																							"125": "_Hebrew",
 																							"-2": "_AutoDetectLanguage"
 																						},
 																						"version": 1,
-																						"keyValueMode": false,
-																						"possibleKeys": {},
+																						"keyValueMode": true,
+																						"possibleKeys": {
+																							"13": -2
+																						},
 																						"activable": true,
 																						"width": "250",
 																						"helpText": "",
@@ -8211,7 +8268,8 @@
 																				"columns": 2,
 																				"ctrlsPos": {},
 																				"colspans": []
-																			}
+																			},
+																			"*": {}
 																		}
 																	}
 																}
@@ -12275,7 +12333,8 @@
 					"stamp": 613,
 					"options": {
 						"splitterType": "simple-h",
-						"version": 0
+						"version": 0,
+						"maxwidth": 1480
 					},
 					"*": {
 						"Previous": {

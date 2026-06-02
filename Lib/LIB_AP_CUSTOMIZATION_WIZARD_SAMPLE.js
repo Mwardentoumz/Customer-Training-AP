@@ -1,7 +1,7 @@
 /* eslint-disable no-empty-function, no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* LIB_DEFINITION{
-  "name": "LIB_AP_CUSTOMIZATION_WIZARD",
+  "name": "LIB_AP_CUSTOMIZATION_WIZARD_SAMPLE",
   "scriptType": "CLIENT",
   "libraryType": "Lib",
   "comment": "HTML (custom script) AP wizard customization callbacks",

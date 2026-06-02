@@ -280,16 +280,14 @@ var Lib;
                  */
                 HTMLScripts.OnRefreshApproversListRowEnd = function (workflowUIParameters, table, row, index) {
                     
-                    
-                    Log.Verbose("profil esker : ", User.profileName)
-                    var currentUser  = User.profileName    
-                    
-                    if (Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP__", "0") === "1") {
-                        Log.Verbose("param is on")
-                        if (currentUser) {
-                            table.HideTableRowDeleteForItem(index, true);
-                            table.HideTableRowAddForItem(index, true);
-                        }
+                    // 1. Récupération robuste du paramètre de configuration Z_BlockAP__
+                    // On teste d'abord l'instance des paramètres, puis la variable globale si la première est indéfinie
+                    var appParameters = Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP__", "0");
+                    if (User.role ==="Accounts Payable Profile" && appParameters === "1") {
+                        table.HideTableRowDeleteForItem(index, true);
+                 		table.HideTableRowAddForItem(index, true);
+                 		row.Approver__.SetBrowsable(false);
+                 		row.Approver__.SetHoverMessage();  // remove display of on hover for information on user added to the workflow
                     }
                 };
                 /**
