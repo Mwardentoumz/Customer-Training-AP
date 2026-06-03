@@ -282,6 +282,9 @@ function handleContractValidity() {
         Lib.AP.Contract.HandleContractValidity();
     }
 }
+
+
+
 /**
 * This function will determinate the best way to reconcile the invoice
 * with the PO found (Teaching, extract data, perfect match, ...)

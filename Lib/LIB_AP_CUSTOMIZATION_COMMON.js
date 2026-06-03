@@ -126,6 +126,10 @@ var Lib;
                  * </code></pre>
                  */
                 Common.GetVendorCustomFields = function () {
+                    var customfields = [
+                        { nameInForm:"Z_SupplierType__", nameInTable: "Z_SupplierType__" }
+                    ]
+                    return customfields
                 };
                 /**
                  * @method Lib.AP.Customization.Common.GetRequiredFields

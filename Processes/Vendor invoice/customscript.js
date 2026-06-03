@@ -1341,6 +1341,30 @@ const InvoiceLineItem = {
         }
     }
 };
+
+
+//specifique demo - TTH
+//TTH
+function checkIfSupplierHasType(){
+    var query = Process.CreateQuery();
+    query.SetSpecificTable(AP - Vendors__);
+    query.AddAttribute("CompanyCode__");
+    query.AddAttribute("Number__");
+    
+
+    var processVars = query.MoveFirst();
+    Log.Info(processVars.GetValue_String("Z_SupplierType", ""));
+    var sType = processVars.GetValue_String("Z_SupplierType", "")
+    if (sType !== "") {
+        Data.SetValue("Z__SupplierType", sType)
+    } else {
+        Data.SetWarning("VendorNumber__", "No known type for this supplier")
+    }
+
+}
+
+checkIfSupplierHasType()
+
 function cleanUpLineItems() {
     if (Lib.AP.InvoiceType.isGLOrDownpaymentInvoice()) {
         // Clear any empty line in PO or POGL Invoice mode only

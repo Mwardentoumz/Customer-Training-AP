@@ -71,9 +71,45 @@ var Lib;
                      * </code></pre>
                      */
                     SetCustomHeaderEvents: function () {
+                        // TTH - Événement déclenché si le type de fournisseur change
+                        if (Controls.Z_SupplierType__) {
+                            Controls.Z_SupplierType__.OnChange = function () {
+                                LayoutHelpers.ManageSupplierTypeWarning();
+                            };
+                        }
+
+                        // TTH - Événement au cas où le spécialiste AP change manuellement le fournisseur
+                        if (Controls.VendorNumber__) {
+                            Controls.VendorNumber__.OnChange = function () {
+                                // Un léger délai (500ms) permet à Esker de rapatrier les données 
+                                // de la base (via GetVendorCustomFields) avant de vérifier le warning
+                                setTimeout(function () {
+                                    LayoutHelpers.ManageSupplierTypeWarning();
+                                }, 500);
+                            };
+                        }
+                    },
+                    ManageSupplierTypeWarning: function () {
+                        Log.Verbose("Test d appel de la fonction")
+                        // Récupération de la clé sélectionnée (P, R, O ou "")
+                        var supplierType = Data.GetValue("Z_SupplierType__");
+
+                        Log.Verbose("Valeur du type : ", supplierType)
+
+                        if (supplierType === null || supplierType === "" ) {
+                            // Si vide, on affiche le warning sur le nom du fournisseur (VendorName__)
+                            if (Controls.VendorName__) {
+                                Controls.VendorName__.SetWarning("Warning: Supplier type is missing in master data.");
+                            }
+                        } else {
+                            // Si renseigné, on nettoie le warning
+                            if (Controls.VendorName__) {
+                                Controls.VendorName__.SetWarning("");
+                            }
+                        }
                     },
                     /**
-                     * @method Lib.AP.Customization.HTMLScripts.SetCustomLineItemsEvents
+                     * @method Lib.AP.Customization.HTMLScripts.SetCustomLi neItemsEvents
                      * @description
                      * Init line items event handlers
                      *  @example
@@ -187,12 +223,15 @@ var Lib;
                  * </code></pre>
                  */
                 HTMLScripts.OnHTMLScriptEnd = function () {
+                    Log.Verbose("coucou")
                     //Handle displayed header fields
                     LayoutHelpers.InitHeaderLayout();
                     //Init header event handlers
                     LayoutHelpers.SetCustomHeaderEvents();
                     //Init line items event handlers
                     LayoutHelpers.SetCustomLineItemsEvents();
+                    //First call for custom
+                    LayoutHelpers.ManageSupplierTypeWarning();
                 };
                 /**
                  * @method Lib.AP.Customization.HTMLScripts.AddCustomTopMessagesWarning
@@ -282,12 +321,15 @@ var Lib;
                     
                     // 1. Récupération robuste du paramètre de configuration Z_BlockAP__
                     // On teste d'abord l'instance des paramètres, puis la variable globale si la première est indéfinie
-                    var appParameters = Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP__", "0");
-                    if (User.role ==="Accounts Payable Profile" && appParameters === "1") {
+                    Log.Verbose("Test of configuration", Sys.Parameters.GetInstance("AP"));                    
+                    Log.Verbose("Test of boolean", Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP__", "0") === "1");
+                    Log.Verbose("User role : ", User.profileName);
+                    
+                    if (User.profileName === "Accounts Payable Profile" && (Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP__", "0") === "1")) {
                         table.HideTableRowDeleteForItem(index, true);
-                 		table.HideTableRowAddForItem(index, true);
-                 		row.Approver__.SetBrowsable(false);
-                 		row.Approver__.SetHoverMessage();  // remove display of on hover for information on user added to the workflow
+                        table.HideTableRowAddForItem(index, true);
+                        row.Approver__.SetBrowsable(false);
+                        row.Approver__.SetHoverMessage();  // remove display of on hover for information on user added to the workflow
                     }
                 };
                 /**
