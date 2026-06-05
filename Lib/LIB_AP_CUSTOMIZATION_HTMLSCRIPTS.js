@@ -37,6 +37,7 @@ var Lib;
                      * },
                      * </code></pre>
                      */
+                    // CUSTO - TTH
                     InitHeaderLayout: function () {
                         Controls.ReceptionMethod__.Hide(true)
                     },

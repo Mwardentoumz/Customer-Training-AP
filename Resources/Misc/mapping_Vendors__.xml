@@ -147,6 +147,12 @@
 				<fieldNameInFile>ShowAlerts__</fieldNameInFile>
 			</fieldInFile>
 		</mapping>
+		<mapping>
+			<fieldInTable>Z_SupplierType__</fieldInTable>
+			<fieldInFile>
+				<fieldNameInFile>Z_SupplierType__</fieldNameInFile>
+			</fieldInFile>
+		</mapping>
 		
 	</mappings>
 </mappingDef>

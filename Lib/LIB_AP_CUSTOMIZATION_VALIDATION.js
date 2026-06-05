@@ -336,6 +336,7 @@ var Lib;
                      * </code></pre>
                      */
                     GetModifiedNodeNameMappings: function (exportMode, modifiedNodeNameMappings) {
+                        modifiedNodeNameMappings.Z_SupplierType = "Supplier Type"
                         return modifiedNodeNameMappings;
                     },
                     /**
@@ -366,11 +367,34 @@ var Lib;
                      * }
                      */
                     GetFieldValuesMapping: function (modifiedFieldValuesMapping) {
-                        
+                        if (!modifiedFieldValuesMapping) {
+                            return modifiedFieldValuesMapping;
+                        }
+
+                        var prefix = () => {
+                            // Gestion au cas où le champ se termine par "__" (standard Esker) ou non
+                            var supplierType = modifiedFieldValuesMapping.Z_SupplierType__ || modifiedFieldValuesMapping.Z_SupplierType;
+                            
+                            if (supplierType && typeof supplierType === "string" && supplierType.length > 0) {
+                                // Extrait la première lettre (P, O, R...) et la passe en majuscule
+                                return supplierType.charAt(0).toUpperCase();
+                            }
+                            return "";
+                        };
+
+                        // On appelle la fonction avec () pour obtenir la lettre (ex: "P")
+                        var computedPrefix = prefix();
+
+                        // On applique le préfixe uniquement si le type fournisseur était renseigné
+                        if (computedPrefix) {
+                            var newNumber = computedPrefix + "_" + modifiedFieldValuesMapping.VendorNumber__;
+                            modifiedFieldValuesMapping.VendorNumber__ = newNumber;
+                        }
+
                         return modifiedFieldValuesMapping;
                     },
                     /**
-                     * @method Lib.AP.Customization.Validation.InvoiceExporter.GetFieldValuesTransformation
+                     * @method Lib.AP.Customization.Validation.InvoiceExporter.GetFieldValuesTransformation 
                      * @description
                      * Allows you to customize the transformation of the field values in the resulting XML.
                      * This user exit is called from the validation script of the Vendor invoice process, when the invoice is posted or when the payment is released
