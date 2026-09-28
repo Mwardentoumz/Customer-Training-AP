@@ -90,10 +90,36 @@ var Lib;
                             };
                         }
                     },
+                    NormalizeSupplierTypeValue: function (value) {
+                        var rawValue = (value || "").toString().trim();
+                        if (!rawValue) {
+                            return "";
+                        }
+
+                        var upperValue = rawValue.toUpperCase();
+                        if (upperValue === "P" || upperValue === "R" || upperValue === "O") {
+                            return upperValue;
+                        }
+
+                        if (/^PREFERRED/.test(upperValue)) {
+                            return "P";
+                        }
+                        if (/^REGULAR/.test(upperValue)) {
+                            return "R";
+                        }
+                        if (/^ONE[\s-]?TIME/.test(upperValue) || /^OCCASIONAL/.test(upperValue)) {
+                            return "O";
+                        }
+
+                        return rawValue;
+                    },
                     ManageSupplierTypeWarning: function () {
                         Log.Verbose("Test d appel de la fonction")
                         // Récupération de la clé sélectionnée (P, R, O ou "")
-                        var supplierType = Data.GetValue("Z_SupplierType__");
+                        var supplierType = LayoutHelpers.NormalizeSupplierTypeValue(Data.GetValue("Z_SupplierType__"));
+
+                        // Garantit que le combo reste cohérent avec ses clés techniques.
+                        Data.SetValue("Z_SupplierType__", supplierType);
 
                         Log.Verbose("Valeur du type : ", supplierType)
 
@@ -319,19 +345,42 @@ var Lib;
                  * </code></pre>
                  */
                 HTMLScripts.OnRefreshApproversListRowEnd = function (workflowUIParameters, table, row, index) {
-                    
-                    // 1. Récupération robuste du paramètre de configuration Z_BlockAP__
-                    // On teste d'abord l'instance des paramètres, puis la variable globale si la première est indéfinie
-                    Log.Verbose("Test of configuration", Sys.Parameters.GetInstance("AP"));                    
-                    Log.Verbose("Test of boolean", Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP__", "0") === "1");
-                    Log.Verbose("User role : ", User.profileName);
-                    
-                    if (User.profileName === "Accounts Payable Profile" && (Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP__", "0") === "1")) {
-                        table.HideTableRowDeleteForItem(index, true);
-                        table.HideTableRowAddForItem(index, true);
-                        row.Approver__.SetBrowsable(false);
-                        row.Approver__.SetHoverMessage();  // remove display of on hover for information on user added to the workflow
+                    Log.Info("[OnRefreshApproversListRowEnd] Début - index: " + index);
+
+                    var isAPSpecialist = User.profileName === "Accounts Payable Profile";
+                    var blockAP = Sys.Parameters.GetInstance("AP").GetParameter("Z_BlockAP", "0") === "1";
+
+                    if (!isAPSpecialist || !blockAP) {
+                        Log.Info("[OnRefreshApproversListRowEnd] Sortie: condition non remplie.");
+                        return;
                     }
+
+                    var contributor = Lib.AP.WorkflowCtrl.workflowUI.GetContributorAt(row);
+                    var role = contributor && contributor.role ? contributor.role : "<undefined>";
+                    var isAPStart = role === "_Role APStart";
+
+                    Log.Info(
+                        "[OnRefreshApproversListRowEnd] role=" + role +
+                        ", isAPStart=" + isAPStart
+                    );
+
+                    // Bloque l'ajout depuis n'importe quelle ligne
+                    table.HideTableRowAddForItem(index, true);
+                    Log.Info("[OnRefreshApproversListRowEnd] Ajout masqué pour la ligne " + index);
+
+                    // Bloque suppression + modification sur toutes les lignes sauf APStart
+                    if (!isAPStart) {
+                        table.HideTableRowDeleteForItem(index, true);
+                        Log.Info("[OnRefreshApproversListRowEnd] Suppression masquée pour la ligne " + index);
+
+                        if (row.Approver__) {
+                            row.Approver__.SetBrowsable(false);
+                            row.Approver__.SetHoverMessage("");
+                            Log.Info("[OnRefreshApproversListRowEnd] row.Approver__ verrouillé.");
+                        }
+                    }
+
+                    Log.Info("[OnRefreshApproversListRowEnd] Fin - index: " + index);
                 };
                 /**
                  * @method Lib.AP.Customization.HTMLScripts.GetContributorsExtraFilter
@@ -769,7 +818,6 @@ var Lib;
                  *	}
                  *	return null;
                  * }
-                 * </code></pre>
                  */
                 HTMLScripts.GetLineItemsImporterMapping = function () {
                 };
@@ -941,7 +989,7 @@ var Lib;
                  *		}
                  *       else
                  *		{
-                 *			Log.Warn("IsPurchaseOrderOpened user exit uses field ISITEMOPENED__ not retrieved by query!");
+                 *			Log.Warn("IsPurchaseOrderItemOpened user exit uses field ISITEMOPENED__ not retrieved by query!");
                  *		}
                  *	}
                  * }
@@ -987,6 +1035,34 @@ var Lib;
                  * </code></pre>
                  */
                 HTMLScripts.OnVendorChange = function (queryResult) {
+                    var supplierType = "";
+
+                    // Handle both query result objects and plain mapped objects.
+                    if (queryResult) {
+                        if (typeof queryResult.GetQueryValue === "function") {
+                            supplierType = queryResult.GetQueryValue("Z_SUPPLIERTYPE__", 0)
+                                || queryResult.GetQueryValue("Z_SUPPLIERTYPE", 0)
+                                || queryResult.GetQueryValue("Z_SupplierType__", 0)
+                                || queryResult.GetQueryValue("Z_SupplierType", 0)
+                                || "";
+                        } else if (Array.isArray(queryResult) && queryResult.length > 0) {
+                            supplierType = queryResult[0].Z_SupplierType__
+                                || queryResult[0].Z_SUPPLIERTYPE__
+                                || queryResult[0].Z_SupplierType
+                                || queryResult[0].Z_SUPPLIERTYPE
+                                || "";
+                        } else {
+                            supplierType = queryResult.Z_SupplierType__
+                                || queryResult.Z_SUPPLIERTYPE__
+                                || queryResult.Z_SupplierType
+                                || queryResult.Z_SUPPLIERTYPE
+                                || "";
+                        }
+                    }
+
+                    supplierType = LayoutHelpers.NormalizeSupplierTypeValue(supplierType);
+                    Data.SetValue("Z_SupplierType__", supplierType || "");
+                    LayoutHelpers.ManageSupplierTypeWarning();
                 };
                 /**
                 * @method Lib.AP.Customization.HTMLScripts.OnFillVendorContactEmail
@@ -1834,12 +1910,6 @@ var Lib;
                          * // First, add the custom columns in CustomizePOHeaderOjects:
                          * Common.CustomizePOHeaderOjects = function (poHeadersColumns, poHeadersDisplayedFields, poHeadersLineLevelFields)
                          * {
-                         * 	// Add custom columns
-                         * 	poHeadersColumns.push(
-                         * 		{ id: "VendorName__", label: "_Supplier Name", type: "STR", width: 200 }
-                         * 	);
-                         * }
-                         * // Then, QueryCustomTable will populate these fields with data from your custom table
                          */
                         QueryCustomTable: function (queryValue) {
                         },
@@ -2333,7 +2403,6 @@ var Lib;
                          *     }
                          *     return filter;
                          * }
-                         * </code></pre>
                          */
                         CustomizePOFilter: function (filter) {
                         },
@@ -2673,7 +2742,7 @@ var Lib;
                  * HTMLScripts.GetVendorByCustomField = function (control, callback)
                  * {
                  * 		if (control.GetName() === "VendorName__" || control.GetName() === "VendorNumber__")
-                            return false;
+                     return false;
                  * 		const vendorFilter = "VATNumber__=" + control.GetValue();
                  * 		const companyCode = Data.GetValue("CompanyCode__");
                  *		Lib.P2P.Browse.GetVendor(callback, companyCode, vendorFilter, "P2P");

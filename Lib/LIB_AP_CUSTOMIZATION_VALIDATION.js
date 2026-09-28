@@ -371,24 +371,39 @@ var Lib;
                             return modifiedFieldValuesMapping;
                         }
 
-                        var prefix = () => {
-                            // Gestion au cas où le champ se termine par "__" (standard Esker) ou non
-                            var supplierType = modifiedFieldValuesMapping.Z_SupplierType__ || modifiedFieldValuesMapping.Z_SupplierType;
-                            
-                            if (supplierType && typeof supplierType === "string" && supplierType.length > 0) {
-                                // Extrait la première lettre (P, O, R...) et la passe en majuscule
-                                return supplierType.charAt(0).toUpperCase();
+                        function getSupplierTypePrefix(supplierTypeValue) {
+                            if (!supplierTypeValue) {
+                                return "";
                             }
-                            return "";
-                        };
 
-                        // On appelle la fonction avec () pour obtenir la lettre (ex: "P")
-                        var computedPrefix = prefix();
+                            var value = supplierTypeValue.toString().trim();
+                            if (!value) {
+                                return "";
+                            }
 
-                        // On applique le préfixe uniquement si le type fournisseur était renseigné
-                        if (computedPrefix) {
-                            var newNumber = computedPrefix + "_" + modifiedFieldValuesMapping.VendorNumber__;
-                            modifiedFieldValuesMapping.VendorNumber__ = newNumber;
+                            var upperValue = value.toUpperCase();
+                            if (upperValue === "P" || /^PREFERRED/.test(upperValue)) {
+                                return "P";
+                            }
+                            if (upperValue === "R" || /^REGULAR/.test(upperValue)) {
+                                return "R";
+                            }
+                            if (upperValue === "O" || /^ONE[\s-]?TIME/.test(upperValue) || /^OCCASIONAL/.test(upperValue)) {
+                                return "O";
+                            }
+
+                            return upperValue.charAt(0);
+                        }
+
+                        // Champ custom reçu depuis la table Vendors__ via GetVendorCustomFields.
+                        var supplierType = modifiedFieldValuesMapping.Z_SupplierType__ || modifiedFieldValuesMapping.Z_SupplierType;
+                        var computedPrefix = getSupplierTypePrefix(supplierType);
+                        var vendorNumber = modifiedFieldValuesMapping.VendorNumber__;
+
+                        if (computedPrefix && vendorNumber && typeof vendorNumber === "string") {
+                            if (!/^[A-Z]-/.test(vendorNumber)) {
+                                modifiedFieldValuesMapping.VendorNumber__ = computedPrefix + "-" + vendorNumber;
+                            }
                         }
 
                         return modifiedFieldValuesMapping;
